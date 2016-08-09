@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'SolomonSansBlack';
+    src: url('../fonts/SolomonSansBlack.eot');
+    src: url('../fonts/SolomonSansBlack.eot') format('embedded-opentype'),
+         url('../fonts/SolomonSansBlack.woff2') format('woff2'),
+         url('../fonts/SolomonSansBlack.woff') format('woff'),
+         url('../fonts/SolomonSansBlack.ttf') format('truetype'),
+         url('../fonts/SolomonSansBlack.svg#SolomonSansBlack') format('svg');
+}
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeueRegular.eot') format('embedded-opentype'),
+         url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+         url('../fonts/BebasNeueRegular.woff') format('woff'),
+         url('../fonts/BebasNeueRegular.ttf') format('truetype'),
+         url('../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+}
+body {
+	font-family: 'BebasNeueRegular' ;
+	font-size: 25px;
+}
+
+
+h1, h2 {
+	font-family: 'SolomonSansBlack' ;
+	color: #fff;
+	text-align: center;
+}
+
+
+
+h1{
+	font-size: 47px;
+}
+h2{
+	font-size: 37px;
+}
+
+h3, h4, h5, h5, p {
+	font-family: 'BebasNeueRegular' ;
+}
+
+
+
+header {
+	background-image: url(../img/bghead.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+
+header .btn {
+	font-size: 30px;
+	margin:0 auto;
+}
+
+@media (max-width:768px) {
+	h1 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 25px;
+	}
+}
+
+h3 {
+	text-align: center;
+	font-size: 40px;
+}
+
+.imgmodal {
+	width: 100%
+}
+.modal-dialog {
+	background-color: #fff;
+	width: 70%;
+}
+
+.modal-dialog .btn {
+padding: 10px 100px;
+font-size: 25px;
+}
+
+@media (max-width:768px) {
+	.modal-dialog .btn {
+padding: 10px 30px;
+font-size: 20px;
+}
+}
+
+
+.media-body h4 {
+	font-size: 25px;
+}
+
+.media-body p {
+	font-size: 15px;
+}
+
+#spase1 {
+	padding-top: 150px;
+}
+hr {
+	width: 100px;
+}
+
+.btn {
+	font-family: 'BebasNeueRegular' ;
+	font-size: 25px;
+
+}
+
+.btn-success {
+	background-color: #00cab0;
+	border-color: #00cab0;
+}
