@@ -1,0 +1,67 @@
+.hello-wrap{
+	background-color: $white;
+	background: url(../img/gplaypattern.png);
+	position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.hello-wrap__modal{
+	text-align: center;
+  &:after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: '';
+    }
+}
+.hello__content{	
+	display: inline-block;
+	vertical-align: middle;
+	width: rem(300px);
+	background: #fff;
+	border-radius: 9px;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+.hello__avatar{
+	width: rem(140px);
+	height: rem(140px);
+	background: #ccc;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 1px solid #bebebe;
+	margin: 0 auto;
+	margin-top: rem(-70px);
+	margin-bottom: rem(20px);
+}
+.hello__avatar-img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	
+}
+.hello-name{
+	padding: 0 rem(21px);
+	font-size: rem(21px);
+	@include fira();
+	margin-bottom: rem(20px);
+}
+.hello_content-bottom{
+	background: $blue;
+	border-radius: 0 0 rem(9px) rem(9px);
+}
+.hello__btns{
+		text-align: center;	
+}
+.btn_white{
+	color: #fff;
+	margin: rem(20px) 0;
+	border-color: #fff;
+	&:hover{
+		color: $blue;
+		background:#fff;
+	}
+}

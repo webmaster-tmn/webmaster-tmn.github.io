@@ -1,0 +1,129 @@
+.career_wraper{
+	@extend %clearfix;
+}
+
+.career__pic{
+	overflow: hidden;
+	border-radius: 6px;
+	display: inline-block;
+	width: rem(220px);
+	height: rem(220px);
+	
+}
+.career__pic-img{
+	display: block;
+	min-width: 100%;
+	min-height: 100%;
+	background:url(../img/content/career-img.jpg) top center;
+}
+.career__item {
+	margin-bottom: rem(20px);
+	text-align: right;
+
+	&:first-child {
+		.career__block {
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	&:last-child {
+		.career__block {
+			&::after {
+				display: none;
+			}
+		}
+	}
+	@include tablets {
+		text-align: center;
+		margin-top: rem(20px);
+		margin-bottom: 0;
+	}
+}
+
+.career__block{
+	display: inline-block;
+	width: rem(340px);
+	position: relative;
+	text-align: left;
+	color: $gray;
+	background: #fff;
+	@include box-shadow(0 1px 3px 0 rgba(#000, .2));
+	border-radius: 10px;
+	padding: rem(20px);
+	@include fira();
+	font-size: rem(18px);
+
+		&:before, &:after {
+			content: "";
+			display: block;
+			width: rem(1px);
+			background: #dddddd;
+			position: absolute;
+			left: rem(-22px);
+		}
+		&:before{
+			top: 0;
+			bottom: 50%;
+			margin-bottom: rem(10px);
+		}
+		&:after{
+			top: 50%;
+			bottom: rem(-22px);
+			margin-top: rem(10px);
+		}
+		@include tablets{
+			width: rem(300px);
+		}
+}
+
+.career__title{
+	font-size: rem(21px);
+	color: #5a5a5a;
+	padding-bottom: rem(4px);
+}
+.career__year{
+	@include fira(light);
+	font-size: rem(14px);
+	position: absolute;
+	left: rem(-65px);
+	top: 50%;
+	
+	margin-top: rem(-7px);
+	&:after{
+		content: '';
+		width: rem(10px);
+		height: rem(10px);
+		background: $blue;
+		border-radius: 50%;
+		position: absolute;
+		right: rem(-22px);
+		top: 50%;
+		margin-top: rem(-5px);
+		z-index: 1;
+	}
+}
+.career__item:hover * {
+    color: #fff;
+}
+.career__item:hover .career__year {
+    color: $blue;
+    @include fira(bold);
+}
+.career__item:hover .career__year::after {
+    border: 5px solid #94e0f2;
+    right: rem(-25px);
+    margin-top: rem(-10px);
+}
+.career__item:hover .career__block{
+	background: $blue;
+}
+.career__block::before, 
+.career__block::after, 
+.career__year,
+.career__year::after{
+	@include tablets{
+		display: none;
+	}
+}
