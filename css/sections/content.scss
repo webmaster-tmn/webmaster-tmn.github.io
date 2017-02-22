@@ -1,0 +1,166 @@
+.content{
+	.container{
+		@extend %clearfix;
+	}
+}
+
+.sidebar{
+	width: rem(220px);
+	float: left;
+	@include laptop{
+			width: 100%;
+			float: none;
+			margin-bottom: rem(35px);
+		}
+}
+.nav__list{
+	@include laptop{
+		text-align: left;
+	}
+}
+.nav__item{
+	@include laptop{
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+.page-content{
+	width: rem(700px);
+	float: right;
+	
+	@include laptop{
+		width: 100%;
+
+	} 
+}
+.nav__link{
+	display: block;
+	text-decoration: none;
+	font-size: rem(18px);
+	color: $black;
+	padding: rem(10px) rem(20px) rem(10px) 0;
+	text-align: right;
+	border-right: 5px solid transparent;
+	@include phones{
+		padding-right: rem(10px);
+	}
+	&:hover{
+		color: $blue;
+	}
+
+	
+	.fa{
+		padding-right: rem(11px);
+		@include phones{
+			display: none;
+		}
+	}
+}
+.nav__link_active{
+	@include fira(bold);
+		color: $blue;
+		border-color: $blue;
+		@include laptop{
+			border: 0;
+		}
+}
+.about{
+	@extend %clearfix;
+}
+.about__left{
+	width: rem(290px);
+	float: left;
+	@include laptop{
+		width: rem(200px);
+		margin-right: rem(25px);
+		margin-left: rem(25px);
+	}
+	@include tablets{
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+.about__pic{
+	overflow: hidden;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	display: inline-block;
+	width: rem(220px);
+	height: rem(220px);
+		@include laptop{
+			width: rem(165px);
+			height: rem(165px);
+	}
+	
+}
+.about__pic-img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+.about__right{
+	width: rem(400px);
+	float: right;
+	@include laptop{
+		width: rem(437px);
+		margin-right: rem(25px);
+	}
+	@include tablets{
+		float: none;
+		margin: 0 auto;
+	}
+	@include phones{
+		width: auto;
+	}
+}
+.title{
+	font-size: rem(35px);
+	@include fira(medium);
+	margin-bottom: rem(20px);
+	color: $black;
+	@include tablets{
+		text-align: center;
+	}
+}
+.about__desc{
+	margin-bottom: rem(50px);
+	p {
+		@include fira (light);
+		font-size: rem(18px);
+		color: #646464;
+		margin-bottom: rem(15px);
+	}
+}
+.about__btns {
+	text-align: right;
+	@include tablets{
+		text-align: center;
+	}
+}
+.btn{
+	display: inline-block;
+	text-align: center;
+	color: $red;
+	font-size: rem(14px);
+	@include fira (bold);
+	text-decoration: none;
+	border: 2px solid $red;
+	-webkit-border-radius: rem(20px);
+	-moz-border-radius: rem(20px);
+	border-radius: rem(20px);
+	padding: rem(9px) rem(14px);
+		.fa{
+			padding-right: rem(11px);
+		}
+		&:hover{
+			color: #fff;
+			background-color: $red;
+		}
+		@include phones{
+			font-size: rem(16px);
+		}
+}
+.content{
+	margin-bottom: rem(106px);
+}
