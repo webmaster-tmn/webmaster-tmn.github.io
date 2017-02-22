@@ -1,0 +1,81 @@
+.footer{
+	background-color: $black;	
+	@extend %clearfix;
+	@include phones{
+		min-height: rem(115px);
+	}
+}
+.footer__left{
+	float: left;
+	@include phones{
+		float: none;
+	}
+}
+.footer__right{
+	float: right;
+	@include phones{
+		float: none;
+	}
+}
+.copyright{
+	color: $gray;
+	font-size: rem(14px);
+	padding: rem(16px) 0 0 rem(10px);
+	@include fira(light);
+	width: rem(540px);
+	@include tablets{
+		width: 100%;
+	}	
+	@include phones{
+		text-align: center;
+		font-size: rem(16px);
+	}
+}
+.socials{
+	text-align: right;
+	padding-top: rem(10px);
+	@include phones{
+		text-align: center;
+	}
+}
+.socials__item{
+	display: inline-block;
+
+		
+}
+.socials__link{
+	display: block;
+	width: rem(33px);
+	height: rem(34px);
+	background: url(../img/content/sprite.png) 0 0 no-repeat;
+	@include tablets{
+		width: rem(36px);
+		height: rem(37px);
+	}
+	@include phones{
+		width: rem(38px);
+		height: rem(40px);
+	}
+
+	
+}
+.socials__link_fb{
+	background-position: 0 0;
+	
+		&:hover{
+			background-position: 0 -33px;
+		}
+}
+.socials__link_vk{
+	background-position: -102px 0;
+	
+		&:hover{
+			background-position: -101px -33px;
+		}
+}
+.socials__link_tw{
+	background-position: -185px 0;
+			&:hover{
+			background-position: -185px -33px;
+		}
+}

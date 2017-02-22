@@ -1,0 +1,184 @@
+.header {
+	background: #fff;
+	@include box-shadow(0 1px 3px 0 rgba(#000, .2));
+	@extend %clearfix;
+	@include fira();
+	margin-bottom: rem(20px);
+	font-size: rem(18px);
+}
+
+.header__left{
+	float: left;
+	width: 50%;
+		@include tablets{
+		width: 65%;
+	}
+	@include phones{
+		width: 70%;
+	}	
+}
+ .header__right{
+ 	float: left;
+	width: 50%;
+	@include tablets{
+		width: 35%;
+	}
+	@include phones{
+		width: 30%;
+	}		
+ } 
+.user__avatar{
+	vertical-align: middle;
+	display: inline-block;
+	width: rem(59px);
+	height: rem(59px);
+	border: 1px solid #bebebe;
+	background: #ccc;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: rem(9px) rem(15px) rem(9px) 0;
+
+}
+.user__avatar-img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+
+}
+.user__username{
+	display: inline-block;
+	vertical-align: middle;
+	@include phones{
+		width: rem(135px);
+	}	
+}
+.header__right{
+	display: block;
+	vertical-align: middle;
+	text-align: right;
+}
+.contacts{
+	display: inline-block;
+	position: relative;
+	@include phones{
+		color: $blue;
+		top: 11px;
+		right: 25px;
+		&:before{
+			display: inline-block;
+			vertical-align: middle;
+			width: rem(32px);
+			height: rem(15px);
+			font-size: rem(40px);
+			font-family: FontAwesome;
+			content: "\f095";
+		}
+	}
+}
+.contacts__link{
+	color: $blue;
+	text-decoration: none;
+	display: inline-block;
+	padding-top: rem(25px);
+	@include fira(bold);
+	background: url(../img/decor/dotted.png) 0 bottom repeat-x;
+		
+		&:hover{
+			color: $red;
+			background: url(../img/decor/dotted-hov.png) 0 bottom repeat-x;
+				
+		}
+		@include phones{
+			position: absolute;
+			left: -999999px;
+		}
+	
+
+}
+.contacts:hover .contacts__dropdown {
+    left: -34%;
+    opacity: 1;
+    @include laptop{
+		left: -66%;
+	}
+	@include phones{
+		left: -500%;
+	}
+
+}
+
+.contacts__dropdown{
+	position: absolute;
+	top: rem(60px);
+  left: -34%;
+	text-align: left;
+	font-size: rem(18px);
+	@include fira(light);
+	opacity: 0;
+	width: rem(190px);
+	min-height: 100%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #fff;
+	border: solid 1px #dedede;
+	left: -99999px;
+	z-index: 50;
+		&:before{
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			height: rem(25px);
+			top: rem(-23px);
+		}
+		
+}
+
+.dropdown-trriangle{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid #dedede;
+	bottom: 100%;
+  left: rem(101px);
+  @include phones{
+  	left: rem(160px);
+  }
+
+		&:before{
+			position: absolute;
+			content: '';
+			width: 0;
+			height: 0;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-bottom: 10px solid #fff;
+			top: rem(2px);
+			left: rem(-5px);
+			z-index: 20;
+		}
+}
+
+.contacts__dropdown-item{
+	color: $black;
+	padding: rem(10px);
+	border-bottom: 1px solid #eeeeee;
+		&:last-child{
+			border-bottom:none;
+		}
+	.fa{
+		color: $blue;
+		margin-right: rem(10px);
+	}
+}
+.contacts__dropdown-link{
+	text-decoration: none;
+	color: $black;
+		&:hover{
+			color: $red;
+		}
+}	
