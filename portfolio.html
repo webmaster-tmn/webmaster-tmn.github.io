@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<meta name="viewport" content="width=960">
+	<meta name="keywords" content="портфолио верстальщика, портфолио фриланс, веб разработка"/>
+	<meta name="description"  content="Вы находитесь на странице начинающего Тюменского frontend разработчика. Качественная верстка по низкой цене."/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Мое портфолио</title>
 	<link rel="stylesheet" href="css/style.css">	
-	<title>Портфолио</title>
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -18,10 +20,10 @@
 				<div class="header__left">
 					<div class="user">
 						<div class="user__avatar">
-							<img src="img/ava.jpg" alt="аватар" class="user__avatar-img">
+							<img src="img/content/logo-cont.jpg" alt="логотип" class="user__avatar-img">
 						</div>
 						<div class="user__username">
-							Константин Константинов
+							Денис Дерябин
 						</div>
 					</div>
 				</div>
@@ -37,10 +39,14 @@
 						<ul class="contacts__dropdown">
 							<div class="dropdown-trriangle"></div>
 							<li class="contacts__dropdown-item">
-								<a href="#" class="contacts__dropdown-link"><i class="fa fa-envelope" aria-hidden="true"></i>kostya@mail.ru</a>
+								<a href="mailto:denis.derjabin@ya.ru" class="contacts__dropdown-link"><i class="fa fa-envelope" aria-hidden="true"></i>denis.derjabin@ya.ru</a>
 							</li>
-							<li class="contacts__dropdown-item"><i class="fa fa-phone" aria-hidden="true"></i>+7 921 887 62 37</li>
-							<li class="contacts__dropdown-item"><i class="fa fa-skype" aria-hidden="true"></i>kostik_</li>
+							<li class="contacts__dropdown-item">
+								<a href="https://vk.com/den1s_tmn" class="contacts__dropdown-link" target="blank"><i class="fa fa-vk" aria-hidden="true"></i>Денис Дерябин</a>
+							</li>
+							<li class="contacts__dropdown-item">
+								<a href="skype:valerich-tmn" class="contacts__dropdown-link"><i class="fa fa-skype" aria-hidden="true"></i>valerich-tmn</a>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -62,6 +68,9 @@
 							<li class="nav__item">
 								<a href="portfolio.html" class="nav__link nav__link_active"><i class="fa fa-briefcase" aria-hidden="true"></i>Портфолио</a>
 							</li>
+							<li class="nav__item">
+								<a href="comment.html" class="nav__link"><i class="fa fa-comments" aria-hidden="true"></i>Отзывы</a>
+							</li>
 						</ul>
 					</nav>
 				</aside>
@@ -72,49 +81,41 @@
 						<h1 class="title">Портфолио</h1>
 						<ul class="portfolio__list">
 							<li class="portfolio__item">
-								<a href="#" class="portfolio__link">
-									<div class="portfolio_pic">
-										<img src="img/content/portfolio/1.jpg" alt="1" class="portfolio_pic-img">
-									</div>
+								<a href="portfolio/hipsweet/index.html" class="portfolio__link" target="blank">
+									<div class="portfolio_pic-bg" style="background-image: url(img/content/portfolio/1.jpg)"></div>
 									<div class="portfolio__desc">
-										<div class="portfolio__title">Deals App</div>
-										<div class="portfolio__work-desc">Продажа одежды</div>
-										<div class="portfolio__type"><i class="fa fa-mobile" aria-hidden="true"></i>Приложение</div>
-									</div>
-								</a>
-							</li>
-							<li class="portfolio__item">
-								<a href="#" class="portfolio__link">
-									<div class="portfolio_pic">
-										<img src="img/content/portfolio/2.jpg" alt="1" class="portfolio_pic-img">
-									</div>
-									<div class="portfolio__desc">
-										<div class="portfolio__title">Dream-scapes</div>
-										<div class="portfolio__work-desc">Лагуна Люфтганза</div>
+										<div class="portfolio__title">Hipsweet</div>
+										<div class="portfolio__work-desc">Кондитерский магазин</div>
 										<div class="portfolio__type"><i class="fa fa-desktop" aria-hidden="true"></i>Лендинг</div>
 									</div>
 								</a>
 							</li>
 							<li class="portfolio__item">
-								<a href="#" class="portfolio__link">
-									<div class="portfolio_pic">
-										<img src="img/content/portfolio/3.jpg" alt="1" class="portfolio_pic-img">
-									</div>
+								<a href="portfolio/sc/index.html" class="portfolio__link" target="blank">
+									<div class="portfolio_pic-bg" style="background-image: url(img/content/portfolio/2.jpg)"></div>
 									<div class="portfolio__desc">
-										<div class="portfolio__title">Creative studio</div>
-										<div class="portfolio__work-desc">Танцевальная студия</div>
-										<div class="portfolio__type"><i class="fa fa-desktop" aria-hidden="true"></i></i>Корпоративный сайт</div>
+										<div class="portfolio__title">Отопление Плюс</div>
+										<div class="portfolio__work-desc">Монтаж отопления под ключ</div>
+										<div class="portfolio__type"><i class="fa fa-desktop" aria-hidden="true"></i>Лендинг</div>
 									</div>
 								</a>
 							</li>
 							<li class="portfolio__item">
-								<a href="#" class="portfolio__link">
-									<div class="portfolio_pic">
-										<img src="img/content/portfolio/4.jpg" alt="1" class="portfolio_pic-img">
-									</div>
+								<a href="portfolio/elki/index.html" class="portfolio__link" target="blank">
+									<div class="portfolio_pic-bg" style="background-image: url(img/content/portfolio/3.jpg)"></div>
 									<div class="portfolio__desc">
-										<div class="portfolio__title">Studio Frog</div>
-										<div class="portfolio__work-desc">Мебельный магазин</div>
+										<div class="portfolio__title">Ёлки</div>
+										<div class="portfolio__work-desc">Магазин искусственных ёлок</div>
+										<div class="portfolio__type"><i class="fa fa-desktop" aria-hidden="true"></i>Лендинг</div>
+									</div>
+								</a>
+							</li>
+							<li class="portfolio__item">
+								<a href="#" class="portfolio__link" target="blank">
+									<div class="portfolio_pic-bg" style="background-image: url(img/content/portfolio/4.png)"></div>
+									<div class="portfolio__desc">
+										<div class="portfolio__title">39 тракторов</div>
+										<div class="portfolio__work-desc">Работы на земельном участке</div>
 										<div class="portfolio__type"><i class="fa fa-desktop" aria-hidden="true"></i>Лендинг</div>
 									</div>
 								</a>
@@ -123,8 +124,8 @@
 								<a href="#" class="portfolio__link">
 									<div class="portfolio_pic-bg" style="background-image: url(img/content/portfolio/5.jpg)"></div>
 									<div class="portfolio__desc">
-										<div class="portfolio__title">Carbonara</div>
-										<div class="portfolio__work-desc">Итальянсий ресторан</div>
+										<div class="portfolio__title">Mr Burger</div>
+										<div class="portfolio__work-desc">Магазин бургеров</div>
 										<div class="portfolio__type"><i class="fa fa-desktop" aria-hidden="true"></i>Лендинг</div>
 									</div>
 								</a>
@@ -149,19 +150,24 @@
 			<div class="footer__right">
 				<ul class="socials">
 					<li class="socials__item">
-						<a href="#" class="socials__link socials__link_fb"></a>
+						<a href="https://www.facebook.com/d.denistmn"  target="blank" class="socials__link socials__link_fb"></a>
 					</li>
 					<li class="socials__item">
-						<a href="#" class="socials__link socials__link_vk">
+						<a href="https://vk.com/den1s_tmn" target="blank" class="socials__link socials__link_vk">
 						</a>
 					</li>
 					<li class="socials__item">
-						<a href="#" class="socials__link socials__link_tw">
+						<a href="https://twitter.com/webmaster_tmn" target="blank" class="socials__link socials__link_tw">
 						</a>
-					</li>					
+					</li>
+					
 				</ul>
 			</div>
 		</div>
 </footer>
+		<script src="http://code.jquery.com/jquery-3.1.1.js" integrity="dVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/jquery.scrollbar.js"></script>
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

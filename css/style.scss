@@ -6,11 +6,18 @@ $blue: #33c1e3;
 $red: #e85f61;
 
 // Layout
+//@import "_misc/jqscrollbar";
+
 @import "../plugins/font-awesome";
 @import "_misc/fonts";
 @import "_misc/mixins";
 @import "_misc/normalize";
 @import "_misc/adjustment";
+@import "_misc/jquery.scrollbar";
+@import "_misc/slick.scss";
+@import "_misc/slick-theme.scss";
+
+
  
 
 
@@ -20,5 +27,6 @@ $red: #e85f61;
 @import "sections/welcome";
 @import "sections/career";
 @import "sections/portfolio";
+@import "sections/comments";
 @import "sections/footer";
 
