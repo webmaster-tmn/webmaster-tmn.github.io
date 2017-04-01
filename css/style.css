@@ -4080,22 +4080,22 @@ footer {
   -webkit-border-radius: 1.25rem;
   -moz-border-radius: 1.25rem;
   border-radius: 1.25rem;
-  padding: 0.5625rem 0.875rem;
+  padding: 7px 14px 5px 14px;
   -webkit-transition: all .4s;
   -ms-transition: all .4s;
   transition: all .4s; }
   .btn .fa {
     position: absolute;
     top: 50%;
-    margin-top: -0.5rem;
+    transform: translate(0, -50%);    
     font-size: 0.875rem; }
   .btn:hover {
     color: #fff;
     background-color: #e85f61; }
     .btn:hover .fa {
-      -webkit-transform: translateX(5px);
-      -ms-transform: translateX(5px);
-      transform: translateX(5px); }
+      -webkit-transform: translate(5px, -50%);
+      -ms-transform: translate(5px, -50%);
+      transform: translate(5px, -50%); }
   @media screen and (max-width: 480px) {
     .btn {
       font-size: 1rem; } }
@@ -4329,7 +4329,8 @@ footer {
   margin-top: 1.25rem;
   display: inline-block;
   vertical-align: top;
-  transition: all .7s; }
+  transition: all .7s; 
+  position: relative;}
   .portfolio__item:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     -ms-transform: scale(1.1);
@@ -4371,7 +4372,10 @@ footer {
 
 .portfolio__type {
   font-family: 'fira_sansregular', Arial, sans-serif;
-  color: #aeaeae; }
+  color: #aeaeae; 
+  position: absolute;
+  left: 20px;
+  bottom: 20px;}
   .portfolio__type .fa {
     margin-right: 0.3125rem;
     font-size: 1.125rem; }

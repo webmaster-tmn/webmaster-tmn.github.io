@@ -12,4 +12,9 @@
 				  
 				  
 					});
-      });
+
+     
+		$(".portfolio__item .portfolio__desc").height('auto').equalHeights();
+		
+	
+});
