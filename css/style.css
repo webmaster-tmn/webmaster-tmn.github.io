@@ -4109,8 +4109,8 @@ footer {
 .hello-wrap {
   background-color: #f6f6f6;
   background: url(../img/decor/gplaypattern.png);
-  position: fixed;
-  overflow: auto;
+  position: relative;
+  overflow: hidden;
   left: 0;
   top: 0;
   width: 100%;
@@ -4126,16 +4126,18 @@ footer {
     content: ''; }
 
 .hello__content {
-  display: inline-block;
-  vertical-align: middle;
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  z-index: 5;
   width: 18.75rem;
   background: #fff;
   border-radius: 9px;
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-  -webkit-box-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2); }
 
 .hello__avatar {
   width: 8.75rem;
