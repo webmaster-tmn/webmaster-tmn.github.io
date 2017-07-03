@@ -46,15 +46,12 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="why__title">
-					<h2 class="h2">
+					<h2 class="h2 wow bounceInLeft" data-wow-delay="0.5s">
 						почему мы злые?
 					</h2>
 					<div class="why__decr">
-						<p>
-							МЫ хорошо делаем дизайн, с увлечением упаковываем каждый проект<br>
- (стартап, мероприятие, франшизу),<br> 
-мы любим создавать мультфильмы, красивые сайты и необычные проекты! <br> 	
-Мы помогаем запускать и развивать бизнес, продавать франшизы и масштабироваться…
+						<p class="wow bounceInUp" data-wow-delay="0.8s">
+							МЫ хорошо делаем дизайн, с увлечением упаковываем каждый проект (стартап, мероприятие, франшизу), мы любим создавать мультфильмы, красивые сайты и необычные проекты! Мы помогаем запускать и развивать бизнес, продавать франшизы и масштабироваться…
 						</p>
 					</div>
 				</div>
@@ -220,7 +217,7 @@
 						<img class="img-responsive parallax__img-2" src="img/paralax/p-1.png">
 					</div>					
 				</div>
-				<a href="#" class="btn__glass">До свидания!</a>
+				<a href="http://button.dekel.ru" class="btn__glass">До свидания!</a>
 				<div class="glass__decr">И успехов вам во всем! Вы – большие молодцы! <br>У вас все получится!</div>
 			</div>
 		</div>
@@ -327,7 +324,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-4 hidden-sm">
-				<div class="advan__item style="margin-bottom: 55px;">
+				<div class="advan__item" style="margin-bottom: 55px;">
 					<span class="advan__item-number">4</span>
 					<div class="advan__item-text">
 					
@@ -366,7 +363,7 @@
 			<div class="cow__title">
 				У вас загорелись глаза <br>и вы соглашались с каждым<br>пунктом из списка выше? <br>Значит, пора писать нам! 
 			</div>
-			<a href="#" class="cow__btn">Хочу с вами работать!</a>
+			<a href="#" data-remodal-target="modal" class="cow__btn">Хочу с вами работать!</a>
 		</div>
 	</div>
 </div>
@@ -381,7 +378,7 @@
 					Xотите посмотреть некоторые наши работы?
 				</h3>
 				<div class="our__works-btn">
-					<a href="#" class="our__works-link">Хочу!</a>
+					<a href="#" data-remodal-target="modal" class="our__works-link">Хочу!</a>
 				</div>	
 			</div>
 		</div>
@@ -398,12 +395,12 @@
 					Хотите принять участие <br>в нашем проекте «ЗлоБизнес»? <br> Расскажите свою историю – все, что вас злит, <br> бесит и раздражает в бизнесе – здесь
 				</div>
 				<div class="footer__btn shake shake-constant shake-delay">
-					<a href="#" class="btn__vk"></a>
+					<a href="https://vk.com/zlobusiness" class="btn__vk"></a>
 				</div>
 				<div class="footer__email">
 					или отправьте нам письмо сюда – <br>
-					<a href="#" class="footer__email-link">
-						АДРЕС электронной почты.
+					<a href="mailto:info@zlobiznes.ru" class="footer__email-link">
+						info@zlobiznes.ru
 					</a>
 				</div>
 			</div>
@@ -411,9 +408,38 @@
 	</div>
 </footer>
 
+	<div class="remodal" data-remodal-id="modal">
+
+	
+	<button data-remodal-action="close" class="remodal-close"></button>
+	<div class="success"><span>Спасибо за заявку!</span></div>
+	
+			<div class="modal__form-box">
+				<form action="#" class="form-callback">
+				
+     
+			
+					<input type="name" name="name" placeholder="Ваше имя*" required>
+					
+					<input type="phone" name="phone" required placeholder="Ваш телефон*">
+					<input type="email" name="email" required placeholder="Ваш e-mail*">
+					<input required="" id="agree_form" type="checkbox">
+					<label style="display:inline" for="agree_form">Я согласен с
+						<a href="Politika_Konfidentsialnosti.pdf" target="_blank">Политикой конфиденциальности</a></label>
+					<button type="submit" class="btn-form">Отправить</button>
+				</form>
+			</div>
+		
+
+</div>
+
 <link rel="stylesheet" href="css/main.min.css">
 <script src="js/scripts.min.js"></script>
 <script>
+	new WOW().init();
+</script>
+<script>
+
 	var scene = document.getElementById('scene');
 // or, if you use jQuery
 var parallax = new Parallax(scene);
