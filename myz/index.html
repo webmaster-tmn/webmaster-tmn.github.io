@@ -742,7 +742,7 @@
 						</div>
 						<div class="events__date">29/07/2016</div>
 						<div class="events__decr">
-							Будущие специалисты по социальной работе в музее Раиса Сметаниной
+							Будущие специалисты по социальной работе в музее Раисы Сметаниной
 						</div>
 					</div>
 					</a>
@@ -994,7 +994,7 @@
 
  </div>
 
-	<link rel="stylesheet" href="css/main.min.css?v=2">
+	<link rel="stylesheet" href="css/main.min.css?v=2.2">
 	<script src="js/scripts.min.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
@@ -1012,103 +1012,10 @@ function confirmHandling() {
     checkForm++;
   }
 }
-$(window).scroll(function () {
 
-$("section").each(function () {
-if($(window).scrollTop() > $(this).offset().top - $(window).height()) {
-
-		$("#GuestBook").find('img').each(function() {
-		if($(this).attr('data-lazy')){
-		$(this).attr('src',$(this).attr('data-lazy'))
-		}
-		})
-
-}
-
-})
-
-}) 
 	</script>
 <script>
-	$(document).ready(function(){
-		var section = '.feedback-popup,.entry-popup,.tab,.header, .btn, .visitors__box, .historyDocument, .wrapper, .historyWrapper, .tab_content, .visitorsWrapper, .section__white-container, .footer, .GuestBook__wrapper';
-//sv_settings
-$("#sv_on").click(function(event) {
-	$(this).css('display', 'none');
-	$(".sv_settings").slideToggle();
-	$("html").addClass('fs-m, imgGrey');
-	$(".wrapper").css('margin-top', '58px');
-	$(".breadcrumbs").css('display', 'none');
-	$(section).addClass('cs-bw');
-
-});
-
-$("#sv_off").click(function(event) {
-	$(".sv_settings").slideToggle();
-	$("html").removeClass();
-	$(".wrapper").css('margin-top', '0px');
-	$("#sv_on").css('display', 'block');
-	$(".breadcrumbs").css('display', 'flex');
-	$(section).removeClass('cs-bw cs-wb cs-bb cs-gb cs-yg');
-});
-
-$(".fs-n").click(function(event) {	
-	$("html").addClass('fs-n');
-	$("html").removeClass('fs-m');
-	$("html").removeClass('fs-l');
-});
-$(".fs-l").click(function(event) {	
-	$("html").addClass('fs-l');
-	$("html").removeClass('fs-n');
-	$("html").removeClass('fs-m');
-});
-$(".fs-m").click(function(event) {	
-	$("html").addClass('fs-m');
-	$("html").removeClass('fs-n');
-	$("html").removeClass('fs-l');
-});
-
-$(".cs-bw").click(function() {
-	$(section).addClass('cs-bw');
-	$(section).removeClass('cs-wb');
-	$(section).removeClass('cs-bb');
-	$(section).removeClass('cs-gb');
-	$(section).removeClass('cs-yg');
-});
-
-$(".cs-wb").click(function() {
-	$(section).addClass('cs-wb');
-	$(section).removeClass('cs-bw');
-	$(section).removeClass('cs-bb');
-	$(section).removeClass('cs-gb');
-	$(section).removeClass('cs-yg');
-});
-
-$(".cs-bb").click(function() {
-	$(section).addClass('cs-bb');
-	$(section).removeClass('cs-bw');
-	$(section).removeClass('cs-wb');
-	$(section).removeClass('cs-gb');
-	$(section).removeClass('cs-yg');
-});
-
-$(".cs-gb").click(function() {
-	$(section).addClass('cs-gb');
-	$(section).removeClass('cs-bw');
-	$(section).removeClass('cs-wb');
-	$(section).removeClass('cs-bb');
-	$(section).removeClass('cs-yg');
-});
-
-$(".cs-yg").click(function() {
-	$(section).addClass('cs-yg');
-	$(section).removeClass('cs-bw');
-	$(section).removeClass('cs-wb');
-	$(section).removeClass('cs-bb');
-	$(section).removeClass('cs-gb');
-});
-
-});
+	
 </script>
 	  
 
