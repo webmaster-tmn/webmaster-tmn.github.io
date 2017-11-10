@@ -188,11 +188,7 @@ body {
   height: 55px;
   background-image: -webkit-gradient(linear, left top, right top, from(#4a00af), to(#ff004e));
   background-image: linear-gradient(to right, #4a00af, #ff004e);
-  text-decoration: none;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s; }
+  text-decoration: none;}
   .btn:hover {
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px); }
