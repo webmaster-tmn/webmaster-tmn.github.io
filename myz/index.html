@@ -99,13 +99,15 @@
 <section class="mainSection" id="main">
 	<div class="container">
 		<div class="mainContent">
-			<h1 class="h1">ГБУ РК 
+			<h1 class="h1 wow fadeInLeftBig">ГБУ РК 
 				<span>
 					Музей<br>олимпийской<br>чемпионки<br>Раисы Сметаниной
 				</span>
 			</h1>
-			<a href="#entry" class="btn popup-link">Записаться на экскурсию</a>
-			<div class="mainPhone">
+			<div class="mainBtn wow fadeInLeftBig" data-wow-delay=".5s" data-wow-duration="1s">
+				<a href="#entry" class="btn popup-link">Записаться на экскурсию</a>
+			</div>			
+			<div class="mainPhone wow fadeInLeftBig" data-wow-delay="1s" data-wow-duration="1s">
 				<a href="tel:+79128647267" class="tel">+ 7 (912)864-72-67</a>;
 				<a href="tel:+7(8212)515043" class="tel">(8212)51-50-43</a>
 			</div>
@@ -128,8 +130,8 @@
 				<span class="breadcrumbs__number">01</span>
 			</div>
 			<div class="history__content">
-				<div class="history__content-left">
-					<h2 class="h2">История</h2>
+				<div class="history__content-left wow fadeInLeft" data-wow-delay=".5s">
+					<h2 class="h2 wow slideInDown" data-wow-duration=".5s">История</h2>
 					<div class="history__text scrollbar-inner">
 						<p>Раиса Сметанина - имя знаковое в лыжном спорте. Двадцать лет она была членом национальной сборной команды страны по лыжным гонкам. Участница пяти Олимпиад, с каждой из которых возвращалась с медалями высшего порядка. Яркая и насыщенная победами спортивная жизнь Раисы Сметаниной по сегодняшний день является недосягаемой высотой. Коллекция титулов, призов и наград легенды лыжного спорта уникальна.</p>
 						<p>В марте 1992 года на вечере прощания Раисы Сметаниной с большим спортом, который проходил в Коми Республиканской филармонии, Правительство Республики Коми со сцены объявило о главном подарке - дом для легендарной землячки, который преподносится спортсменке от всей Республики Коми как дань благодарности за ее беззаветный труд, прославивший Землю Коми на весь мир. В марте 1997 года Раисе Сметаниной торжественно были вручены ключи от коттеджа по адресу улица Тентюковская, дом 301. А в июле 1997 года Глава Республики Коми Ю.А.Спиридонов издал Распоряжение о создании Музея четырехкратной олимпийской чемпионки Раисы Сметаниной по указанному адресу</p>
@@ -141,7 +143,7 @@
 						<p>Подготовленная музеем к печати книга «Раиса Сметанина. Эпизоды спортивной судьбы» (автор текста и составитель Людмила Оплеснина) вошла в число победителей Всероссийского конкурса на лучшее издание по спортивной тематике, учрежденного в 2012 году Министерством спорта Российской Федерации</p>
 					</div>
 				</div>
-				<div class="history__content-right">
+				<div class="history__content-right wow fadeInRight" data-wow-delay=".5s">
 					<div class="historySlider">
 						<img src="img/history_slider/hs-1.jpg" alt="Слидер 1">
 						<img src="img/history_slider/hs-2.jpg" alt="Слидер 2">
@@ -152,18 +154,15 @@
 						<button type="button" data-role="none" class="historySlider_next">&rsaquo;</button>
 					</div>
 				</div>
-				<div class="documentTrigger">
+				<div class="documentTrigger wow fadeInUpBig" data-wow-delay=".8s">
 					<div class="document__title">
 						Нормативно-правовые документы
 					</div>
 					 <span>
 							<img src="img/arrow_down.png" alt="down">
 						</span>
-				</div>
-
-				
-			</div>
-			
+				</div>				
+			</div>			
 		
 		<div class="historyDocument">
 			<div class="documentControl">
@@ -252,6 +251,20 @@
 								<img src="img/download.png" alt="download" class="down__icon">
 							</a>
 						</li>
+						<li class="document__item">
+							<a href="documents/12 Кодекс этики и служебного поведения.pdf" class="document__link"  target="_blank">
+								<img src="img/doc-icon.png" alt="icon" class="doc__pic">
+								<span class="document__text">Кодекс этики и служебного поведения</span>
+								<img src="img/download.png" alt="download" class="down__icon">
+							</a>
+						</li>
+						<li class="document__item">
+							<a href="documents/13 Конфликт интересов.pdf" class="document__link"  target="_blank">
+								<img src="img/doc-icon.png" alt="icon" class="doc__pic">
+								<span class="document__text">Конфликт интересов</span>
+								<img src="img/download.png" alt="download" class="down__icon">
+							</a>
+						</li>
 
 					</ul>
 		</div>
@@ -265,8 +278,10 @@
 <section id="contact">
 	<div class="container">
 		<div class="contactWrapper">
-			<div class="contactLeft">
-				<div id="map" class="map"></div>
+			<div class="contactLeft wow fadeInLeft" data-wow-delay=".5s">
+				<div id="map" class="map">
+					<img src="img/map2.jpg" alt="Карта">
+				</div>
 			</div>
 			<div class="contactRight">
 				<div class="tabs__container">
@@ -276,7 +291,7 @@
 						<li class="tab">Стоимость билетов</li>
 					</ul>
 					<ul class="tab_content">
-						<li class="tab_item">
+						<li class="tab_item wow slideInRight" data-wow-delay=".5s">
 							<p class="tab_item-text">
 								Государственное бюджетное учреждение Республики Коми<br>«Музей олимпийской чемпионки Раисы Сметаниной»
 							</p>
@@ -342,9 +357,9 @@
 				<span class="breadcrumbs__text">Посещение музея / Прейскурант / Порядок посещения музея / Запись на экскурсию</span>
 				<span class="breadcrumbs__number">03</span>
 			</div>
-			<h2 class="h2">Порядок посещения музея</h2>
+			<h2 class="h2 wow slideInDown" data-wow-duration=".5s">Порядок посещения музея</h2>
 			<div class="visitors__content">
-				<a href="#price-img" class="visitors__box popup-link">
+				<a href="#price-img" class="visitors__box popup-link wow slideInLeft" data-wow-duration="1s">
 					<span class="box__icon"><img src="img/rub.png" alt="ico"></span>
 					<span class="box__text">
 						<span class="box__title">Прейскурант</span>
@@ -356,7 +371,7 @@
 					</span>
 					
 				</a>
-				<a href="#excursion-img" class="visitors__box popup-link">
+				<a href="#excursion-img" class="visitors__box popup-link wow slideInRight" data-wow-duration="1s">
 					<span class="box__icon"><img src="img/forma-ic.png" alt="ico"></span>
 					<span class="box__text">
 						<span class="box__title">Порядок посещения музея</span>						
@@ -364,7 +379,7 @@
 				</a>
 				
 			</div>
-			<div class="visitors__btn">
+			<div class="visitors__btn wow slideInUp" data-wow-duration="2s">
 				<a href="#entry" class="btn btn_dark popup-link">Записаться</a>
 			</div>
 		</div>
@@ -377,9 +392,9 @@
 				<span class="breadcrumbs__text">Гостевая книга / Отзывы</span>
 				<span class="breadcrumbs__number">04</span>
 			</div>
-			<h2 class="h2">Гостевая книга</h2>
+			<h2 class="h2 wow slideInDown" data-wow-duration=".5s">Гостевая книга</h2>
 			<div class="feedback_btn">
-				<a href="#form__popup" class="feedback__link btn popup-link">Оставить отзыв</a>
+				<a href="#form__popup" class="feedback__link btn popup-link wow fadeIn" data-wow-duration="2s">Оставить отзыв</a>
 			</div>
 			<div class="feedback__wrapper">
 				<div class="feedbackSlider-container">
@@ -466,7 +481,7 @@
 						</div>
 						<div class="feedback__name">Дмитрий Губерниев</div>
 						<div class="feedback__text">
-							Раисе Петровне многая лета! <br> Вы не просто кумир,<br> Вы, жизнь, любовь и страсть!<br> С огромным уважением, Дмитрий Губерниев <br> P. S. Просто счастлив видеть такую красоту!
+							Раисе Петровне многая лета! <br> Вы не просто кумир,<br> Вы жизнь, любовь и страсть!<br> С огромным уважением, Дмитрий Губерниев <br> P. S. Просто счастлив видеть такую красоту!
 						</div>
 					</div>
 
@@ -493,7 +508,7 @@
 
 					<div class="feedback__content">
 						<div class="feedback__decr">
-							С двукратными олимпийскими чемпионами Зимней Олимпиады в г. Сочи-2014 бобслеистами Александром Зубковым и Алексеем Воеводой и телекомментатором Кириллом Набутовым
+							С двукратными олимпийскими чемпионами Зимней Олимпиады в г.Сочи-2014 бобслеистами Александром Зубковым и Алексеем Воеводой и телекомментатором Кириллом Набутовым
 
 						</div>							
 					</div>
@@ -504,7 +519,7 @@
 						</div>
 						<div class="feedback__name">Татьяна Лебедева</div>
 						<div class="feedback__text">
-							С большим уважением посетили <br> Ваш музей, впечатлялись, вдохновились! Мы росли на Вашем примере! Хочется пожелать Вам здоровья, благодати, пусть традиции советско-российского спорта продолжаются, а Вы личным примером вдохновили на новые труды, победы наших молодых ребят и спортсменов!
+							С большим уважением посетили <br> Ваш музей, впечатлились, вдохновились! Мы росли на Вашем примере! Хочется пожелать Вам здоровья, благодати, пусть традиции советско-российского спорта продолжаются, а Вы личным примером вдохновили на новые труды, победы наших молодых ребят и спортсменов!
 						</div>
 					</div>
 					<div class="feedback__content">
@@ -525,49 +540,49 @@
 				<span class="breadcrumbs__text">Фотогалерея</span>
 				<span class="breadcrumbs__number">05</span>
 			</div>
-			<h2 class="h2">Фотогалерея</h2>
+			<h2 class="h2 wow slideInDown" data-wow-duration=".5s">Фотогалерея</h2>
 			<div class="gallery__list">
-				<div class="gallery__item cell-w3">
+				<div class="gallery__item cell-w3 wow fadeInUp" data-wow-delay=".1s">
 					<a href="img/gallery/big/1.JPG" class="gallery__link">
 						<img src="img/lazy.jpg" data-lazy="img/gallery/1.jpg" alt="1">
 					</a>
 				</div>
-				<div class="gallery__item cell-w3">
+				<div class="gallery__item cell-w3 wow fadeInUp" data-wow-delay=".2s">
 					<a href="img/gallery/big/2.JPG" class="gallery__link">
 						<img src="img/lazy.jpg" data-lazy="img/gallery/2.jpg" alt="2">
 					</a>
 				</div>
-				<div class="gallery__item cell-w5">
+				<div class="gallery__item cell-w5 wow fadeInUp" data-wow-delay=".3s">
 					<a href="img/gallery/big/3.JPG" class="gallery__link">
 						<img src="img/lazy.jpg" data-lazy="img/gallery/3.jpg" alt="3">
 					</a>
 				</div>
-				<div class="gallery__item cell-w5">
+				<div class="gallery__item cell-w5 wow fadeInUp" data-wow-delay=".4s">
 					<a href="img/gallery/big/4.JPG" class="gallery__link">
 						<img src="img/lazy.jpg" data-lazy="img/gallery/4.jpg" alt="4">
 					</a>
 				</div>
-				<div class="gallery__item cell-w3">
+				<div class="gallery__item cell-w3 wow fadeInUp" data-wow-delay=".5s">
 					<a href="img/gallery/big/5.JPG" class="gallery__link">
 						<img src="img/lazy.jpg" data-lazy="img/gallery/5.jpg" alt="5">
 					</a>
 				</div>
-				<div class="gallery__item cell-w3">
+				<div class="gallery__item cell-w3 wow fadeInUp" data-wow-delay=".6s">
 					<a href="img/gallery/big/6.JPG" class="gallery__link">
 						<img src="img/lazy.jpg" data-lazy="img/gallery/6.jpg" alt="6">
 					</a>
 				</div>
-				<div class="gallery__item cell-w3">
+				<div class="gallery__item cell-w3 wow fadeInUp" data-wow-delay=".7s">
 					<a href="img/gallery/big/7.JPG" class="gallery__link">
 						<img src="img/lazy.jpg" data-lazy="img/gallery/7.jpg" alt="7">
 					</a>
 				</div>
-				<div class="gallery__item cell-w5">
+				<div class="gallery__item cell-w5 wow fadeInUp" data-wow-delay=".8s">
 					<a href="img/gallery/big/8.JPG" class="gallery__link">
 						<img src="img/lazy.jpg" data-lazy="img/gallery/8.jpg" alt="8">
 					</a>
 				</div>
-				<div class="gallery__item cell-w3">
+				<div class="gallery__item cell-w3 wow fadeInUp" data-wow-delay=".9s">
 					<a href="img/gallery/big/9.JPG" class="gallery__link">
 						<img src="img/lazy.jpg" data-lazy="img/gallery/9.jpg" alt="9">
 					</a>
@@ -671,9 +686,9 @@
 					<span class="breadcrumbs__text">Наши издания</span>
 					<span class="breadcrumbs__number">06</span>
 				</div>
-				<h2 class="h2">Наши издания</h2>
+				<h2 class="h2 wow slideInDown" data-wow-duration=".5s">Наши издания</h2>
 				<div class="publications__list">
-					<div class="publications__item publications__item-one">
+					<div class="publications__item publications__item-one wow fadeInLeft" data-wow-duration=".5s" data-wow-delay="1s">
 						<div class="publications__item-pic">
 							<img src="img/publications/Placeholder.jpg" alt="Буклет о “Музее олимпийской чемпионки Раисы Сметаниной”">
 						</div>						
@@ -689,7 +704,7 @@
 							“Раиса Сметанина.<br>Эпизоды спортивной судьбы”
 						</div>
 					</div>
-					<div class="publications__item publications__item-three">
+					<div class="publications__item publications__item-three wow fadeInRight" data-wow-duration=".5s" data-wow-delay="1s">
 						<div class="publications__item-pic">
 							<img src="img/publications/Слой-33.jpg" alt="“Там, за белыми  холмами” Книга о двукратном олимпийском чемпионе Николае Бажукове">
 						</div>						
@@ -706,27 +721,26 @@
 				</div>
 				<h2 class="h2">Мероприятия музея/Анонсы</h2>
 				<div class="events__list">
-					<a href="#preview-1" class="events__link">
+					<a href="#preview-1" class="events__link wow fadeInUp" data-wow-delay=".1s">
 						<div class="events__item events__item-preview">
-						<div class="events__pic">
-							<img src="img/events/1 анонс/анонс.jpg" alt="1 анонс">
-							<span>Далее</span>
-							<div class="preview">Анонс</div>
+							<div class="events__pic">
+								<img src="img/events/1 анонс/анонс.jpg" alt="1 анонс">
+								<span>Далее</span>
+								<div class="preview">Анонс</div>
+							</div>
+							<!-- <div class="events__date">29/07/2016</div> -->
+							<div class="events__decr">
+								С 20 по 24 ноября в музее пройдут традиционные Олимпийские уроки. 
+							</div>
 						</div>
-						<div class="events__date">29/07/2016</div>
-						<div class="events__decr">
-						С 20 по 24 ноября в музее пройдут традиционные Олимпийские уроки. 
-						</div>
-					</div>
 					</a>
-					<a href="#preview-2" class="events__link">
+					<a href="#preview-2" class="events__link wow fadeInUp" data-wow-delay=".2s">
 						<div class="events__item events__item-preview">
 						<div class="events__pic">
 							<img src="img/events/2 анонс/2-меропритие.jpg" alt="2 анонс">
 							<span>Далее</span>
-							<div class="preview">Анонс</div>
 						</div>
-						<div class="events__date">29/07/2016</div>
+						<!-- <div class="events__date">29/07/2016</div> -->
 						<div class="events__decr">
 							Последняя суббота  месяца  
 							28 октября с 10.00 до 15.00 –
@@ -734,25 +748,25 @@
 						</div>
 					</div>
 					</a>
-					<a href="#events-2" class="events__link">
+					<a href="#events-2" class="events__link wow fadeInUp" data-wow-delay=".3s">
 						<div class="events__item">
 						<div class="events__pic">
 							<img src="img/events/1 мероприяте/3-мероприятие.jpg" alt="3 мероприятие">
 							<span>Далее</span>
 						</div>
-						<div class="events__date">29/07/2016</div>
+						<!-- <div class="events__date">29/07/2016</div> -->
 						<div class="events__decr">
 							Будущие специалисты по социальной работе в музее Раисы Сметаниной
 						</div>
 					</div>
 					</a>
-					<a href="#events-1" class="events__link">
+					<a href="#events-1" class="events__link wow fadeInUp" data-wow-delay=".4s">
 						<div class="events__item">
 						<div class="events__pic">
 							<img src="img/events/2 мероприятие/1-мероприятие.jpg" alt="1 мероприятие">
 							<span>Далее</span>
 						</div>
-						<div class="events__date">29/07/2016</div>
+						<!-- <div class="events__date">29/07/2016</div> -->
 						<div class="events__decr">
 							Новая тематическая экскурсия
 							для  старших и подготовительных 
@@ -762,51 +776,75 @@
 					</div>
 					</a>
 					
-					<a href="#events-3" class="events__link">
+					<a href="#events-3" class="events__link wow fadeInUp" data-wow-delay=".5s">
 						<div class="events__item">
 						<div class="events__pic">
 							<img src="img/events/3 мероприятие/верстка.jpg" alt="3 мероприятие">
 							<span>Далее</span>
 						</div>
-						<div class="events__date">29/07/2016</div>
+						<!-- <div class="events__date">29/07/2016</div> -->
 						<div class="events__decr">
 							Юные лыжники из Яреги в музее Раисы Сматаниной
 						</div>
 					</div>
 					</a>
-					<a href="#events-4" class="events__link">
+					<a href="#events-4" class="events__link wow fadeInUp" data-wow-delay=".6s">
 						<div class="events__item">
 						<div class="events__pic">
 							<img src="img/events/4 мероприятие/верстка.jpg" alt="4 мероприятие">
 							<span>Далее</span>
 						</div>
-						<div class="events__date">29/07/2016</div>
+						<!-- <div class="events__date">29/07/2016</div> -->
 						<div class="events__decr">
-							Известный в Европе финский хореограя Алпо Аалтакоски в музее Раисы Сматаниной
+							Известный в Европе финский хореограф Алпо Аалтакоски в музее Раисы Сматаниной
 						</div>
 					</div>
 					</a>
-						<a href="#events-5" class="events__link">
-						<div class="events__item">
-						<div class="events__pic">
-							<img src="img/events/5 мероприятие/1.jpg" alt="5 мероприятие">
-							<span>Далее</span>
-						</div>
-						<div class="events__date">29/07/2016</div>
-						<div class="events__decr">
-							Семиклассники посетила музей Раисы Сметаниной
-						</div>
-					</div>
-					</a>
-					<a href="#events-6" class="events__link">
+						<a href="#events-6" class="events__link wow fadeInUp" data-wow-delay=".7s">
 						<div class="events__item">
 						<div class="events__pic">
 							<img src="img/events/6 мероприятие/1.jpg" alt="6 мероприятие">
 							<span>Далее</span>
 						</div>
-						<div class="events__date">29/07/2016</div>
+						<!-- <div class="events__date">29/07/2016</div> -->
+						<div class="events__decr">
+							Семиклассники посетили музей Раисы Сметаниной
+						</div>
+					</div>
+					</a>
+					<a href="#events-5" class="events__link wow fadeInUp" data-wow-delay=".8s">
+						<div class="events__item">
+						<div class="events__pic">
+							<img src="img/events/5 мероприятие/1.jpg" alt="5 мероприятие">
+							<span>Далее</span>
+						</div>
+						<!-- <div class="events__date">29/07/2016</div> -->
 						<div class="events__decr">
 							Группа туристов из Москва посетила музей Раисы Сметаниной
+						</div>
+					</div>
+					</a>
+					<a href="#events-7" class="events__link wow fadeInUp" data-wow-delay=".9s">
+						<div class="events__item">
+						<div class="events__pic">
+							<img src="img/events/7 мероприятие/верстка.jpg" alt="7 мероприятие">
+							<span>Далее</span>
+						</div>
+						<!-- <div class="events__date">29/07/2016</div> -->
+						<div class="events__decr">
+							Юные лыжники республиканского спортивного лагеря посетили музей легендарной лыжницы
+						</div>
+					</div>
+					</a>
+					<a href="#events-8" class="events__link wow fadeInUp" data-wow-delay="1s">
+						<div class="events__item">
+						<div class="events__pic">
+							<img src="img/events/8 мероприятие/верстка.jpg" alt="8 мероприятие">
+							<span>Далее</span>
+						</div>
+						<!-- <div class="events__date">29/07/2016</div> -->
+						<div class="events__decr">
+							Участницы Кубка России по боксу побывали на экскурсии в музее
 						</div>
 					</div>
 					</a>
@@ -881,7 +919,7 @@
 					<input type="checkbox" onchange="confirmHandling()">
 					<span class="custom-checkbox"></span>
 					<span class="checkbox-text">Я ознакомлен(а) с
-			<a href="#" target="_blank">политикой конфиденциальности</a></span>
+			<a href="documents/PK_muzey_Smetaninoy.pdf" target="_blank">политикой конфиденциальности</a></span>
 				</label>
       <input id="submit-form-btn" name="saveForm" type="button" value="Оставить отзыв"> 
  		</form>
@@ -897,12 +935,24 @@
  		</div>
  		<div class="events__popup-slider">
  			<div class="eventsSlider">
- 				<img src="img/events/2 мероприятие/1.jpg" alt="s1">
- 				<img src="img/events/2 мероприятие/2.jpg" alt="s2">
- 				<img src="img/events/2 мероприятие/3.jpg" alt="s3">
- 				<img src="img/events/2 мероприятие/4.jpg" alt="s4">
- 				<img src="img/events/2 мероприятие/6.jpg" alt="s6">
- 				<img src="img/events/2 мероприятие/7.jpg" alt="s7">
+ 				<a href="img/events/2 мероприятие/1.jpg" class="colorbox">
+ 					<img src="img/events/2 мероприятие/1.jpg" alt="s1">
+ 				</a>
+ 				<a href="img/events/2 мероприятие/2.jpg" class="colorbox">
+ 					<img src="img/events/2 мероприятие/2.jpg" alt="s2">
+ 				</a>
+ 				<a href="img/events/2 мероприятие/3.jpg" class="colorbox">
+ 					<img src="img/events/2 мероприятие/3.jpg" alt="s3">
+ 				</a>
+ 				<a href="img/events/2 мероприятие/4.jpg" class="colorbox">
+ 					<img src="img/events/2 мероприятие/4.jpg" alt="s4">
+ 				</a>
+ 				<a href="img/events/2 мероприятие/6.jpg" class="colorbox">
+ 					<img src="img/events/2 мероприятие/6.jpg" alt="s6">
+ 				</a>
+ 				<a href="img/events/2 мероприятие/7.jpg" class="colorbox">
+ 					<img src="img/events/2 мероприятие/7.jpg" alt="s7">
+ 				</a>
  			</div>
  			<div class="events__controls">
  				<a class="next_events"><img src="img/arrow_right.png" alt="right"></a>
@@ -923,7 +973,7 @@
 
  	<div class="events__popup popup" id="events-3"> 		
  		<div class="events__popup-text">
- 			<p>После экскурсии один из юных лыжников из поселка  Ярега Ухтинского района написал в альбоме музея: « Раиса Сметанина!  Надеюсь Вы станете моим тренером ведь я хочу заниматься лыжами.  Благодарим за Ваш стадион». Во время каникул ребята с тренером  Ириной Шаровой проводят тренировки на Республиканском лыжном  комплексе им.Р.П,Сметаниной.</p>
+ 			<p>После экскурсии один из юных лыжников из поселка  Ярега Ухтинского района написал в альбоме музея: « Раиса Сметанина!  Надеюсь Вы станете моим тренером ведь я хочу заниматься лыжами.  Благодарим за Ваш стадион». Во время каникул ребята с тренером  Ириной Шаровой проводят тренировки на Республиканском лыжном  комплексе им. Р.П. Сметаниной.</p>
  			
  		</div>
  		<div class="events__popup-pic">
@@ -961,6 +1011,26 @@
  		</div>
  	</div>
 
+ 	<div class="events__popup popup" id="events-7"> 		
+ 		<div class="events__popup-text">
+ 			<p>Юные лыжники республиканского спортивного лагеря из Ухтинского, Сосногорского, Прилузского и Удорского районов в дни отдыха между тренировками на искусственном снегу Республиканского лыжного комплекса им.Р.П.Сметаниной посетили музей легендарной лыжницы.</p>
+ 			
+ 		</div>
+ 		<div class="events__popup-pic">
+ 			<img src="img/events/7 мероприятие/ыв.jpg" alt="1">
+ 		</div>
+ 	</div>
+ 	<div class="events__popup popup" id="events-8"> 		
+ 		<div class="events__popup-text">
+ 			<p>Участницы Кубка России по боксу среди женщин перед началом соревнований побывали на экскурсии в музее. “Воодушевились, впечатлены мужеством лыжников-олимпийцев, получили хороший настрой на борьбу,”- отзывы спортсменок после посещения музея.</p>
+ 			
+ 		</div>
+ 		<div class="events__popup-pic">
+ 			<img src="img/events/8 мероприятие/С.jpg" alt="1">
+ 		</div>
+ 	</div>
+
+
  	<div class="events__popup popup" id="preview-1">
  		
  		<div class="events__popup-text">
@@ -975,15 +1045,26 @@
  	<div class="events__popup popup" id="preview-2">
  		
  		<div class="events__popup-text">
- 			<p>Последняя суббота  месяца  28 октября с 10.00 до 15.00 – День открытых дверей для семейного посещения родителей с детьми дошкольного и школьного возраста.</p>
- 			<p>Справки по телефону +7-912- 864-73-67</p>
+ 			<p> В последнюю субботу октября в Музее прошел День открытых дверей для семейного посещения родителей с детьми дошкольного и младшего школьного возраста. Гостями Музея в этот день стали сорок два посетителя, самому юному из которых было всего годик.</p>
+
  		</div>
  		<div class="events__popup-slider">
- 			<div class="eventsSlider">
- 				<img src="img/events/2 анонс/1.jpg" alt="s1">
- 				<img src="img/events/2 анонс/2.jpg" alt="s2">
- 				<img src="img/events/2 анонс/верстка.jpg" alt="s3">
- 				<img src="img/events/2 анонс/2.jpg" alt="s1">
+ 			<div class="eventsSlider"> 				
+ 					<a class="colorbox" href="img/events/2 анонс/1-big.jpg">
+ 						<img src="img/events/2 анонс/1.jpg" alt="s1">
+ 					</a>
+ 					<a class="colorbox" href="img/events/2 анонс/2-big.jpg">
+ 						<img src="img/events/2 анонс/2.jpg" alt="s2">
+ 					</a>
+ 					<a class="colorbox" href="img/events/2 анонс/верстка-big.jpg">
+ 						<img src="img/events/2 анонс/верстка.jpg" alt="s1">
+ 					</a>
+ 				 				
+ 					<a class="colorbox" href="img/events/2 анонс/2-big.jpg">
+ 						<img src="img/events/2 анонс/2.jpg" alt="s2">
+ 					</a>
+
+ 				
  			</div>
  			<div class="events__controls">
  				<a class="next_events"><img src="img/arrow_right.png" alt="right"></a>
@@ -994,7 +1075,7 @@
 
  </div>
 
-	<link rel="stylesheet" href="css/main.min.css?v=2.2">
+	<link rel="stylesheet" href="css/main.min.css">
 	<script src="js/scripts.min.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 
@@ -1015,7 +1096,7 @@ function confirmHandling() {
 
 	</script>
 <script>
-	
+	new WOW().init();
 </script>
 	  
 
