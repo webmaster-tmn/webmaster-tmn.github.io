@@ -177,6 +177,7 @@ body {
   min-width: 270px; }
 
 .btn {
+  color: #fff;
   display: block;
   text-align: center;
   line-height: 55px;
