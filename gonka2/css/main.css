@@ -255,6 +255,8 @@ body {
     .speed {
       background-size: contain;
       margin-top: -70px; } }
+      .girl .container {
+    padding-left: 30px; } 
 
 @media screen and (max-width: 768px) {
   .header {
@@ -263,8 +265,7 @@ body {
     width: 50%; }
   .right {
     width: 50%; }
-  .girl .container {
-    padding-left: 30px; } 
+  
   .footer__text {
       width: 410px; } }
 
