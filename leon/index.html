@@ -1,0 +1,2319 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title></title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/slick.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div class="wrapper">
+	<header class="header">
+		<div class="container header__container">
+			<div class="logo">
+				<a href="#" class="logo__link">
+					<img src="img/logo.png" alt="Leon" class="logo__pic img-responsive">
+				</a>
+			</div>
+			<nav class="header__nav">
+							<ul class="header__nav-list">
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link is-active">главная</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">live</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">прематч</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">прогнозы</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">бонусы</a>
+								</li>
+								<li class="header__nav-item">
+									<a href="#" class="header__nav-link">акции</a>
+								</li>
+							</ul>
+						</nav>
+			<div class="header__content">
+						
+						<div class="header__search">
+							<form class="header__search-form">
+								<label for="search">
+									<i class="fa fa-search"></i>
+									<input id="search" class="search-field" placeholder="Поиск событий" type="text"/>
+								</label>
+							</form>
+							
+						</div>
+						<div class="header__right">
+							<button class="search__btn"><i class="fa fa-search"></i></button>
+							<div class="notification disabled">
+								<img src="img/icons/notification1.png" alt="icon">					 		
+								<div class="notification__dropdown">
+									<div class="dropdown-trng"></div>
+									<div class="notification__dropdown-pic">
+										<img src="img/icons/not_dd.jpg" alt="icon">
+									</div>
+									<div class="notification__dropdown-decr">У вас еще нет уведомлений, попробуйте сделать ставку сейчас!</div>
+									<div class="notification__dropdown-link">
+										<a href="#">сделать ставку</a>
+									</div>
+								</div>
+							</div>
+							<div class="notification-active">
+								<div class="notification__pic">
+									<img src="img/icons/notification-active.png" alt="icon">
+									<span>8</span>
+								</div>					 		
+								<div class="notification-active__dropdown">
+									<div class="dropdown-trng"></div>
+									<div class="notification__item bet__up">
+										<div class="bet-text">
+											Ставка на <span>Челси - Милан</span> сыграла!
+										</div>
+										<span class="bet__time">12 минут назад</span>
+									</div>
+									<div class="notification__item bet__down">
+										<div class="bet-text">
+											Ставка на <span>ПСГ - Марсель</span> не сыграла!
+										</div>
+										<span class="bet__time">вчера 12:30</span>
+									</div>
+									<div class="notification__item bet__timer">
+										<div class="bet-text">
+											Матч Лиги Чемпионов<span> Манчестер Юнт - Барселона</span> уже начался.
+										</div>
+										<span class="bet__time">вчера в 20:15</span>
+									</div>
+									<div class="notification__item bet__up">
+										<div class="bet-text">
+											Матч Лиги Чемпионов<span> Манчестер Юнт - Барселона</span> уже начался.
+										</div>
+										<span class="bet__time">вчера в 20:15</span>
+									</div>
+									<div class="notification__item account__up">
+										<div class="bet-text">
+											Пополнение счета на<span> 1100 Рублей</span> одобренна.
+										</div>
+										<span class="bet__time">вчера в 20:15</span>
+									</div>
+									<div class="notification__line"></div>
+									<div class="notification__all">
+										<a href="#" >Смотреть все нотификации</a>
+									</div>
+									
+								</div>
+							</div>
+							<div class="header__buttons">
+								<div class="user__balance">
+										<span>1138.26</span>
+									</div>
+								<a href="#" class="btn__login disabled">войти</a>
+								<div class="user">
+									
+									<a href="#" class="btn__user">бк</a>
+									<div class="user__dropdown">
+										<div class="dropdown-trng"></div>
+										<div class="user__dropdown-top">
+											<span class="user__name">богдан кононец</span>
+											<span class="user__count">Счет: 6239867</span>
+										</div>
+										<div class="user__dropdown-line"></div>
+										<div class="user__dropdown-bottom">
+											<div class="dropdown__list">
+												<div class="dropdown__list-item">
+													<img src="img/icons/user.png" alt="icon">
+													<a href="#">Личный кабинет</a>
+												</div>
+												<div class="dropdown__list-item">
+													<img src="img/icons/people.png" alt="icon">
+													<a href="#">Партнерский счет</a>
+												</div>
+												<div class="dropdown__list-item">
+													<img src="img/icons/coins.png" alt="icon">
+													<a href="#">Зачисления</a>
+												</div>
+												<div class="dropdown__list-item">
+													<img src="img/icons/credit_cart.png" alt="icon">
+													<a href="#">Выплаты</a>
+												</div>
+												<div class="dropdown__list-item">
+													<img src="img/icons/settings.svg" alt="icon">
+													<a href="#">Настройки</a>
+												</div>
+											</div>
+											<div class="dropdown__list-link">
+												<a href="#">Помощь</a>
+												<a href="#">Отправить отзыв</a>
+												<a href="#">Выход</a>
+											</div>
+										</div>
+									</div>
+								</div>	
+								<div class="registration disabled">
+									<a href="#" class="btn__registration btn__orange"><i class="ico-shield"></i>регистрация</a>
+									<div class="registration__dropdown">
+										<div class="dropdown-trng"></div>
+										<div class="registration__dropdown-pic">
+											<img src="img/icons/confetti.jpg" alt="icon">
+										</div>
+										<div class="registration__dropdown-title">Добро пожаловать обратно!</div>
+										<div class="registration__dropdown-decr">За первый депозит мы<br> даем <span>3999 Р.</span></div>
+									</div>
+								</div>
+								<div class="balance__box">
+									<div class="balance">
+										<span class="balance__leon">18342</span>
+										<span class="balance__rubles">1138.26</span>
+										<button class="balance__plus">+</button>
+									</div>
+									<div class="balance__dropdown">
+										<div class="dropdown-trng"></div>
+										<div class="balance__dropdown-top">
+											<div class="balance__dropdown-item">
+												<div class="balance__dropdown-left">
+													<span>Баланс</span><br>
+													<span class="balance__number">8 911 138.26</span>
+												</div>
+												<div class="balance__dropdown-right">
+													<a href="#" class="btn__dropdown btn__dropdown-plus">пополнить</a>
+												</div>
+											</div>
+											<div class="balance__dropdown-item">
+												<div class="balance__dropdown-left">
+													<span>Бонусные очки</span><br>
+													<span class="bonus__number">18234</span>
+												</div>
+												<div class="balance__dropdown-right">
+													<a href="#" class="btn__dropdown">обмен</a>
+												</div>
+											</div>
+										</div>
+										<div class="balance__dropdown-bottom">
+											<div class="dropdown__list">
+												<div class="dropdown__list-item">
+													<img src="img/icons/wallet.svg" alt="icon">
+													<span class="user__count">Счет: 6239867</span>
+												</div>
+												<div class="dropdown__list-item">
+													<img src="img/icons/credit_cart.png" alt="icon">
+													<a href="#">Выплаты</a>
+												</div>
+												<div class="dropdown__list-item">
+													<img src="img/icons/coins.png" alt="icon">
+													<a href="#">Зачисления</a>
+												</div>
+												<div class="dropdown__list-item">
+													<img src="img/icons/questions.png" alt="icon">
+													<a href="#">Помощь</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+		</div>
+	</header>
+
+<div class="container main-container">
+	<aside class="aside__left">
+		<div class="topLeague__box">
+			<div class="aside__left-title">топ лиги</div>
+			<div class="aside__left-list">
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/team/bundes_lg.png" alt="Бундеслига">
+					</div>
+					<div class="aside__left-text">Бундеслига</div>
+				</div>
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/team/la-liga.png" alt="La liga">
+					</div>
+					<div class="aside__left-text">La liga</div>
+				</div>
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/team/premier.png" alt="Premier League">
+					</div>
+					<div class="aside__left-text">Premier League</div>
+				</div>
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/team/liga-chemp.png" alt="Лига Чемпионов">
+					</div>
+					<div class="aside__left-text">Лига Чемпионов</div>
+				</div>
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/team/liga-europe.png" alt="Лига Европы">
+					</div>
+					<div class="aside__left-text">Лига Европы</div>
+				</div>
+				<div class="aside__left-hidden">
+					<div class="aside__left-item">
+						<div class="aside__left-icon">
+							<img src="img/team/liga-europe.png" alt="Лига Европы">
+						</div>
+						<div class="aside__left-text">Лига Европы</div>
+					</div>
+					<div class="aside__left-item">
+						<div class="aside__left-icon">
+							<img src="img/team/liga-europe.png" alt="Лига Европы">
+						</div>
+						<div class="aside__left-text">Лига Европы</div>
+					</div>
+					<div class="aside__left-item">
+						<div class="aside__left-icon">
+							<img src="img/team/liga-europe.png" alt="Лига Европы">
+						</div>
+						<div class="aside__left-text">Лига Европы</div>
+					</div>
+				</div>
+				<div class="hidden__btn-wrap">
+					<img class="hidden__btn-pic" src="img/icons/arrow_down.png" alt="">
+					<button class="hidden__btn">Еще лиги</button>
+				</div>							
+			</div>
+		</div>
+
+		<div class="sport__box">
+			<div class="aside__left-title">спорт</div>
+			<div class="sport__search">
+				<input class="sport__search-input" placeholder="Поиск события"/>
+				<i class="fa fa-search"></i>
+			</div>
+			<div class="aside__left-list">
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/icons/myLiga.png" alt="Мои лиги">
+					</div>
+					<div class="aside__left-text">Мои лиги</div>
+				</div>
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/icons/football.png" alt="Футбол">
+					</div>
+					<div class="aside__left-text">Футбол</div>
+				</div>
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/icons/basketball.png" alt="Баскетбол">
+					</div>
+					<div class="aside__left-text">Баскетбол</div>
+				</div>
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/icons/badminton.png" alt="Бадминтон">
+					</div>
+					<div class="aside__left-text">Бадминтон</div>
+				</div>
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/icons/rugby.png" alt="Регби">
+					</div>
+					<div class="aside__left-text">Регби</div>
+				</div>
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/icons/futsal.png" alt="Футзал">
+					</div>
+					<div class="aside__left-text">Футзал</div>
+				</div>
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/icons/american.png" alt="Амереканский Футбол">
+					</div>
+					<div class="aside__left-text">Амереканский Футбол</div>
+				</div>
+				<div class="aside__left-hidden">
+					<div class="aside__left-item">
+						<div class="aside__left-icon">
+							<img src="img/icons/american.png" alt="Амереканский Футбол">
+						</div>
+						<div class="aside__left-text">Амереканский Футбол</div>
+					</div>
+					<div class="aside__left-item">
+						<div class="aside__left-icon">
+							<img src="img/icons/american.png" alt="Амереканский Футбол">
+						</div>
+						<div class="aside__left-text">Амереканский Футбол</div>
+					</div>
+					<div class="aside__left-item">
+						<div class="aside__left-icon">
+							<img src="img/icons/american.png" alt="Амереканский Футбол">
+						</div>
+						<div class="aside__left-text">Амереканский Футбол</div>
+					</div>
+				</div>
+				<div class="hidden__btn-wrap">
+					<img class="hidden__btn-pic" src="img/icons/arrow_down.png" alt="">
+					<button class="hidden__btn">Еще лиги</button>
+				</div>							
+			</div>
+		</div>
+
+		<div class="favorites__box">
+			<div class="settin__icon"><img src="img/icons/cogwheel.svg" alt="1"></div>
+			<div class="aside__left-title">Избраные</div>
+			<div class="aside__left-list">
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/team/mnu.png" alt="Манчестер Юн">
+					</div>
+					<div class="aside__left-text">Манчестер Юн</div>
+				</div>
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/team/chelsea.png" alt="Челси">
+					</div>
+					<div class="aside__left-text">Челси</div>
+				</div>
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/team/barsa.png" alt="Барселона">
+					</div>
+					<div class="aside__left-text">Барселона</div>
+				</div>
+				<div class="aside__left-item">
+					<div class="aside__left-icon">
+						<img src="img/team/csk.png" alt="ЦСКА">
+					</div>
+					<div class="aside__left-text">ЦСКА</div>
+				</div>					
+
+			</div>
+		</div>	
+
+		<div class="recommendation">
+			<img src="img/recommendation.png" alt="recommendation">
+		</div>
+	</aside>
+			<main class="main">
+					<section class="top__section">
+						<div class="top__section-close"><img src="img/icons/close.png" alt="x"></div>
+						<a href="#" class="carousel-control right__slide">
+							<img src="img/icons/arrow_left.svg" alt="right">
+						</a>
+						<a href="#" class="carousel-control left__slide">
+							<img src="img/icons/arrow_left.svg" alt="left">
+						</a>
+						<div class="topSlider">
+							<div class="topSlider__item">
+								<div class="topSlider__title">
+									<div class="topSlider__subtitle">Англия - Премьер-лига. 14-й тур</div>
+									<h2 class="h2">матч дня</h2>
+								</div>
+								<div class="topSlider__content">
+									<div class="topSlider__content-item topSlider__content-item-left">
+										<div class="team__item team__item-left">
+											<div class="team__text">
+												<span class="top-team__name">Ман Юнайтед</span>
+												<span class="top-team__country">Англия</span>
+											</div>
+											<div class="top-team__pic">
+												<img src="img/team/mnu-big.png" alt="mnu">
+											</div>
+										</div>
+									</div>
+									<div class="topSlider__content-time">
+										<span class="top-match__time">19:00</span>
+										<span class="top-match__date">Сегодня</span>
+									</div>
+									<div class="topSlider__content-item">
+										<div class="team__item team__item-right">
+											<div class="top-team__pic">
+												<img src="img/team/barsa_big.png" alt="barsa">
+											</div>
+											<div class="team__text">
+												<span class="top-team__name">Барселона</span>
+												<span class="top-team__country">Испания</span>
+											</div>
+										</div>
+									</div>
+								</div>
+									<div class="topSlider__match-bet">
+										<span>1.40</span>
+										<span>3.70</span>
+										<span>9.00</span>
+									</div>
+							</div>
+
+							<div class="topSlider__item">
+								<div class="topSlider__title">
+									<div class="topSlider__subtitle">Англия - Премьер-лига. 14-й тур</div>
+									<h2 class="h2">матч дня</h2>
+								</div>
+								<div class="topSlider__content">
+									<div class="topSlider__content-item topSlider__content-item-left">
+										<div class="team__item team__item-left">
+											<div class="team__text">
+												<span class="top-team__name">Ман Юнайтед</span>
+												<span class="top-team__country">Англия</span>
+											</div>
+											<div class="top-team__pic">
+												<img src="img/team/mnu-big.png" alt="mnu">
+											</div>
+										</div>
+									</div>
+									<div class="topSlider__content-time">
+										<span class="top-match__time">19:00</span>
+										<span class="top-match__date">Сегодня</span>
+									</div>
+									<div class="topSlider__content-item">
+										<div class="team__item team__item-right">
+											<div class="top-team__pic">
+												<img src="img/team/barsa_big.png" alt="barsa">
+											</div>
+											<div class="team__text">
+												<span class="top-team__name">Барселона</span>
+												<span class="top-team__country">Испания</span>
+											</div>
+										</div>
+									</div>
+								</div>
+									<div class="topSlider__match-bet">
+										<span>1.40</span>
+										<span>3.70</span>
+										<span>9.00</span>
+									</div>
+							</div>
+
+							<div class="topSlider__item">
+								<div class="topSlider__title">
+									<div class="topSlider__subtitle">Англия - Премьер-лига. 14-й тур</div>
+									<h2 class="h2">матч дня</h2>
+								</div>
+								<div class="topSlider__content">
+									<div class="topSlider__content-item topSlider__content-item-left">
+										<div class="team__item team__item-left">
+											<div class="team__text">
+												<span class="top-team__name">Ман Юнайтед</span>
+												<span class="top-team__country">Англия</span>
+											</div>
+											<div class="top-team__pic">
+												<img src="img/team/mnu-big.png" alt="mnu">
+											</div>
+										</div>
+									</div>
+									<div class="topSlider__content-time">
+										<span class="top-match__time">19:00</span>
+										<span class="top-match__date">Сегодня</span>
+									</div>
+									<div class="topSlider__content-item">
+										<div class="team__item team__item-right">
+											<div class="top-team__pic">
+												<img src="img/team/barsa_big.png" alt="barsa">
+											</div>
+											<div class="team__text">
+												<span class="top-team__name">Барселона</span>
+												<span class="top-team__country">Испания</span>
+											</div>
+										</div>
+									</div>
+								</div>
+									<div class="topSlider__match-bet">
+										<span>1.40</span>
+										<span>3.70</span>
+										<span>9.00</span>
+									</div>
+							</div>
+
+
+						</div>
+					</section>
+					<section class="section__table">
+						<ul class="sport__list">
+							<li class="sport__item all-live">Весь LIVE</li>
+							<li class="sport__item">
+								<div class="sport__item-pic"><img src="img/icons/footbal.png" alt="footbal"></div>
+								<span class="sport__item-text">Футбол</span>
+							</li>
+							<li class="sport__item">
+								<div class="sport__item-pic"><img src="img/icons/tennis.png" alt="tennis"></div>
+								<span class="sport__item-text">Теннис</span>
+							</li>
+							<li class="sport__item">
+								<div class="sport__item-pic"><img src="img/icons/basketball-big.png" alt="basketball"></div>
+								<span class="sport__item-text">Баскетбол</span>
+							</li>
+							<li class="sport__item">
+								<div class="sport__item-pic"><img src="img/icons/volleyball.png" alt="volleyball"></div>
+								<span class="sport__item-text">Волейбол</span>
+							</li>
+							<li class="sport__item">
+								<div class="sport__item-pic"><img src="img/icons/badminton-2.png" alt="badminton"></div>
+								<span class="sport__item-text">Бадминтон</span>
+							</li>
+							<li class="sport__item">
+								<div class="sport__item-pic"><img src="img/icons/hockey-2-1.png" alt="hockey"></div>
+								<span class="sport__item-text">Хоккей</span>
+							</li>
+							<li class="sport__item">
+								<div class="sport__item-pic"><img src="img/icons/baseball-1.png" alt="baseball"></div>
+								<span class="sport__item-text">Бейсбол</span>
+							</li>
+							<li class="sport__item">
+								<div class="sport__item-pic"><img src="img/icons/ragby-6.png" alt="ragby"></div>
+								<span class="sport__item-text">Регби</span>
+							</li>
+						</ul>
+						<table class="main__table">
+							<thead class="table__head">
+								<tr>
+									<th>
+										<div class="table__head-pic">
+											<img src="img/icons/footbal.png" alt="footbal">
+										</div>
+										<div class="table__head-title">футбол</div>
+									</th>
+									<th>1</th>
+									<th>x</th>
+									<th>2</th>
+									<th>ALL</th>
+									<th class="table__arrow"><img src="img/icons/arrow_down.png" alt="скрыть"></th>
+								</tr>
+							</thead>
+							<tbody class="main__tbody">
+								<tr>
+									<td>
+										<div class="td__left">
+											<span class="score">2:3</span>
+											<div class="visible-mobile">
+												<img src="img/icons/timer.png" alt="">
+												<span class="table__time">18’</span>
+											</div>
+											<span class="half">1-й тайм</span>
+										</div>
+										<div class="td__right">
+											<span class="table__team">Арсенал - Уотфорд</span>
+											<span class="table__liga">Израиль - Национальная Лига</span>
+											<span class="table__time">18’</span>
+										</div>
+										<div class="visible-mobile td__bottom">
+											<div class="td__bottom-count td__bottom-count-good">
+												<span>1</span>
+												<span class="table__count">1.40</span>
+											</div>
+											<div class="td__bottom-count">
+												<span>x</span>
+												<span class="table__count">3.70</span>
+											</div>
+											<div class="td__bottom-count td__bottom-count-bad">
+												<span>2</span>
+												<span class="table__count">9.80</span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="table__count">1.40</span>
+									</td>
+									<td>
+										<span class="table__count">3.70</span>
+									</td>
+									<td>
+										<span class="table__count">9.00</span>
+									</td>
+									<td>
+										<span class="table__count">+12</span>
+									</td>
+									<td class="table__star"><img src="img/icons/star.png" alt="star"></td>
+								</tr>
+								<tr>
+									<td>
+										<div class="td__left">
+											<span class="score">2:3</span>
+											<div class="visible-mobile">
+												<img src="img/icons/timer.png" alt="">
+												<span class="table__time">18’</span>
+											</div>
+											<span class="half">1-й тайм</span>
+										</div>
+										<div class="td__right">
+											<span class="table__team">Арсенал - Уотфорд</span>
+											<span class="table__liga">Израиль - Национальная Лига</span>
+											<span class="table__time">18’</span>
+										</div>
+										<div class="visible-mobile td__bottom">
+											<div class="td__bottom-count td__bottom-count-good">
+												<span>1</span>
+												<span class="table__count">1.40</span>
+											</div>
+											<div class="td__bottom-count">
+												<span>x</span>
+												<span class="table__count">3.70</span>
+											</div>
+											<div class="td__bottom-count td__bottom-count-bad">
+												<span>2</span>
+												<span class="table__count">9.80</span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="table__count">1.40</span>
+									</td>
+									<td>
+										<span class="table__count">3.70</span>
+									</td>
+									<td>
+										<span class="table__count">9.00</span>
+									</td>
+									<td>
+										<span class="table__count">+12</span>
+									</td>
+									<td class="table__star"><img src="img/icons/star.png" alt="star"></td>
+								</tr>
+								<tr>
+									<td>
+										<div class="td__left">
+											<span class="score">2:3</span>
+											<div class="visible-mobile">
+												<img src="img/icons/timer.png" alt="">
+												<span class="table__time">18’</span>
+											</div>
+											<span class="half">1-й тайм</span>
+										</div>
+										<div class="td__right">
+											<span class="table__team">Арсенал - Уотфорд</span>
+											<span class="table__liga">Израиль - Национальная Лига</span>
+											<span class="table__time">18’</span>
+										</div>
+										<div class="visible-mobile td__bottom">
+											<div class="td__bottom-count td__bottom-count-good">
+												<span>1</span>
+												<span class="table__count">1.40</span>
+											</div>
+											<div class="td__bottom-count">
+												<span>x</span>
+												<span class="table__count">3.70</span>
+											</div>
+											<div class="td__bottom-count td__bottom-count-bad">
+												<span>2</span>
+												<span class="table__count">9.80</span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="table__count">1.40</span>
+									</td>
+									<td>
+										<span class="table__count">3.70</span>
+									</td>
+									<td>
+										<span class="table__count">9.00</span>
+									</td>
+									<td>
+										<span class="table__count">+12</span>
+									</td>
+									<td class="table__star"><img src="img/icons/star.png" alt="star"></td>
+								</tr>
+								<tr>
+									<td>
+										<div class="td__left">
+											<span class="score">2:3</span>
+											<div class="visible-mobile">
+												<img src="img/icons/timer.png" alt="">
+												<span class="table__time">18’</span>
+											</div>
+											<span class="half">1-й тайм</span>
+										</div>
+										<div class="td__right">
+											<span class="table__team">Арсенал - Уотфорд</span>
+											<span class="table__liga">Израиль - Национальная Лига</span>
+											<span class="table__time">18’</span>
+										</div>
+										<div class="visible-mobile td__bottom">
+											<div class="td__bottom-count td__bottom-count-good">
+												<span>1</span>
+												<span class="table__count">1.40</span>
+											</div>
+											<div class="td__bottom-count">
+												<span>x</span>
+												<span class="table__count">3.70</span>
+											</div>
+											<div class="td__bottom-count td__bottom-count-bad">
+												<span>2</span>
+												<span class="table__count">9.80</span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="table__count">1.40</span>
+									</td>
+									<td>
+										<span class="table__count">3.70</span>
+									</td>
+									<td>
+										<span class="table__count">9.00</span>
+									</td>
+									<td>
+										<span class="table__count">+12</span>
+									</td>
+									<td class="table__star"><img src="img/icons/star.png" alt="star"></td>
+								</tr>
+								<tr>
+									<td>
+										<div class="td__left">
+											<span class="score">2:3</span>
+											<div class="visible-mobile">
+												<img src="img/icons/timer.png" alt="">
+												<span class="table__time">18’</span>
+											</div>
+											<span class="half">1-й тайм</span>
+										</div>
+										<div class="td__right">
+											<span class="table__team">Арсенал - Уотфорд</span>
+											<span class="table__liga">Израиль - Национальная Лига</span>
+											<span class="table__time">18’</span>
+										</div>
+										<div class="visible-mobile td__bottom">
+											<div class="td__bottom-count td__bottom-count-bad">
+												<span>1</span>
+												<span class="table__count">1.40</span>
+											</div>
+											<div class="td__bottom-count">
+												<span>x</span>
+												<span class="table__count">3.70</span>
+											</div>
+											<div class="td__bottom-count td__bottom-count-good">
+												<span>2</span>
+												<span class="table__count">9.80</span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="table__count">1.40</span>
+									</td>
+									<td>
+										<span class="table__count">3.70</span>
+									</td>
+									<td>
+										<span class="table__count">9.00</span>
+									</td>
+									<td>
+										<span class="table__count">+12</span>
+									</td>
+									<td class="table__star"><img src="img/icons/star.png" alt="star"></td>
+								</tr>
+
+							</tbody>
+						</table>
+						<table class="main__table">
+							<thead class="table__head">
+								<tr>
+									<th>
+										<div class="table__head-pic">
+											<img src="img/icons/basketball-big.png" alt="basketbal">
+										</div>
+										<div class="table__head-title">Баскетбол</div>
+									</th>
+									<th>1</th>
+									<th>x</th>
+									<th>2</th>
+									<th>ALL</th>
+									<th class="table__arrow"><img src="img/icons/arrow_down.png" alt="скрыть"></th>
+								</tr>
+							</thead>
+							<tbody class="main__tbody">
+								<tr>
+									<td>
+										<div class="td__left">
+											<span class="score">2:3</span>
+											<div class="visible-mobile">
+												<img src="img/icons/timer.png" alt="">
+												<span class="table__time">18’</span>
+											</div>
+											<span class="half">1-й тайм</span>
+										</div>
+										<div class="td__right">
+											<span class="table__team">Арсенал - Уотфорд</span>
+											<span class="table__liga">Израиль - Национальная Лига</span>
+											<span class="table__time">18’</span>
+										</div>
+										<div class="visible-mobile td__bottom">
+											<div class="td__bottom-count td__bottom-count-good">
+												<span>1</span>
+												<span class="table__count">1.40</span>
+											</div>
+											<div class="td__bottom-count">
+												<span>x</span>
+												<span class="table__count">3.70</span>
+											</div>
+											<div class="td__bottom-count td__bottom-count-bad">
+												<span>2</span>
+												<span class="table__count">9.80</span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="table__count">1.40</span>
+									</td>
+									<td>
+										<span class="table__count">3.70</span>
+									</td>
+									<td>
+										<span class="table__count">9.00</span>
+									</td>
+									<td>
+										<span class="table__count">+12</span>
+									</td>
+									<td class="table__star"><img src="img/icons/star.png" alt="star"></td>
+								</tr>
+
+							</tbody>
+						</table>
+						<table class="main__table">
+							<thead class="table__head">
+								<tr>
+									<th>
+										<div class="table__head-pic">
+											<img src="img/icons/tennis.png" alt="tennisl">
+										</div>
+										<div class="table__head-title">Теннис</div>
+									</th>
+									<th>1</th>
+									<th>x</th>
+									<th>2</th>
+									<th>ALL</th>
+									<th class="table__arrow"><img src="img/icons/arrow_down.png" alt="скрыть"></th>
+								</tr>
+							</thead>
+							<tbody class="main__tbody">
+								<tr>
+									<td>
+										<div class="td__left">
+											<span class="score">2:3</span>
+											<div class="visible-mobile">
+												<img src="img/icons/timer.png" alt="">
+												<span class="table__time">18’</span>
+											</div>
+											<span class="half">1-й тайм</span>
+										</div>
+										<div class="td__right">
+											<span class="table__team">Арсенал - Уотфорд</span>
+											<span class="table__liga">Израиль - Национальная Лига</span>
+											<span class="table__time">18’ 49:33(26:23; 23:10)</span>
+										</div>
+										<div class="visible-mobile td__bottom">
+											<div class="td__bottom-count td__bottom-count-good">
+												<span>1</span>
+												<span class="table__count">1.40</span>
+											</div>
+											<div class="td__bottom-count">
+												<span>x</span>
+												<span class="table__count">3.70</span>
+											</div>
+											<div class="td__bottom-count td__bottom-count-bad">
+												<span>2</span>
+												<span class="table__count">9.80</span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="table__count">1.40</span>
+									</td>
+									<td>
+										<span class="table__count">3.70</span>
+									</td>
+									<td>
+										<span class="table__count">9.00</span>
+									</td>
+									<td>
+										<span class="table__count">+12</span>
+									</td>
+									<td class="table__star"><img src="img/icons/star.png" alt="star"></td>
+								</tr>
+
+							</tbody>
+						</table>
+						<div class="redaction">
+							<div class="redaction__subtitle">редакция леона</div>
+							<div class="redaction__title">Первый отборочный<br>тур ЧМ 2018</div>
+							<div class="best__match">
+								<div class="best__match-header">
+									<div class="best__match-title">
+										<span class="best__match-icon">
+											<?xml version="1.0" encoding="UTF-8"?>
+											<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+												<g id="Main-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+													<g id="Main" transform="translate(-286.000000, -1331.000000)">
+														<g id="01---Content-top" transform="translate(77.000000, 65.000000)">
+															<g id="Stacked-Group" transform="translate(190.000000, 0.000000)">
+																<g id="+-Content">
+																	<g id="02---Recomendations" transform="translate(0.000000, 1049.000000)">
+																		<g id="teams" transform="translate(0.000000, 203.000000)">
+																			<g id="header" transform="translate(19.000000, 14.000000)">
+																				<g id="inspect">
+																					<circle id="Outer" stroke="#0F1417" stroke-width="1.3" cx="11" cy="11" r="8"></circle>
+																					<circle id="Centre" stroke="#0F1417" stroke-width="2" opacity="0.4" cx="11" cy="11" r="2"></circle>
+																					<path d="M10.3999939,0.99077797 C10.3999939,0.44358641 10.688506,0 11.0499939,0 C11.4089789,0 11.6999938,0.45097518 11.6999938,0.99077797 L11.6999938,5.00922203 C11.6999938,5.55641359 11.4114817,6 11.0499939,6 C10.6910088,6 10.3999939,5.54902482 10.3999939,5.00922203 L10.3999939,0.99077797 Z M10.3999939,16.990778 C10.3999939,16.4435864 10.688506,16 11.0499939,16 C11.4089789,16 11.6999938,16.4509752 11.6999938,16.990778 L11.6999938,21.009222 C11.6999938,21.5564136 11.4114817,22 11.0499939,22 C10.6910088,22 10.3999939,21.5490248 10.3999939,21.009222 L10.3999939,16.990778 Z M0.99077797,11.7000244 C0.44358641,11.7000244 0,11.4115123 0,11.0500244 C0,10.6910393 0.45097518,10.4000244 0.99077797,10.4000244 L5.00922203,10.4000244 C5.55641359,10.4000244 6,10.6885365 6,11.0500244 C6,11.4090094 5.54902482,11.7000244 5.00922203,11.7000244 L0.99077797,11.7000244 Z M16.990778,11.7000244 C16.4435864,11.7000244 16,11.4115123 16,11.0500244 C16,10.6910393 16.4509752,10.4000244 16.990778,10.4000244 L21.009222,10.4000244 C21.5564136,10.4000244 22,10.6885365 22,11.0500244 C22,11.4090094 21.5490248,11.7000244 21.009222,11.7000244 L16.990778,11.7000244 Z" id="Lines" fill="#0F1417" fill-rule="nonzero"></path>
+																				</g>
+																			</g>
+																		</g>
+																	</g>
+																</g>
+															</g>
+														</g>
+													</g>
+												</g>
+											</svg>
+										</span>Лучшие Матчи</div>
+										<div class="best__slider-controls">
+											<a href="#" class="carousel-control bestSlide-left">
+												<img src="img/icons/arrow-left-slide.png" alt="left">
+											</a>
+											<a href="#" class="carousel-control bestSlide-right">
+												<img src="img/icons/arrow_right-slide.png" alt="right">
+											</a>
+										</div>
+									</div>
+									<div class="bestSlider">
+										<div class="bestSlider__item">
+											<div class="bestSlider__item-notification"><img src="img/icons/match__not.png" alt="alt"></div>
+											<div class="bestSlider__item-head">
+												<div class="bestSlider__team">
+													<div class="bestSlider__team-pic"><img src="img/team/ger.png" alt=alt""></div>
+													<span class="bestSlider__team-name">гер</span>
+												</div>
+												<div class="bestSlider__match-date">
+													<div class="bestSlider__match-date-pic"><img src="img/team/primer-liga-logo.png" alt=""></div>
+													<span class="bestSlider__match-date-day">17 Авг</span>
+													<span class="bestSlider__match-date-time">18:30</span>
+												</div>
+												<div class="bestSlider__team">
+													<div class="bestSlider__team-pic"><img src="img/team/azr.png" alt=alt""></div>
+													<span class="bestSlider__team-name">азр</span>
+												</div>
+											</div>
+											<div class="bestSlider__count">
+												<span>1.41</span>
+												<span>3.70</span>
+												<span>9.00</span>
+												<span>+42</span>
+											</div>
+											<div class="bestSlider__item-foot">
+												<a href="#" class="bestSlider__item-btn">
+													<span><img src="img/icons/coin-dollar.png" alt="p"></span>
+													сделать ставку
+												</a>
+											</div>
+										</div>
+										<div class="bestSlider__item">
+											<div class="bestSlider__item-notification"><img src="img/icons/match__not.png" alt="alt"></div>
+											<div class="bestSlider__item-head">
+												<div class="bestSlider__team">
+													<div class="bestSlider__team-pic"><img src="img/team/ger.png" alt=alt""></div>
+													<span class="bestSlider__team-name">гер</span>
+												</div>
+												<div class="bestSlider__match-date">
+													<div class="bestSlider__match-date-pic"><img src="img/team/primer-liga-logo.png" alt=""></div>
+													<span class="bestSlider__match-date-day">17 Авг</span>
+													<span class="bestSlider__match-date-time">18:30</span>
+												</div>
+												<div class="bestSlider__team">
+													<div class="bestSlider__team-pic"><img src="img/team/azr.png" alt=alt""></div>
+													<span class="bestSlider__team-name">азр</span>
+												</div>
+											</div>
+											<div class="bestSlider__count">
+												<span>1.41</span>
+												<span>3.70</span>
+												<span>9.00</span>
+												<span>+42</span>
+											</div>
+											<div class="bestSlider__item-foot">
+												<a href="#" class="bestSlider__item-btn">
+													<span><img src="img/icons/coin-dollar.png" alt="p"></span>
+													сделать ставку
+												</a>
+											</div>
+										</div>
+										<div class="bestSlider__item">
+											<div class="bestSlider__item-notification"><img src="img/icons/match__not.png" alt="alt"></div>
+											<div class="bestSlider__item-head">
+												<div class="bestSlider__team">
+													<div class="bestSlider__team-pic"><img src="img/team/ger.png" alt=alt""></div>
+													<span class="bestSlider__team-name">гер</span>
+												</div>
+												<div class="bestSlider__match-date">
+													<div class="bestSlider__match-date-pic"><img src="img/team/primer-liga-logo.png" alt=""></div>
+													<span class="bestSlider__match-date-day">17 Авг</span>
+													<span class="bestSlider__match-date-time">18:30</span>
+												</div>
+												<div class="bestSlider__team">
+													<div class="bestSlider__team-pic"><img src="img/team/azr.png" alt=alt""></div>
+													<span class="bestSlider__team-name">азр</span>
+												</div>
+											</div>
+											<div class="bestSlider__count">
+												<span>1.41</span>
+												<span>3.70</span>
+												<span>9.00</span>
+												<span>+42</span>
+											</div>
+											<div class="bestSlider__item-foot">
+												<a href="#" class="bestSlider__item-btn">
+													<span><img src="img/icons/coin-dollar.png" alt="p"></span>
+													сделать ставку
+												</a>
+											</div>
+										</div>
+										<div class="bestSlider__item">
+											<div class="bestSlider__item-notification"><img src="img/icons/match__not.png" alt="alt"></div>
+											<div class="bestSlider__item-head">
+												<div class="bestSlider__team">
+													<div class="bestSlider__team-pic"><img src="img/team/ger.png" alt=alt""></div>
+													<span class="bestSlider__team-name">гер</span>
+												</div>
+												<div class="bestSlider__match-date">
+													<div class="bestSlider__match-date-pic"><img src="img/team/primer-liga-logo.png" alt=""></div>
+													<span class="bestSlider__match-date-day">17 Авг</span>
+													<span class="bestSlider__match-date-time">18:30</span>
+												</div>
+												<div class="bestSlider__team">
+													<div class="bestSlider__team-pic"><img src="img/team/azr.png" alt=alt""></div>
+													<span class="bestSlider__team-name">азр</span>
+												</div>
+											</div>
+											<div class="bestSlider__count">
+												<span>1.41</span>
+												<span>3.70</span>
+												<span>9.00</span>
+												<span>+42</span>
+											</div>
+											<div class="bestSlider__item-foot">
+												<a href="#" class="bestSlider__item-btn">
+													<span><img src="img/icons/coin-dollar.png" alt="p"></span>
+													сделать ставку
+												</a>
+											</div>
+										</div>
+									</div>
+							</div>
+						</div>
+						<div class="topMatch">
+							<div class="topMatch__header">
+								<div class="topMatch__title">Топ матчи</div>
+								<div class="topMatch__filter">
+									Фильтры
+								</div>
+							</div>
+							<table class="main__table">
+							<thead class="table__head">
+								<tr>
+									<th>
+										<div class="table__head-title">Весь спорт</div>
+									</th>
+									<th>1</th>
+									<th>x</th>
+									<th>2</th>
+									<th>ALL</th>
+									<th class="table__arrow"><img src="img/icons/arrow_down.png" alt="скрыть"></th>
+								</tr>
+							</thead>
+							<tbody class="main__tbody">
+								<tr>
+									<td>
+										<div class="td__left">
+											<span class="score">20:00</span>
+											<div class="visible-mobile">
+												<img src="img/icons/timer.png" alt="">
+												<span class="table__time">18’</span>
+											</div>
+											<span class="half">12 Окт</span>
+										</div>
+										<div class="td__right">
+											<span class="table__team">Дуди Села - Фрунза</span>
+											<span class="table__liga"><b>Баскетбол</b> - Турция - Турецкая Женская Баскетбольная лига</span>
+										</div>
+										<div class="visible-mobile td__bottom">
+											<div class="td__bottom-count td__bottom-count-good">
+												<span>1</span>
+												<span class="table__count">1.40</span>
+											</div>
+											<div class="td__bottom-count">
+												<span>x</span>
+												<span class="table__count">3.70</span>
+											</div>
+											<div class="td__bottom-count td__bottom-count-bad">
+												<span>2</span>
+												<span class="table__count">9.80</span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="table__count">1.40</span>
+									</td>
+									<td>
+										<span class="table__count">3.70</span>
+									</td>
+									<td>
+										<span class="table__count">9.00</span>
+									</td>
+									<td>
+										<span class="table__count">+12</span>
+									</td>
+									<td class="table__star"><img src="img/icons/star.png" alt="star"></td>
+								</tr>
+								<tr>
+									<td>
+										<div class="td__left">
+											<span class="score">20:00</span>
+											<div class="visible-mobile">
+												<img src="img/icons/timer.png" alt="">
+												<span class="table__time">18’</span>
+											</div>
+											<span class="half">12 Окт</span>
+										</div>
+										<div class="td__right">
+											<span class="table__team">Дуди Села - Фрунза</span>
+											<span class="table__liga"><b>Баскетбол</b> - Турция - Турецкая Женская Баскетбольная лига</span>
+										</div>
+										<div class="visible-mobile td__bottom">
+											<div class="td__bottom-count td__bottom-count-good">
+												<span>1</span>
+												<span class="table__count">1.40</span>
+											</div>
+											<div class="td__bottom-count">
+												<span>x</span>
+												<span class="table__count">3.70</span>
+											</div>
+											<div class="td__bottom-count td__bottom-count-bad">
+												<span>2</span>
+												<span class="table__count">9.80</span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="table__count">1.40</span>
+									</td>
+									<td>
+										<span class="table__count">3.70</span>
+									</td>
+									<td>
+										<span class="table__count">9.00</span>
+									</td>
+									<td>
+										<span class="table__count">+12</span>
+									</td>
+									<td class="table__star"><img src="img/icons/star.png" alt="star"></td>
+								</tr>
+								<tr>
+									<td>
+										<div class="td__left">
+											<span class="score">20:00</span>
+											<div class="visible-mobile">
+												<img src="img/icons/timer.png" alt="">
+												<span class="table__time">18’</span>
+											</div>
+											<span class="half">12 Окт</span>
+										</div>
+										<div class="td__right">
+											<span class="table__team">Дуди Села - Фрунза</span>
+											<span class="table__liga"><b>Баскетбол</b> - Турция - Турецкая Женская Баскетбольная лига</span>
+										</div>
+										<div class="visible-mobile td__bottom">
+											<div class="td__bottom-count td__bottom-count-good">
+												<span>1</span>
+												<span class="table__count">1.40</span>
+											</div>
+											<div class="td__bottom-count">
+												<span>x</span>
+												<span class="table__count">3.70</span>
+											</div>
+											<div class="td__bottom-count td__bottom-count-bad">
+												<span>2</span>
+												<span class="table__count">9.80</span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="table__count">1.40</span>
+									</td>
+									<td>
+										<span class="table__count">3.70</span>
+									</td>
+									<td>
+										<span class="table__count">9.00</span>
+									</td>
+									<td>
+										<span class="table__count">+12</span>
+									</td>
+									<td class="table__star"><img src="img/icons/star.png" alt="star"></td>
+								</tr>
+								<tr>
+									<td>
+										<div class="td__left">
+											<span class="score">20:00</span>
+											<div class="visible-mobile">
+												<img src="img/icons/timer.png" alt="">
+												<span class="table__time">18’</span>
+											</div>
+											<span class="half">12 Окт</span>
+										</div>
+										<div class="td__right">
+											<span class="table__team">Дуди Села - Фрунза</span>
+											<span class="table__liga"><b>Баскетбол</b> - Турция - Турецкая Женская Баскетбольная лига</span>
+										</div>
+										<div class="visible-mobile td__bottom">
+											<div class="td__bottom-count td__bottom-count-good">
+												<span>1</span>
+												<span class="table__count">1.40</span>
+											</div>
+											<div class="td__bottom-count">
+												<span>x</span>
+												<span class="table__count">3.70</span>
+											</div>
+											<div class="td__bottom-count td__bottom-count-bad">
+												<span>2</span>
+												<span class="table__count">9.80</span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="table__count">1.40</span>
+									</td>
+									<td>
+										<span class="table__count">3.70</span>
+									</td>
+									<td>
+										<span class="table__count">9.00</span>
+									</td>
+									<td>
+										<span class="table__count">+12</span>
+									</td>
+									<td class="table__star"><img src="img/icons/star.png" alt="star"></td>
+								</tr>
+								<tr>
+									<td>
+										<div class="td__left">
+											<span class="score">20:00</span>
+											<div class="visible-mobile">
+												<img src="img/icons/timer.png" alt="">
+												<span class="table__time">18’</span>
+											</div>
+											<span class="half">12 Окт</span>
+										</div>
+										<div class="td__right">
+											<span class="table__team">Дуди Села - Фрунза</span>
+											<span class="table__liga"><b>Баскетбол</b> - Турция - Турецкая Женская Баскетбольная лига</span>
+										</div>
+										<div class="visible-mobile td__bottom">
+											<div class="td__bottom-count td__bottom-count-good">
+												<span>1</span>
+												<span class="table__count">1.40</span>
+											</div>
+											<div class="td__bottom-count">
+												<span>x</span>
+												<span class="table__count">3.70</span>
+											</div>
+											<div class="td__bottom-count td__bottom-count-bad">
+												<span>2</span>
+												<span class="table__count">9.80</span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="table__count">1.40</span>
+									</td>
+									<td>
+										<span class="table__count">3.70</span>
+									</td>
+									<td>
+										<span class="table__count">9.00</span>
+									</td>
+									<td>
+										<span class="table__count">+12</span>
+									</td>
+									<td class="table__star"><img src="img/icons/star.png" alt="star"></td>
+								</tr>
+								<tr>
+									<td>
+										<div class="td__left">
+											<span class="score">20:00</span>
+											<div class="visible-mobile">
+												<img src="img/icons/timer.png" alt="">
+												<span class="table__time">18’</span>
+											</div>
+											<span class="half">12 Окт</span>
+										</div>
+										<div class="td__right">
+											<span class="table__team">Дуди Села - Фрунза</span>
+											<span class="table__liga"><b>Баскетбол</b> - Турция - Турецкая Женская Баскетбольная лига</span>
+										</div>
+										<div class="visible-mobile td__bottom">
+											<div class="td__bottom-count td__bottom-count-good">
+												<span>1</span>
+												<span class="table__count">1.40</span>
+											</div>
+											<div class="td__bottom-count">
+												<span>x</span>
+												<span class="table__count">3.70</span>
+											</div>
+											<div class="td__bottom-count td__bottom-count-bad">
+												<span>2</span>
+												<span class="table__count">9.80</span>
+											</div>
+										</div>
+									</td>
+									<td>
+										<span class="table__count">1.40</span>
+									</td>
+									<td>
+										<span class="table__count">3.70</span>
+									</td>
+									<td>
+										<span class="table__count">9.00</span>
+									</td>
+									<td>
+										<span class="table__count">+12</span>
+									</td>
+									<td class="table__star"><img src="img/icons/star.png" alt="star"></td>
+								</tr>
+
+							</tbody>
+						</table>
+						</div>
+					</section>
+				</main>
+				<aside class="aside__right">
+					<div class="betslip">
+						<div class="min__betslip"></div>
+						
+						<div class="betslip__slim">
+							<div class="betslip__title">Купон ставок</div>						
+							<span class="number__game">3</span>
+							<span class="number">1</span>
+							<div class="trng__up"></div>
+							<div class="trng__down"></div>
+						</div>
+						<div class="betslip__content">
+							<div class="betslip__title">Купон ставок</div>
+							<div class="betslip__settings">
+								<div class="back__betslip">
+									<img src="img/icons/arrow_left.svg" alt="Назад">
+								</div>
+								<div class="betslip__title">Настройки купона</div>
+								<div class="settings__item">
+									<div class="settings__item-title">
+										Автоматически принимать изменения коэфициентов
+									</div>
+									<div class="sub-setting">
+										<span>Всегда спрашивать</span>
+										<div class="checkbox_content">
+											<input type="checkbox" class="checkbox" id="checkbox-1" />
+											<label for="checkbox-1"></label>
+										</div>
+									</div>
+									<div class="sub-setting">
+										<span>Принимать более высокие</span>
+										<div class="checkbox_content">
+											<input type="checkbox" class="checkbox" id="checkbox-2" />
+											<label for="checkbox-2"></label>
+										</div>
+									</div>
+									<div class="sub-setting">
+										<span>Принимать любые</span>
+										<div class="checkbox_content">
+											<input type="checkbox" class="checkbox" id="checkbox-3" />
+											<label for="checkbox-3"></label>
+										</div>
+									</div>
+								</div>
+								<div class="settings__item">
+									<div class="settings__item-title">
+										Формат коэфициента
+									</div>
+									<div class="sub-setting">
+										<span>Десятичный</span>
+										<div class="checkbox_content">
+											<input type="checkbox" class="checkbox" id="checkbox-4" />
+											<label for="checkbox-4"></label>
+										</div>
+									</div>
+									<div class="sub-setting">
+										<span>Дробный</span>
+										<div class="checkbox_content">
+											<input type="checkbox" class="checkbox" id="checkbox-5" />
+											<label for="checkbox-5"></label>
+										</div>
+									</div>
+									<div class="sub-setting">
+										<span>Американский</span>
+										<div class="checkbox_content">
+											<input type="checkbox" class="checkbox" id="checkbox-6" />
+											<label for="checkbox-6"></label>
+										</div>
+									</div>
+								</div>
+								<div class="settings__btn">
+									<a class="btn__orange" href="javascript:void(0)">вернуться к купону</a>
+								</div>	
+							</div>
+							<div class="settings__entry"><img src="img/icons/cogwheel.svg" alt="Настрйоки"></div>
+							
+							
+							<ul class="betslip__tabs">
+								<li class="betslip__tab is-active">одинар</li>
+								<li class="betslip__tab">экспресс</li>
+								<li class="betslip__tab">система</li>
+							</ul>
+							<div class="betslip__tabs-content">
+								<div class="betslip__tabs-item">
+									<div class="betslip__item">
+										<div class="betslip__team">
+											<div class="team__pic">
+												<span class="team__img"><img src="img/team/chelsea.png" alt="chelsea"></span>
+												<span class="team__img"><img src="img/team/mnu.png" alt="chelsea"></span>
+											</div>
+											<div class="team__name"><a href="#">Челси</a> - <a href="#">Тоттенхем Хотспур</a></div>
+										</div>
+										<div class="betslip__item-box">
+											<div class="box__close">x</div>
+											<div class="box-trriangle"></div>
+											<div class="box__blocked"><div class="box__blocked-trriangle"></div>Событие заблокировано</div>
+											<div class="loading__bet">
+												<div class="loader-circle"></div>
+												<div class="loader__text">Ставка принимается</div>
+											</div>						
+											<div class="box__visible-content">
+												<div class="box__left">
+													Тотал количества игр
+													<span>больше (26.5)</span>
+												</div>
+												<div class="box__right">
+													<span class="val">2.20</span>
+												</div>
+											</div>
+											<div class="box__hidden-content">
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Сумма<br>ставки
+													</div>
+													<div class="box__right">
+														<div class="inputNumber__wrap">
+															<input class="input__number" type="text" value="5">
+															<button class="input__plus">+</button>
+															<button class="input__minus">-</button>
+															руб
+														</div>
+													</div>
+												</div>
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Возможный выйгрыш
+													</div>
+													<div class="box__right">
+														<span class="win">47,500 руб</span>
+													</div>
+												</div>
+												<button class="btn__orange btn__bet">сделать ставку</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="betslip__item">
+										<div class="betslip__team">
+											<div class="team__pic">
+												<span class="team__img"><img src="img/team/chelsea.png" alt="chelsea"></span>
+												<span class="team__img"><img src="img/team/mnu.png" alt="chelsea"></span>
+											</div>
+											<div class="team__name"><a href="#">Челси</a> - <a href="#">Тоттенхем Хотспур</a></div>
+										</div>
+										<div class="betslip__item-box">
+											<div class="box__close">x</div>
+											<div class="box-trriangle"></div>
+											<div class="box__blocked"><div class="box__blocked-trriangle"></div>Событие заблокировано</div>
+											<div class="loading__bet">
+												<div class="loader-circle"></div>
+												<div class="loader__text">Ставка принимается</div>
+											</div>						
+											<div class="box__visible-content">
+												<div class="box__left">
+													Тотал количества игр
+													<span>больше (26.5)</span>
+												</div>
+												<div class="box__right">
+													<span class="val">2.20</span>
+												</div>
+											</div>
+											<div class="box__hidden-content">
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Сумма<br>ставки
+													</div>
+													<div class="box__right">
+														<div class="inputNumber__wrap">
+															<input class="input__number" type="text" value="5">
+															<button class="input__plus">+</button>
+															<button class="input__minus">-</button>
+															руб
+														</div>
+													</div>
+												</div>
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Возможный выйгрыш
+													</div>
+													<div class="box__right">
+														<span class="win">47,500 руб</span>
+													</div>
+												</div>
+												<button class="btn__orange btn__bet">сделать ставку</button>
+											</div>
+										</div>
+									</div>
+
+									<div class="betslip__item">
+										<div class="betslip__team">
+											<div class="team__pic">
+												<span class="team__img"><img src="img/team/chelsea.png" alt="chelsea"></span>
+												<span class="team__img"><img src="img/team/mnu.png" alt="chelsea"></span>
+											</div>
+											<div class="team__name"><a href="#">Челси</a> - <a href="#">Тоттенхем Хотспур</a></div>
+										</div>
+										<div class="betslip__item-box">
+											<div class="box__close">x</div>
+											<div class="box-trriangle"></div>
+											<div class="box__blocked"><div class="box__blocked-trriangle"></div>Событие заблокировано</div>
+											<div class="loading__bet">
+												<div class="loader-circle"></div>
+												<div class="loader__text">Ставка принимается</div>
+											</div>						
+											<div class="box__visible-content">
+												<div class="box__left">
+													Тотал количества игр
+													<span>больше (26.5)</span>
+												</div>
+												<div class="box__right">
+													<span class="val">2.20</span>
+												</div>
+											</div>
+											<div class="box__hidden-content">
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Сумма<br>ставки
+													</div>
+													<div class="box__right">
+														<div class="inputNumber__wrap">
+															<input class="input__number" type="text" value="5">
+															<button class="input__plus">+</button>
+															<button class="input__minus">-</button>
+															руб
+														</div>
+													</div>
+												</div>
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Возможный выйгрыш
+													</div>
+													<div class="box__right">
+														<span class="win">47,500 руб</span>
+													</div>
+												</div>
+												<button class="btn__orange btn__bet">сделать ставку</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- express -->
+								<div class="betslip__tabs-item">
+									<div class="betslip__item">
+										<div class="betslip__team">
+											<div class="team__pic">
+												<span class="team__img"><img src="img/team/chelsea.png" alt="chelsea"></span>
+												<span class="team__img"><img src="img/team/mnu.png" alt="chelsea"></span>
+											</div>
+											<div class="team__name"><a href="#">Челси</a> - <a href="#">Тоттенхем Хотспур</a></div>
+										</div>
+										<div class="betslip__item-box">
+											<div class="box__close">x</div>
+											<div class="box-trriangle"></div>
+											<div class="box__blocked"><div class="box__blocked-trriangle"></div>Событие заблокировано</div>
+											<div class="loading__bet">
+												<div class="loader-circle"></div>
+												<div class="loader__text">Ставка принимается</div>
+											</div>						
+											<div class="box__visible-content">
+												<div class="box__left">
+													Тотал количества игр
+													<span>больше (26.5)</span>
+												</div>
+												<div class="box__right">
+													<span class="val">2.20</span>
+												</div>
+											</div>
+											<div class="box__hidden-content">
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Сумма<br>ставки
+													</div>
+													<div class="box__right">
+														<div class="inputNumber__wrap">
+															<input class="input__number" type="text" value="5">
+															<button class="input__plus">+</button>
+															<button class="input__minus">-</button>
+															руб
+														</div>
+													</div>
+												</div>
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Возможный выйгрыш
+													</div>
+													<div class="box__right">
+														<span class="win">47,500 руб</span>
+													</div>
+												</div>
+												<button class="btn__orange btn__bet">сделать ставку</button>
+											</div>
+										</div>								
+									</div>
+									<div class="betslip__item">
+										<div class="betslip__team">
+											<div class="team__pic">
+												<span class="team__img"><img src="img/team/chelsea.png" alt="chelsea"></span>
+												<span class="team__img"><img src="img/team/mnu.png" alt="chelsea"></span>
+											</div>
+											<div class="team__name"><a href="#">Челси</a> - <a href="#">Тоттенхем Хотспур</a></div>
+										</div>
+										<div class="betslip__item-box">
+											<div class="box__close">x</div>
+											<div class="box-trriangle"></div>
+											<div class="box__blocked"><div class="box__blocked-trriangle"></div>Событие заблокировано</div>
+											<div class="loading__bet">
+												<div class="loader-circle"></div>
+												<div class="loader__text">Ставка принимается</div>
+											</div>						
+											<div class="box__visible-content">
+												<div class="box__left">
+													Тотал количества игр
+													<span>больше (26.5)</span>
+												</div>
+												<div class="box__right">
+													<span class="old__val">2.06</span>
+													<span class="val val__up">2.20</span>
+												</div>
+											</div>
+											<div class="box__hidden-content">
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Сумма<br>ставки
+													</div>
+													<div class="box__right">
+														<div class="inputNumber__wrap">
+															<input class="input__number" type="text" value="5">
+															<button class="input__plus">+</button>
+															<button class="input__minus">-</button>
+															руб
+														</div>
+													</div>
+												</div>
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Возможный выйгрыш
+													</div>
+													<div class="box__right">
+														<span class="win">47,500 руб</span>
+													</div>
+												</div>
+												<button class="btn__orange btn__bet">сделать ставку</button>
+											</div>
+										</div>								
+									</div>
+									<div class="betslip__item">
+										<div class="betslip__team">
+											<div class="team__pic">
+												<span class="team__img"><img src="img/team/chelsea.png" alt="chelsea"></span>
+												<span class="team__img"><img src="img/team/mnu.png" alt="chelsea"></span>
+											</div>
+											<div class="team__name"><a href="#">Челси</a> - <a href="#">Тоттенхем Хотспур</a></div>
+										</div>
+										<div class="betslip__item-box">
+											<div class="box__close">x</div>
+											<div class="box-trriangle"></div>
+											<div class="box__blocked"><div class="box__blocked-trriangle"></div>Событие заблокировано</div>
+											<div class="loading__bet">
+												<div class="loader-circle"></div>
+												<div class="loader__text">Ставка принимается</div>
+											</div>						
+											<div class="box__visible-content">
+												<div class="box__left">
+													Тотал количества игр
+													<span>больше (26.5)</span>
+												</div>
+												<div class="box__right">
+													<span class="old__val">2.90</span>
+													<span class="val val__down">2.20</span>
+												</div>
+											</div>
+											<div class="box__hidden-content">
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Сумма<br>ставки
+													</div>
+													<div class="box__right">
+														<div class="inputNumber__wrap">
+															<input class="input__number" type="text" value="5">
+															<button class="input__plus">+</button>
+															<button class="input__minus">-</button>
+															руб
+														</div>
+													</div>
+												</div>
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Возможный выйгрыш
+													</div>
+													<div class="box__right">
+														<span class="win">47,500 руб</span>
+													</div>
+												</div>
+												<button class="btn__orange btn__bet">сделать ставку</button>
+											</div>
+										</div>								
+									</div>
+									<div class="betslip__express-set">
+										<div class="loading__bet">
+											<div class="loader-circle"></div>
+											<div class="loader__text">Ставка принимается</div>
+										</div>
+										<div class="express__item">
+											<div class="box__left">
+												Итоговый коэффициент
+											</div>
+											<div class="box__right">
+												<span class="val">9.82</span>
+											</div>
+										</div>
+										<div class="express__item">
+											<div class="box__left">
+												Сумма ставки
+											</div>
+											<div class="box__right">
+												<div class="inputNumber__wrap">
+													<input class="input__number" type="text" value="5">
+													<button class="input__plus">+</button>
+													<button class="input__minus">-</button>
+													руб
+												</div>
+											</div>
+										</div>
+										<div class="express__item">
+											<div class="box__left">
+												Возможный выигрыш
+											</div>
+											<div class="box__right">
+												<span class="val">-</span>
+											</div>
+										</div>
+										<div class="express__item">
+											<div class="box__left">
+												Застраховать экспресс
+											</div>
+											<div class="box__right">
+												<div class="checkbox_content">
+													<input type="checkbox" class="checkbox" id="checkbox-7" />
+													<label for="checkbox-7"></label>
+												</div>
+											</div>
+										</div>
+										<button class="btn__orange btn__bet">сделать ставку</button>
+										<div class="warning">
+											<img src="img/icons/warning.png" alt="warning">
+											<span>Есть изменения коэффициентов</span>
+										</div>
+									</div>
+								</div>
+
+								<!-- system -->
+
+								<div class="betslip__tabs-item">
+									<div class="betslip__item">
+										<div class="betslip__team">
+											<div class="team__pic">
+												<span class="team__img"><img src="img/team/chelsea.png" alt="chelsea"></span>
+												<span class="team__img"><img src="img/team/mnu.png" alt="chelsea"></span>
+											</div>
+											<div class="team__name"><a href="#">Челси</a> - <a href="#">Тоттенхем Хотспур</a></div>
+										</div>
+										<div class="betslip__item-box">
+											<!-- <div class="box__close">x</div> -->
+											<div class="box__chect"></div>
+											<div class="box-trriangle"></div>
+											<div class="box__blocked"><div class="box__blocked-trriangle"></div>Событие заблокировано</div>
+											<div class="loading__bet">
+												<div class="loader-circle"></div>
+												<div class="loader__text">Ставка принимается</div>
+											</div>						
+											<div class="box__visible-content">
+												<div class="box__left">
+													Тотал количества игр
+													<span>больше (26.5)</span>
+												</div>
+												<div class="box__right">
+													<span class="val">2.20</span>
+												</div>
+											</div>
+											<div class="box__hidden-content">
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Сумма<br>ставки
+													</div>
+													<div class="box__right">
+														<div class="inputNumber__wrap">
+															<input class="input__number" type="text" value="5">
+															<button class="input__plus">+</button>
+															<button class="input__minus">-</button>
+															руб
+														</div>
+													</div>
+												</div>
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Возможный выйгрыш
+													</div>
+													<div class="box__right">
+														<span class="win">47,500 руб</span>
+													</div>
+												</div>
+												<button class="btn__orange btn__bet">сделать ставку</button>
+											</div>
+										</div>								
+									</div>
+									<div class="betslip__item">
+										<div class="betslip__team">
+											<div class="team__pic">
+												<span class="team__img"><img src="img/team/chelsea.png" alt="chelsea"></span>
+												<span class="team__img"><img src="img/team/mnu.png" alt="chelsea"></span>
+											</div>
+											<div class="team__name"><a href="#">Челси</a> - <a href="#">Тоттенхем Хотспур</a></div>
+										</div>
+										<div class="betslip__item-box">
+											<!-- <div class="box__close">x</div> -->
+											<div class="box__chect"></div>
+											<div class="box-trriangle"></div>
+											<div class="box__blocked"><div class="box__blocked-trriangle"></div>Событие заблокировано</div>
+											<div class="loading__bet">
+												<div class="loader-circle"></div>
+												<div class="loader__text">Ставка принимается</div>
+											</div>						
+											<div class="box__visible-content">
+												<div class="box__left">
+													Тотал количества игр
+													<span>больше (26.5)</span>
+												</div>
+												<div class="box__right">
+													<span class="val">2.20</span>
+												</div>
+											</div>
+											<div class="box__hidden-content">
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Сумма<br>ставки
+													</div>
+													<div class="box__right">
+														<div class="inputNumber__wrap">
+															<input class="input__number" type="text" value="5">
+															<button class="input__plus">+</button>
+															<button class="input__minus">-</button>
+															руб
+														</div>
+													</div>
+												</div>
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Возможный выйгрыш
+													</div>
+													<div class="box__right">
+														<span class="win">47,500 руб</span>
+													</div>
+												</div>
+												<button class="btn__orange btn__bet">сделать ставку</button>
+											</div>
+										</div>								
+									</div>
+									<div class="betslip__item">
+										<div class="betslip__team">
+											<div class="team__pic">
+												<span class="team__img"><img src="img/team/chelsea.png" alt="chelsea"></span>
+												<span class="team__img"><img src="img/team/mnu.png" alt="chelsea"></span>
+											</div>
+											<div class="team__name"><a href="#">Челси</a> - <a href="#">Тоттенхем Хотспур</a></div>
+										</div>
+										<div class="betslip__item-box">
+											<!-- <div class="box__close">x</div> -->
+											<div class="box__chect"></div>
+											<div class="box-trriangle"></div>
+											<div class="box__blocked"><div class="box__blocked-trriangle"></div>Событие заблокировано</div>
+											<div class="loading__bet">
+												<div class="loader-circle"></div>
+												<div class="loader__text">Ставка принимается</div>
+											</div>						
+											<div class="box__visible-content">
+												<div class="box__left">
+													Тотал количества игр
+													<span>больше (26.5)</span>
+												</div>
+												<div class="box__right">
+													<span class="val">2.20</span>
+												</div>
+											</div>
+											<div class="box__hidden-content">
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Сумма<br>ставки
+													</div>
+													<div class="box__right">
+														<div class="inputNumber__wrap">
+															<input class="input__number" type="text" value="5">
+															<button class="input__plus">+</button>
+															<button class="input__minus">-</button>
+															руб
+														</div>
+													</div>
+												</div>
+												<div class="box__hidden-item">
+													<div class="box__left">
+														Возможный выйгрыш
+													</div>
+													<div class="box__right">
+														<span class="win">47,500 руб</span>
+													</div>
+												</div>
+												<button class="btn__orange btn__bet">сделать ставку</button>
+											</div>
+										</div>								
+									</div>
+									<div class="betslip__express-set">
+										<div class="loading__bet">
+											<div class="loader-circle"></div>
+											<div class="loader__text">Ставка принимается</div>
+										</div>
+										<div class="express__item">
+											<div class="box__left">
+												Система 2 из 3
+											</div>
+											<div class="box__right">
+												<img src="img/icons/arrow_down.png" alt="down">
+											</div>
+										</div>
+										<div class="express__item">
+											<div class="box__left">
+												С банкерами
+											</div>
+											<div class="box__right">
+												<div class="checkbox_content">
+													<input type="checkbox" class="checkbox" id="checkbox-8" />
+													<label for="checkbox-8"></label>
+												</div>
+											</div>
+										</div>
+										<div class="express__item">
+											<div class="box__left">
+												Сумма ставки
+											</div>
+											<div class="box__right">
+												<div class="inputNumber__wrap">
+													<input class="input__number" type="text" value="5">
+													<button class="input__plus">+</button>
+													<button class="input__minus">-</button>
+													руб
+												</div>
+											</div>
+										</div>
+										<div class="express__item">
+											<div class="box__left">
+												Возможный выйгрыш
+											</div>
+											<div class="box__right">
+												<span class="win">47,500 руб</span>
+											</div>
+										</div>
+										<button class="btn__orange btn__bet">сделать ставку</button>
+										
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="express__day">
+						<div class="min__betslip"></div>
+						<div class="express__title">Экспресс дня</div>
+					</div>
+					<div class="express__live">
+						<div class="min__betslip"></div>
+						<div class="express__title">Экспресс <span>live</span></div>
+						<div class="express__content">
+							<div class="express__live-item">
+								<div class="express__team">
+									<div class="express__score">
+										<span>1 : 0</span>
+									</div>
+									<div class="team__name"><a href="#">Челси</a> - <a href="#">Тоттенхем Хотспур</a></div>
+								</div>
+								<div class="betslip__item-box">
+									<!-- <div class="box__close">x</div> -->
+									<div class="box-trriangle"></div>						
+									<div class="box__visible-content">
+										<div class="box__left">
+											более 2,5 голов
+										</div>
+										<div class="box__right">
+											<span class="val">2.01</span>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="express__live-item">
+								<div class="express__team">
+									<div class="express__score">
+										<span>7 : 0</span>
+									</div>
+									<div class="team__name"><a href="#">Марк Селби</a> - <a href="#">Мартин Гульд</a></div>
+								</div>
+								<div class="betslip__item-box">
+									<!-- <div class="box__close">x</div> -->
+									<div class="box-trriangle"></div>						
+									<div class="box__visible-content">
+										<div class="box__left">
+											обе команды забьют? - нет
+										</div>
+										<div class="box__right">
+											<span class="val">1.65</span>
+										</div>
+									</div>
+								</div>						
+							</div>
+
+							<div class="express__live-item">
+								<div class="express__team">
+									<div class="express__score">
+										<span>0 : 0</span>
+									</div>
+									<div class="team__name"><a href="#">Ахсу</a> - <a href="#">Моик Баку</a></div>
+								</div>
+								<div class="betslip__item-box">
+									<!-- <div class="box__close">x</div> -->
+									<div class="box-trriangle"></div>						
+									<div class="box__visible-content">
+										<div class="box__left">
+											азиатский гандикап - 1 (+0)
+										</div>
+										<div class="box__right">
+											<span class="val">1.90</span>
+										</div>
+									</div>
+								</div>							
+							</div>
+							<div class="espress__win">
+								<div class="box__left">
+									Возможный выйгрыш
+								</div>
+								<div class="box__right">
+									<span class="win">4,900 руб</span>
+								</div>
+							</div>
+							<div class="espress__add-betslip">
+								<img src="img/icons/reload.svg" alt="reload">
+								<div class="add__betslip-wrap">
+									<button>добавить в купон</button>
+									<span>3.38</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="aside__video-box">
+						<div class="video__box-close">
+							<img src="img/icons/close_video.svg" alt="x">
+						</div>
+						<div class="video__box-content">
+							<a href="#"><img src="img/icons/video__play.svg" alt="play"></a>
+							<span>Узнай все за<br>2 минуты</span>
+						</div>
+					</div>
+					<div class="aside__help">
+						<div class="aside__help-title">
+							Пополнение счета и вывод средств станут доступны после проверки личности - идентификации. 
+						</div>
+						<ul class="aside__help-list">
+							<li class="aside__help-item">
+								<a href="#" class="aside__help-link">как пройти идентификацию?</a>
+							</li>
+							<li class="aside__help-item">
+								<a href="#" class="aside__help-link">как починить счет?</a>
+							</li>
+							<li class="aside__help-item">
+								<a href="#" class="aside__help-link">как снять деньги?</a>
+							</li>
+							<li class="aside__help-item">
+								<a href="#" class="aside__help-link">как сделать ставку?</a>
+							</li>
+						</ul>
+					</div>
+					<div class="aside__phone">
+						<div class="aside__phone-title">
+							неважно где - всегда в игре
+							<span>Весь Леон у тебя на ладони</span>
+						</div>
+						<img src="img/aside__phone.jpg" alt="pic">
+						<div class="aside__phone-box">
+							<div class="aside__phone-box-text">
+								<span>Скачать</span><br>приложение
+							</div>
+							<div class="aside__phone-box-icon">
+								<a href="#"><img src="img/icons/google-play.svg" alt="google-play"></a>
+								<a href="#"><img src="img/icons/apple-color-1.svg" alt="appl-store"></a>
+							</div>
+						</div>
+					</div>
+				</aside>
+</div>
+<section class="section__footer">
+	
+	<div class="container">
+		<div class="footer__nav">
+			<div class="gusev"><img src="img/gusev.png" alt="gusev"></div>
+			<div class="footer__widget">
+				<div class="footer__nav-title">главное</div>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Правила</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Документы</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Поддержка</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">О компании</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__widget">
+				<div class="footer__nav-title">с чего начать</div>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Идентификация</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Пополнение счета</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Вывод выйгрыша</a>
+					</li>
+					<li class="footer__nav-item">
+						<a href="#" class="footer__nav-link">Как сделать ставку</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__support">
+				<div class="footer__support-title">
+					поддерживаем <br>российский футбол
+				</div>
+				<ul class="footer__support-list">
+					<li class="footer__support-item">
+						<img src="img/team/csk-support.png" alt="csk">
+					</li>
+					<li class="footer__support-item">
+						<img src="img/team/lc-support.png" alt="lc">
+					</li>
+					<li class="footer__support-item">
+						<img src="img/team/ural-support.png" alt="ural">
+					</li>
+				</ul>
+			</div>
+			<div class="becomePartners">
+				<div class="becomePartners__title">
+					партнеры леона - <br>всегда в плюсе
+				</div>
+				<div class="becomePartners__decr">
+					Становись партнером и получай<br>стабильный доход
+				</div>
+				<a href="#" class="becomePartners__btn">узнать условия</a>
+			</div>
+
+			
+		</div>
+		<div class="footer__partners">
+			<div class="footer__partners-item"><img src="img/parthers/parthers-1.png" alt="1"></div>
+			<div class="footer__partners-item"><img src="img/parthers/parthers-2.png" alt="2"></div>
+			<div class="footer__partners-item"><img src="img/parthers/parthers-3.png" alt="3"></div>
+			<div class="footer__partners-item"><img src="img/parthers/parthers-4.png" alt="4"></div>
+			<div class="footer__partners-item"><img src="img/parthers/parthers-5.png" alt="5"></div>
+			<div class="footer__partners-item"><img src="img/parthers/parthers-6.png" alt="6"></div>
+			<div class="footer__partners-item"><img src="img/parthers/parthers-7.png" alt="7"></div>
+			<div class="footer__partners-item"><img src="img/parthers/parthers-8.png" alt="8"></div>
+			<div class="footer__partners-item"><img src="img/parthers/parthers-9.png" alt="9"></div>
+		</div>
+	</div>
+</section>
+	
+	
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="footer__copyrights">
+			© Общество с ограниченной ответственностью «Леон». Зарегистрированный товарный знак LEON.RU
+		</div>
+		<div class="footer__social">
+			<ul class="social__list">
+				<li class="vk"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+			</li>
+				<li class="inst"><a href="#">
+					<i class="fa fa-instagram" aria-hidden="true"></i></a>
+			</li>
+				<li class="feed"><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+	
+
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>	
+	<script src="js/slick.min.js"></script>	
+	<script src="js/common.js"></script>
+	
+	  
+
+</body>
+</html>
