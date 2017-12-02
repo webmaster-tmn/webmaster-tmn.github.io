@@ -51,8 +51,8 @@ body textarea:required:valid {
   color: #666; }
 
 html, body {
-  height: 100%; 
-overflow-x: hidden;}
+  height: 100%;
+  overflow-x: hidden; }
 
 input,
 textarea, a {
@@ -655,9 +655,9 @@ a.btn__dropdown {
     top: -4px;
     display: block;
     text-align: center;
-    padding: 3px;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
     border: solid 2px white;
     border-radius: 100%; }
 
@@ -2549,6 +2549,39 @@ a.becomePartners__btn {
     .social__list li:hover {
       opacity: 1; }
 
+.fixed__menu {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #181f24; }
+
+.fixed__menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-top: 8px;
+  padding-bottom: 5px; }
+
+.fixed__menu-item a {
+  color: #fff; }
+
+.fixed__menu-item {
+  font-size: 11px;
+  font-weight: 500;
+  text-align: center; }
+  .fixed__menu-item span {
+    display: block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: #293239;
+    margin: 0 auto;
+    margin-bottom: 5px; }
+
 @media (max-width: 1300px) {
   .bestSlider__item {
     padding-right: 10px;
@@ -2697,6 +2730,8 @@ a.becomePartners__btn {
     padding-top: 17px; }
   .sport__item span {
     display: none; }
+  tbody td {
+    padding: 5px 0 7px 0; }
   .table__head {
     background-color: #0f1417;
     background-image: -webkit-gradient(linear, right top, left top, from(rgba(150, 181, 199, 0)), to(rgba(255, 255, 255, 0.1)));
@@ -2722,10 +2757,7 @@ a.becomePartners__btn {
   tr {
     border-top: 2px solid #1f272d; }
   .table__head tr th:nth-child(n+2):nth-child(-n+5) {
-    opacity: 0; }
-  .main__tbody tr td:nth-child(n+2):nth-child(-n+6) {
-    opacity: 0;
-    display: none; }
+    font-size: 0; }
   .table__head th:first-child {
     width: 95%; }
   .td__left span {
@@ -2736,9 +2768,19 @@ a.becomePartners__btn {
     margin-right: 8px; }
   .td__right {
     margin-bottom: 10px; }
+  .table__count {
+    font-size: 0;
+    border: none;
+    padding: 0; }
   .td__bottom-count .table__count {
     border: none;
-    color: rgba(255, 255, 255, 0.7); }
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    padding-right: 0; }
+  .td__bottom-count span {
+    padding-right: 5px; }
+  .table__star img {
+    display: none; }
   .td__bottom-count {
     background-color: rgba(255, 255, 255, 0.08);
     margin-right: 13px;
@@ -2789,7 +2831,8 @@ a.becomePartners__btn {
     height: auto;
     text-align: center;
     line-height: 1.4;
-    padding: 15px; }
+    padding: 15px;
+    margin-bottom: 70px; }
   .topMatch__title {
     color: #fff; }
   .topMatch__filter {
@@ -2797,7 +2840,8 @@ a.becomePartners__btn {
   .right__slide, .left__slide {
     display: none; }
   .team__item {
-    width: 140px; }
+    width: auto;
+    padding: 0 5px; }
   .top-team__country {
     display: none; }
   .slider__dots {
@@ -2814,7 +2858,10 @@ a.becomePartners__btn {
   .team__item-right .team__text {
     margin-left: 5px; }
   .team__item-left .team__text {
-    margin-right: 10px; } }
+    margin-right: 10px; }
+  .fixed__menu {
+    display: block;
+    z-index: 2; } }
 
 @media (max-width: 400px) {
   .top__section {
@@ -2824,7 +2871,7 @@ a.becomePartners__btn {
     padding-top: 0; }
   .redaction {
     background-position: 180px 0px; }
-  .table__head tr th:nth-child(n+2):nth-child(-n+5) {
-    display: none; }
   .td__bottom-count {
-    padding: 7px; } }
+    padding: 7px; }
+  .bestSlider {
+    margin-right: -20px; } }
