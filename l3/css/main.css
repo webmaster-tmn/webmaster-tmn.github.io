@@ -4142,7 +4142,7 @@ a.becomePartners__btn {
     margin-right: 10px; }
   .fixed__menu {
     display: block;
-    z-index: 2; }
+    z-index: 10; }
   .forecast__table-row .forecast__table-left-data {
     display: none; }
   .forecast__table-row .forecast__table-data-mobile {
