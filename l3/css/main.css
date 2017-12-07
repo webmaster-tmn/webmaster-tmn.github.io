@@ -3238,7 +3238,8 @@ a.bestSlider__item-btn {
   padding-left: 35px;
   padding-top: 25px;
   padding-left: 25px;
-  position: relative; }
+  position: relative; 
+  overflow: hidden;}
 
 .people__plus {
   position: absolute;
