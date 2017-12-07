@@ -4000,6 +4000,8 @@ a.becomePartners__btn {
     position: relative; }
   .mobile__tab-container {
     display: block; }
+  .topSlider__item {
+    top: 38px; }
   .topSlider__title-match {
     top: 30px; }
   .topSlider__content-match {
@@ -4367,6 +4369,12 @@ a.becomePartners__btn {
   .topSlider__content {
     right: 9%;
     top: 25px; }
+  .topSlider__item {
+    top: 44px;
+    height: 190px; }
+  .topSlider__item-match {
+    top: 20px;
+    height: 200px; }
   .topSlider__btn {
     margin-top: 10px; }
   .people__tab-text {
@@ -4379,7 +4387,10 @@ a.becomePartners__btn {
     padding-left: 15px; }
   .main__table td:nth-child(2) {
     padding-left: 15px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    top: 23px; }
+  .main__tbody tr {
+    height: 120px; }
   .topSlider__match-bet {
     bottom: 20px; } }
 
@@ -4411,4 +4422,11 @@ a.becomePartners__btn {
     padding-top: 20px;
     height: 170px; }
   .slider__dots {
-    display: none; } }
+    display: none; }
+  .topSlider__item {
+    height: 150px;
+    top: 30px; }
+  .top__section {
+    margin-top: 0; }
+  .topSlider__item-match {
+    top: 11px; } }
