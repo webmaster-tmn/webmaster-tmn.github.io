@@ -4071,6 +4071,8 @@ a.becomePartners__btn {
     position: relative;
     width: 100%;
     display: block; }
+  .main__tbody.prematch__tbody tr {
+    height: 140px; }
   .main__table tr td:first-child {
     width: 100%;
     max-width: 770px;
