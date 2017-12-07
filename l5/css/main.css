@@ -147,9 +147,7 @@ html {
   background-color: #0F1417;
   position: fixed;
   z-index: 201;
-  width: 100%;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+  width: 100%; }
 
 .logo {
   padding-top: 20px;
@@ -2495,14 +2493,15 @@ span.win {
     height: 45px;
     color: #6b737c;
     font-size: 11px;
-    font-weight: 500; }
+    font-weight: 500;
+    width: 7%; }
     .table__head th:first-child {
       text-align: left;
-      width: 94%;
+      width: 65%;
       padding-left: 20px; }
     .table__head th:nth-child(2) {
       text-align: left;
-      width: 55%;
+      width: 7%;
       padding-left: 20px; }
     .table__head th:last-child {
       padding-right: 20px; }
@@ -4363,7 +4362,7 @@ a.becomePartners__btn {
     position: fixed;
     z-index: 7;
     width: 100%;
-    top: 60px; } }
+    top: 65px; } }
 
 @media (max-width: 480px) {
   .topSlider__content {
@@ -4390,7 +4389,7 @@ a.becomePartners__btn {
     padding-right: 15px;
     top: 23px; }
   .main__tbody tr {
-    height: 120px; }
+    height: 125px; }
   .topSlider__match-bet {
     bottom: 20px; } }
 
