@@ -4361,7 +4361,7 @@ a.becomePartners__btn {
   .mobile__tab-container.mobile__tab-container_fixed {
     background-color: #0F1417;
     position: fixed;
-    z-index: 201;
+    z-index: 7;
     width: 100%;
     top: 60px; } }
 
