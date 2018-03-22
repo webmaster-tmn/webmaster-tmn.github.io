@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'FontfabricMullerHeavy';
-    src: url('fonts/FontfabricMullerHeavy.eot');
-    src: url('fonts/FontfabricMullerHeavy.eot') format('embedded-opentype'),
-         url('fonts/FontfabricMullerHeavy.woff2') format('woff2'),
-         url('fonts/FontfabricMullerHeavy.woff') format('woff'),
-         url('fonts/FontfabricMullerHeavy.ttf') format('truetype'),
-         url('fonts/FontfabricMullerHeavy.svg#FontfabricMullerHeavy') format('svg');
-}

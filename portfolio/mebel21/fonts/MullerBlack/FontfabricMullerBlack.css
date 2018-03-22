@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'FontfabricMullerBlack';
-    src: url('fonts/FontfabricMullerBlack.eot');
-    src: url('fonts/FontfabricMullerBlack.eot') format('embedded-opentype'),
-         url('fonts/FontfabricMullerBlack.woff2') format('woff2'),
-         url('fonts/FontfabricMullerBlack.woff') format('woff'),
-         url('fonts/FontfabricMullerBlack.ttf') format('truetype'),
-         url('fonts/FontfabricMullerBlack.svg#FontfabricMullerBlack') format('svg');
-}
