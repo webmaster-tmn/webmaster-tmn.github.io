@@ -18,7 +18,7 @@
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
-	<link rel="stylesheet" href="css/main.min.css?v=2.1">
+	<link rel="stylesheet" href="css/main.min.css">
 
 
 
@@ -33,14 +33,17 @@
 					<div class="header__right">
 						<a href="tel:89021200353" class="header__phone">8 902 120 03 53</a>
 						<a href="#" class="header__call">Перезвоните мне</a>
+						<a href="tel:89021200353" class="header__phone-mobile">
+							<img src="img/icons/tel-mob.svg" alt="89021200353">
+						</a>
 					</div>
 				</header>
 				<div class="main__content">
-					<h1 class="h1">Уникальная мебель из массива с эпоксидной смолой от производителя</h1>
+					<h1 class="h1">Уникальная мебель из массива <span>с эпоксидной смолой от производителя</span></h1>
 					<div class="main__advan advans">
 						<div class="advan">
 							<div class="advan__icon"><img src="img/icons/warranty.svg" alt="alt"></div>
-							<div class="advan__text">50 лет гарантированной<br>эксплуатации</div>
+							<div class="advan__text">50 лет гарантированной &nbsp<br>эксплуатации</div>
 						</div>
 						<div class="advan">
 							<div class="advan__icon"><img src="img/icons/truck.svg" alt="alt"></div>
@@ -48,11 +51,14 @@
 						</div>
 					</div>
 					<div class="main__button">
-						<a href="#" class="btn">Как заказать?</a>
+						<a href="#popup-modal" class="btn popup-modal"
+						data-title="Просто оставьте заявку"
+						data-subtitle="Менеджер свяжется с вами и расскажет об условиях приобретения нашей продукции"
+						>Как заказать?</a>
 					</div>
 				</div>
 				<div class="main__bottom">
-					<a href="#video" class="scroll-down">
+					<a href="#video" class="scroll-down link-scroll">
 						<div class="scroll-down__icon">
 							<span></span>
 						</div>
@@ -81,14 +87,19 @@
 							<div class="play__text">Посмотреть видео<br><b>1:30 мин</b></div>
 						</a>
 						<div class="video__personal personal">
-							<div class="personal__name">Эдуард Касабян</div>
+						<div class="personal__wrap">
+								<div class="personal__name">Эдуард Касабян</div>
 							<div class="personal__text">Основатель «Gregory-wood»</div>
 							<div class="personal__social social">
 								<a href="#" class="social__item"><img src="img/icons/fb.svg" alt="facebook"></a>
 								<a href="#" class="social__item"><img src="img/icons/inst-small.svg" alt="instagramm"></a>
 							</div>
 						</div>
+						</div>
 					</div>
+				</div>
+				<div class="video__man">
+					<img src="img/man1.png" alt="Эдуард Касабян">
 				</div>
 			</div>
 		</section>
@@ -111,7 +122,7 @@
 			</div>
 
 			<!-- row 2 -->
-			<div class="works__row">
+			<div class="works__row works__row--two">
 				<div class="works__item work">
 					<div class="work__decr">
 						<div class="work__number">02<span></span></div>
@@ -175,7 +186,7 @@
 				</div>
 			</div>
 	</div>
-
+		
 	</div>
 	</div>
 	<div class="works__action works-action">
@@ -245,8 +256,11 @@
 							</div>
 							<div class="catalog__item catalog__item-action">
 								<div class="action-title">Получить полный каталог древесины и варианты выкрасок</div>
-								<a href="#" class="action-btn">
-									<div class="action-btn__icon"><img src="img/icons/play.svg" alt="получить"></div>
+								<a href="#popup-modal" class="action-btn popup-modal"
+								data-title="Оставьте заявку"
+							data-subtitle="Наш менеджер свяжется с вами и проведет бесплатную консультацию!"
+								>
+									<div class="action-btn__icon"><img src="img/icons/download.svg" alt="получить"></div>
 									<div class="action-btn__text">Получить каталог</div>
 								</a>
 							</div>
@@ -320,7 +334,16 @@
 				<div class="hit__head">Хит - продаж!</div>
 				<div class="hit__wrap">
 					<div class="hit__pic">
-						<img src="img/hit-table.png" alt="стол-река">
+						<img class="img-responsive" src="img/hit-table.png" alt="стол-река">
+						<div class="hit__options options options--phone">
+								<div class="options__title">Вы можете сами выбрать:</div>
+								<div class="options__list">
+									<div class="options__item">Размеры стола</div>
+									<div class="options__item">Породу и цвет<br>древесины</div>
+									<div class="options__item">Цвет эпоксидной<br> смолы</div>
+									<div class="options__item">Форму подстолья</div>
+								</div>
+							</div>
 					</div>
 					<div class="hit__right">
 						<div class="hit__title">стол - река</div>
@@ -333,7 +356,7 @@
 								Получается очень красивый эффект, словно река, текущая по поверхности стола.
 							</p>
 						</div>
-						<div class="hit__options options">
+						<div class="hit__options options options--desktop">
 							<div class="options__title">Вы можете сами выбрать:</div>
 							<div class="options__list">
 								<div class="options__item">Размеры стола</div>
@@ -346,7 +369,10 @@
 
 				</div>
 				<div class="hit__buttons">
-					<a href="#" class="btn btn-hit">Оформить заказ</a>
+					<a href="#popup-modal" class="btn btn-hit popup-modal"
+					data-title="Заполните форму"
+						data-subtitle="Наш менеджер свяжется с вами, чтобы оформить заказ!"
+					>Оформить заказ</a>
 				</div>
 			</div>
 		</section>
@@ -373,7 +399,10 @@
 								<div class="personal__text">Ваш личный менеджер</div>
 							</div>
 							<div class="credit__buttons">
-								<a href="#" class="btn btn-credit">Узнать про рассрочку</a>
+								<a href="#popup-modal" class="btn btn-credit popup-modal"
+								data-title="Рассрочка под 0% годовых"
+								data-subtitle="Заполните форму и наш менеджер свяжется с вами и расскажет про условия уникальной программы!"
+								>Узнать про рассрочку</a>
 							</div>
 						</div>
 					</div>
@@ -443,21 +472,37 @@
 											</div>
 										</div>
 										<!-- 8 -->
-										<div class="process__item">
+										<div class="process__item show-desktop">
 											<img class="process__bg-btn" src="img/processbg-btn.png" alt="1">
 												<div class="process__button">
-													<a href="#" class="btn btn--process">Оставить заявку</a>
+													<a href="#popup-modal" class="btn btn--process popup-modal"
+													data-title="Заполните форму"
+													data-subtitle="Наш менеджер свяжется с вами для обсуждения деталей!"
+													>Оставить заявку</a>
 												</div>
 											</div>
 				</div>
+				<div class="process__item show-mobile">
+						<img class="process__bg-btn" src="img/processbg-btn.png" alt="1">
+							<div class="process__button">
+								<a href="#popup-modal" class="btn btn--process popup-modal"
+								data-title="Заполните форму"
+								data-subtitle="Наш менеджер свяжется с вами для обсуждения деталей!"
+								>Оставить заявку</a>
+							</div>
+						</div>
 			</div>
 		</section>
 		<section class="wholesale">
 			<div class="container">
 				<div class="wholesale__wrap">
-					<div class="wholesale__pic"><img src="img/opt.png" alt="оптовым клиентам"></div>
+					<div class="wholesale__pic">
+							<div class="wholesale__title show-mobile">
+									Предлагаем <span>эксклюзивные условия</span> на заказ от 10 изделий
+								</div>
+						<img src="img/opt.png" alt="оптовым клиентам"></div>
 					<div class="wholesale__content">
-						<div class="wholesale__title">
+						<div class="wholesale__title show-desktop">
 							Предлагаем <span>эксклюзивные условия</span> на заказ от 10 изделий
 						</div>
 						<div class="wholesale__text">
@@ -465,7 +510,10 @@
 							эксклюзивный стиль.
 						</div>
 						<div class="wholesale__button">
-							<a href="#" class="btn btn-wholesale">Получить коммерческое предложение</a>
+							<a href="#popup-modal" class="btn btn-wholesale popup-modal"
+							data-title="Коммерческое предложение"
+							data-subtitle="Заполните форму, чтобы мы смогли выслать вам коммерческое предлоение!"
+							><span>Получить коммерческое предложение</span></a>
 						</div>
 					</div>
 				</div>
@@ -522,6 +570,59 @@
 		</footer>
 
 	</div>
+	<div class="hidden">
+		<div id="popup-modal" class="popup">
+			<div class="popup__wrap">
+				<div class="popup__body">
+					<div class="popup__title">
+						Просто оставьте заявку
+					</div>
+					<div class="popup__subtitle">
+							Менеджер свяжется с вами и расскажет об условиях приобретения нашей продукции
+					</div>
+					<form class="form form-popup">
+							<div class="form__top">
+								<div class="form__group">
+									<input type="text" name="Имя:" class="form__input" required="">
+									<span class="placeholder">Ваше имя</span>
+								</div>
+								<div class="form__group">
+									<input type="text" name="Телефон:" class="form__input" required="">
+									<span class="placeholder">Телефон</span>
+								</div>								
+							</div>
+							<div class="form__middle">
+							<div class="form__group">
+									<input type="text" name="E-mail:" class="form__input" required="">
+									<span class="placeholder">E-mail</span>
+								</div>
+							</div>
+							<div class="form__bottom">
+								<div class="form__decr">
+										Нажимая «Отправить» вы принимаете условия обработки данных
+								</div>
+								<button type="submit" class="btn form__btn">Отправить</button>
+							</div>
+						
+						</form>
+				</div>
+				<div class="popup__close close">
+					<div class="close__warp">
+						<div class="close__btn">
+								<svg 
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="18px" height="18px">
+							 <path fill-rule="evenodd"  fill="rgb(253, 253, 253)"
+								d="M10.414,8.999 L17.485,16.071 C17.876,16.461 17.876,17.094 17.485,17.484 C17.095,17.875 16.462,17.875 16.071,17.484 L9.000,10.413 L1.929,17.484 C1.538,17.875 0.905,17.875 0.515,17.484 C0.124,17.094 0.124,16.461 0.515,16.071 L7.586,8.999 L0.515,1.928 C0.124,1.538 0.124,0.905 0.515,0.514 C0.905,0.124 1.538,0.124 1.929,0.514 L9.000,7.585 L16.071,0.514 C16.462,0.124 17.095,0.124 17.485,0.514 C17.876,0.905 17.876,1.538 17.485,1.928 L10.414,8.999 Z"/>
+							 </svg>
+						</div>
+						<div class="close__text">Закрыть</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 	<script src="js/scripts.min.js"></script>
@@ -565,6 +666,117 @@
 		myPin.add(myPlacemark);
 		myMap.geoObjects.add(myPin);
 	}
+	</script>
+	<script>
+		//Плавный скролл
+	$("a.link-scroll").click(function () {
+		elementClick = $(this).attr("href")
+		destination = $(elementClick).offset().top;
+		$("html:not(:animated),body:not(:animated)").animate({
+			scrollTop: destination
+		}, 1100);
+		return false;
+	});
+	</script>
+
+	<script>
+		var processSlider = function(){
+				if	($(window).width() < 768 ){
+					$('.process__list .show-desktop').detach();
+					$('.process__list').slick({
+						slidesToShow: 2,
+						slidesToScroll: 2,
+						infinite: true,
+						dots: true,
+						arrows: false,
+						responsive: [
+						{
+								breakpoint: 480,
+								settings: {
+									slidesToShow: 1,
+									slidesToScroll: 1,
+								}
+							},
+						]
+					});
+					
+				}
+				else{
+					$('.process__list .show-desktop').append();
+				// $('#slick-slide07').append();
+				}
+		};
+		processSlider();
+	</script>
+	<script>
+		var processSlider = function(){
+			var sliderElement = $('.process__list');
+			
+			if ($(window).width() < 768 && !(sliderElement.hasClass('slick-initialized'))){
+				// $('.process__list .show-desktop').detach();
+				// $('#slick-slide07').detach();
+				$('.process__list .show-desktop').detach();
+				
+				sliderElement.slick({
+						slidesToShow: 2,
+						slidesToScroll: 2,
+						infinite: true,
+						dots: true,
+						arrows: false,
+						responsive: [
+						{
+								breakpoint: 480,
+								settings: {
+									slidesToShow: 1,
+									slidesToScroll: 1,
+								}
+							},
+						]
+				})
+			} else if ($(window).width() > 768 && sliderElement.hasClass('slick-initialized')){
+				$('.process__list .show-desktop').append();
+				sliderElement.slick('unslick');
+			}
+		};
+
+		
+		$(window).on('resize', function () {
+			processSlider(); 
+			if	($(window).width() < 768 ){
+					$('.process__list .show-desktop').detach();
+				
+					
+				}
+				else{
+					// $('.process__list .show-desktop').append();
+				// $('#slick-slide07').append();
+				}
+		})
+	</script>
+	<script>
+		$('.popup-modal').magnificPopup({
+		type: 'inline',
+		modal: true,
+		closeOnContentClick: true
+	});
+	$(document).on('click', '.close__btn', function (e) {
+		e.preventDefault();
+		$.magnificPopup.close();
+	});
+	</script>
+	<script>
+		$('.popup-modal').on('click', function() {
+		var dataForm = $(this).data("form");
+		var datatitle = $(this).data("title");
+		var dataSubTitle = $(this).data("subtitle");
+		// var dataImg = $(this).attr('data-bg');
+
+		$(".popup__title").text(datatitle);
+		$(".popup__subtitle").text(dataSubTitle);
+		$(".form .formname").val(dataForm);
+		// $("#submit-form-btn").val(dataBtn);
+		// $(".form").css('background-image', "url('" + dataImg + "')");
+});
 	</script>
 
 </body>
