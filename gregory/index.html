@@ -18,7 +18,7 @@
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
-	<link rel="stylesheet" href="css/main.min.css?v=2.1">
+	<link rel="stylesheet" href="css/main.min.css?v=2.3">
 
 
 
@@ -186,7 +186,7 @@
 				</div>
 			</div>
 	</div>
-		
+
 	</div>
 	</div>
 	<div class="works__action works-action">
@@ -589,7 +589,7 @@
 								<div class="form__group">
 									<input type="text" name="Телефон:" class="form__input" required="">
 									<span class="placeholder">Телефон</span>
-								</div>								
+								</div>
 							</div>
 							<div class="form__middle">
 							<div class="form__group">
@@ -603,13 +603,13 @@
 								</div>
 								<button type="submit" class="btn form__btn">Отправить</button>
 							</div>
-						
+
 						</form>
 				</div>
 				<div class="popup__close close">
 					<div class="close__warp">
 						<div class="close__btn">
-								<svg 
+								<svg
 								xmlns="http://www.w3.org/2000/svg"
 								xmlns:xlink="http://www.w3.org/1999/xlink"
 								width="18px" height="18px">
@@ -699,7 +699,7 @@
 							},
 						]
 					});
-					
+
 				}
 				else{
 					$('.process__list .show-desktop').append();
@@ -711,12 +711,12 @@
 	<script>
 		var processSlider = function(){
 			var sliderElement = $('.process__list');
-			
+
 			if ($(window).width() < 768 && !(sliderElement.hasClass('slick-initialized'))){
 				// $('.process__list .show-desktop').detach();
 				// $('#slick-slide07').detach();
 				$('.process__list .show-desktop').detach();
-				
+
 				sliderElement.slick({
 						slidesToShow: 2,
 						slidesToScroll: 2,
@@ -739,13 +739,13 @@
 			}
 		};
 
-		
+
 		$(window).on('resize', function () {
-			processSlider(); 
+			processSlider();
 			if	($(window).width() < 768 ){
 					$('.process__list .show-desktop').detach();
-				
-					
+
+
 				}
 				else{
 					// $('.process__list .show-desktop').append();
