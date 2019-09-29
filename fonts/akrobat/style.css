@@ -4,7 +4,7 @@
 font-family: 'Akrobat';
 font-style: normal;
 font-weight: 400;
-src: local('Akrobat Regular'), url('Akrobat-Regular.woff') format('woff');
+src: url('https://github.com/webmaster-tmn/acobat/blob/master/akrobat/Akrobat-Regular.woff') format('woff');
 }
 
 
@@ -12,7 +12,7 @@ src: local('Akrobat Regular'), url('Akrobat-Regular.woff') format('woff');
 font-family: 'Akrobat';
 font-style: normal;
 font-weight: 300;
-src: local('Akrobat Light'), url('Akrobat-Light.woff') format('woff');
+src: url('https://github.com/webmaster-tmn/acobat/blob/master/akrobat/Akrobat-Light.woff') format('woff');
 }
 
 
@@ -20,7 +20,7 @@ src: local('Akrobat Light'), url('Akrobat-Light.woff') format('woff');
 font-family: 'Akrobat';
 font-style: normal;
 font-weight: 200;
-src: local('Akrobat ExtraLight'), url('Akrobat-ExtraLight.woff') format('woff');
+src:  url('https://github.com/webmaster-tmn/acobat/blob/master/akrobat/Akrobat-ExtraLight.woff') format('woff');
 }
 
 
@@ -28,7 +28,7 @@ src: local('Akrobat ExtraLight'), url('Akrobat-ExtraLight.woff') format('woff');
 font-family: 'Akrobat';
 font-style: normal;
 font-weight: 600;
-src: local('Akrobat SemiBold'), url('Akrobat-SemiBold.woff') format('woff');
+src: url('https://github.com/webmaster-tmn/acobat/blob/master/akrobat/Akrobat-SemiBold.woff') format('woff');
 }
 
 
@@ -36,7 +36,7 @@ src: local('Akrobat SemiBold'), url('Akrobat-SemiBold.woff') format('woff');
 font-family: 'Akrobat';
 font-style: normal;
 font-weight: 700;
-src: local('Akrobat Bold'), url('Akrobat-Bold.woff') format('woff');
+src: url('https://github.com/webmaster-tmn/acobat/blob/master/akrobat/Akrobat-Bold.woff') format('woff');
 }
 
 
@@ -44,7 +44,7 @@ src: local('Akrobat Bold'), url('Akrobat-Bold.woff') format('woff');
 font-family: 'Akrobat';
 font-style: normal;
 font-weight: 800;
-src: local('Akrobat ExtraBold Regular'), url('akrobat-extrabold-webfont.woff') format('woff');
+src: url('https://github.com/webmaster-tmn/acobat/blob/master/akrobat/akrobat-extrabold-webfont.woff') format('woff');
 }
 
 
@@ -52,5 +52,5 @@ src: local('Akrobat ExtraBold Regular'), url('akrobat-extrabold-webfont.woff') f
 font-family: 'Akrobat';
 font-style: normal;
 font-weight: 900;
-src: local('Akrobat Black'), url('Akrobat-Black.woff') format('woff');
+src:url('https://github.com/webmaster-tmn/acobat/raw/master/akrobat/Akrobat-Black.woff') format('woff');
 }
