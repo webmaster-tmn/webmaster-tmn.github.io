@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Enegix | Новости</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" sizes="16x16" href="img/favicon/favicon.ico">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+
+</head>
+
+<body class="page-advan">
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__logo">
+				<a href="" class="logo"><img src="img/logo.svg" alt="enegix" class="logo__pic"></a>
+			</div>
+			<div class="header__nav container">
+				<nav class="nav">
+					<a href="./index.html" class="nav__link">Главная</a>
+					<a href="./advantage.html" class="nav__link">Преимущества</a>
+					<a href="./about.html" class="nav__link">О компании</a>
+					<a href="./news.html" class="nav__link">Новости</a>
+					<a href="./faq.html" class="nav__link">FAQ</a>
+					<a href="./contact.html" class="nav__link">Контакты</a>
+				</nav>
+			</div>
+			<div class="header__buttons">
+				<div class="btn-lang btn">ru
+					<span class="lang-triangel"></span>
+				</div>
+				<a href="#" class="btn-feedback btn">обратная связь</a>
+			</div>
+		</header>
+		<section class="s-top news">
+			<div class="container">
+				<div class="news__title">
+					<h2 class="h2">Новости</h2>
+				</div>
+				<div class="news-top">
+					<div class="news__slide js-news-slide owl-carousel owl-theme">
+						<div class="news-top__item news-top-item">
+							<img src="../img/news/news-top-1.jpg" alt="" class="news-top-item__pic">
+							<div class="news-top-item__text">
+								<p>Made for Studio</p>
+							</div>
+						</div>
+						<div class="news-top__item news-top-item">
+							<img src="../img/news/news-top-2.jpg" alt="" class="news-top-item__pic">
+							<div class="news-top-item__text">
+								<p>Good to great UI animation tips</p>
+							</div>
+						</div>
+						<div class="news-top__item news-top-item">
+							<img src="../img/news/news-top-3.jpg" alt="" class="news-top-item__pic">
+							<div class="news-top-item__text">
+								<p>9 features you might have missed in InVision Studio Early Access</p>
+							</div>
+						</div>
+						<div class="news-top__item news-top-item">
+							<img src="../img/news/news-top-2.jpg" alt="" class="news-top-item__pic">
+							<div class="news-top-item__text">
+								<p>Good to great UI animation tips</p>
+							</div>
+						</div>
+						<div class="news-top__item news-top-item">
+							<img src="../img/news/news-top-1.jpg" alt="" class="news-top-item__pic">
+							<div class="news-top-item__text">
+								<p>Made for Studio</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="news-list">
+				<div class="news-list__min news-min">
+					<div class="news-min__pic">
+						<img src="../img/news/news-min-1.jpg" alt="">
+					</div>
+					<div class="news-min__body">
+						<h2 class="news-min__title">Studio Facebook</h2>
+						<p class="news-min__decr">Join our growing Facebook community to stay on top of the latest Studio news and
+							announcements.</p>
+						<a href="#" class="news-min__link">читать</a>
+					</div>
+				</div>
+				<div class="news-list__min news-min">
+					<div class="news-min__pic">
+						<img src="../img/news/news-min-2.jpg" alt="">
+					</div>
+					<div class="news-min__body">
+						<h2 class="news-min__title">InVision Studio Shortcuts</h2>
+						<p class="news-min__decr">Simplify your design work and save time with this </p>
+						<a href="#" class="news-min__link">читать</a>
+					</div>
+				</div>
+				<div class="news-list__min news-min">
+					<div class="news-min__pic">
+						<img src="../img/news/news-min-3.jpg" alt="">
+					</div>
+					<div class="news-min__body">
+						<h2 class="news-min__title">Made for Studio</h2>
+						<p class="news-min__decr">Simplify your design work and save time with this </p>
+						<a href="#" class="news-min__link">читать</a>
+					</div>
+				</div>
+				<div class="news-list__min news-min">
+					<div class="news-min__pic">
+						<img src="../img/news/news-min-4.jpg" alt="">
+					</div>
+					<div class="news-min__body">
+						<h2 class="news-min__title">Good to great UI animation tips</h2>
+						<p class="news-min__decr">Simplify your design work and save time with this </p>
+						<a href="#" class="news-min__link">читать</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<footer class="footer dark-grey">
+			<div class="footer__inner">
+				<div class="footer__logo">
+					<a href="#"><img src="img/logo-footer.svg" alt="enegix"></a>
+				</div>
+				<div class="footer__text">
+					<span>Политика конфедициальности</span>
+				</div>
+			</div>
+
+		</footer>
+
+	</div>
+
+
+
+
+	<script src="js/scripts.min.js?v=1"></script>
+
+	<script>
+		$('.js-news-slide').owlCarousel({
+			items: 2,
+			itemsDesktop: [1199, 2],
+			itemsDesktopSmall: [980, 3],
+			itemsTablet: [768, 2],
+			itemsTabletSmall: false,
+			itemsMobile: [479, 1],
+			mouseDrag: true,
+			dots: false,
+			afterInit: function () {
+				var self = this;
+				var el = this.$elem;
+				var items = this.$owlItems;
+				var len;
+				var wrapper = this.$owlWrapper;
+
+				if ($(window).width() > 778) {
+					len = items.length - 3;
+				} else {
+					len = items.length - 2;
+				}
+
+
+
+			}
+		});
+	</script>
+</body>
+
+</html>

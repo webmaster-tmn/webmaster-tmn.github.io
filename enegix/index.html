@@ -30,10 +30,10 @@
 			</div>
 			<div class="header__nav container">
 				<nav class="nav">
-					<a href="#" class="nav__link">Главная</a>
+					<a href="./index.html" class="nav__link">Главная</a>
 					<a href="./advantage.html" class="nav__link">Преимущества</a>
 					<a href="./about.html" class="nav__link">О компании</a>
-					<a href="#" class="nav__link">Новости</a>
+					<a href="./news.html" class="nav__link">Новости</a>
 					<a href="./faq.html" class="nav__link">FAQ</a>
 					<a href="./contact.html" class="nav__link">Контакты</a>
 				</nav>
@@ -45,8 +45,34 @@
 				<a href="#" class="btn-feedback btn">обратная связь</a>
 			</div>
 		</header>
-		<section class="s-top">
-			<div class="container">
+		<section class="s-top s-top--home">
+			<div class="main-map__wrap">
+				<img src="img/main-map.png" alt="карта" class="main-map__pictures">
+
+				<div class="main-map__content">
+					<div class="main-map__item main-map__item--usa">
+						<img class="main-map__pin" src="./img/icons/main-map-point.svg" alt="pin">
+						<span class="main-map__name-country">США</span>
+					</div>
+					<div class="main-map__item main-map__item--europe">
+						<span class="main-map__name-country">Европа</span>
+						<img class="main-map__pin" src="./img/icons/main-map-point.svg" alt="pin">
+					</div>
+					<div class="main-map__item main-map__item--kazak">
+						<img class="main-map__pin" src="./img/icons/main-map-point-big.svg" alt="pin">
+						<span class="main-map__name-country">Казахстан</span>
+					</div>
+					<div class="main-map__item main-map__item--china">
+						<img class="main-map__pin" src="./img/icons/main-map-point.svg" alt="pin">
+						<span class="main-map__name-country">Китай</span>
+					</div>
+					<div class="main-map__text">
+						<h2 class="h2">Работаем со всем миром</h2>
+						<div class="main-map__decr">Сюда можно добавить описание в одно-два предложения</div>
+					</div>
+				</div>
+			</div>
+			<div class="container top-container">
 				<div class="s-top__head">
 					<h1 class="h1">Начните майнить<br> с крупнейшим<br> Дата Центром в СНГ</h1>
 				</div>
@@ -68,34 +94,12 @@
 						</div>
 
 					</div>
+					<div class="s-top__trigger"></div>
 				</div>
 			</div>
 		</section>
 		<section class="s-main-map main-map">
-			<img src="img/main-map.png" alt="карта" class="main-map__pictures">
 
-			<div class="main-map__content">
-				<div class="main-map__item main-map__item--usa">
-					<img class="main-map__pin" src="./img/icons/main-map-point.svg" alt="pin">
-					<span class="main-map__name-country">США</span>
-				</div>
-				<div class="main-map__item main-map__item--europe">
-					<span class="main-map__name-country">Европа</span>
-					<img class="main-map__pin" src="./img/icons/main-map-point.svg" alt="pin">
-				</div>
-				<div class="main-map__item main-map__item--kazak">
-					<img class="main-map__pin" src="./img/icons/main-map-point-big.svg" alt="pin">
-					<span class="main-map__name-country">Казахстан</span>
-				</div>
-				<div class="main-map__item main-map__item--china">
-					<img class="main-map__pin" src="./img/icons/main-map-point.svg" alt="pin">
-					<span class="main-map__name-country">Китай</span>
-				</div>
-				<div class="main-map__text">
-					<h2 class="h2">Работаем со всем миром</h2>
-					<div class="main-map__decr">Сюда можно добавить описание в одно-два предложения</div>
-				</div>
-			</div>
 
 		</section>
 
@@ -109,6 +113,8 @@
 				</div>
 				<div class="road-map__list">
 					<div class="road-map__item road-map__item--one">
+						<div class="circle circle--green"></div>
+						<div class="line line--green"></div>
 						<div class="road-map__icon">
 							<div class="road-map__icon--sm">
 								<svg viewBox="0 0 95 113" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,6 +131,8 @@
 					</div>
 					<!-- 2 -->
 					<div class="road-map__item road-map__item--two">
+						<div class="circle"></div>
+						<div class="line"></div>
 						<div class="road-map__icon">
 							<div class="road-map__icon--md">
 								<svg viewBox="0 0 95 113" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,6 +154,9 @@
 					</div>
 					<!-- 3 -->
 					<div class="road-map__item road-map__item--three">
+						<div class="circle"></div>
+						<div class="line"></div>
+
 						<div class="road-map__icon">
 							<div class="road-map__icon--lg">
 								<svg viewBox="0 0 95 113" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -313,6 +324,225 @@
 
 
 	<script src="js/scripts.min.js?v=1"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+
+
+	<script>
+		const tlTopSection = new TimelineMax();
+		const tlSecondSection = new TimelineMax();
+		const tlThirdSection = new TimelineMax();
+		const tlFourthSection = new TimelineMax();
+		const tlFifthSection = new TimelineMax();
+		const tlSixSection = new TimelineMax();
+
+		tlTopSection
+			.fromTo('.main-map__pictures', 2.5, {
+				scale: 1,
+				opacity: 0,
+
+			}, {
+				scale: 0.6,
+				opacity: 1,
+				x: 77
+			})
+			.fromTo('.header', 1.5, {
+				opacity: 0
+			}, {
+				opacity: 1
+			}, 0.4)
+			.fromTo('.s-top__head', 1.5, {
+				opacity: 0,
+				y: 50
+			}, {
+				opacity: 1,
+				y: 0
+			}, 0.5)
+			.fromTo('.calc-block', 1.5, {
+				opacity: 0,
+				y: 30,
+				x: -10
+			}, {
+				opacity: 1,
+				y: 0,
+				x: 0
+			}, 1)
+			.fromTo('.video-block__inner', 1.5, {
+				opacity: 0,
+				y: 20
+			}, {
+				opacity: 1,
+				y: 0
+			}, 1)
+			.fromTo('.video-block__content', 1.5, {
+				opacity: 0,
+				y: -80,
+				x: 30
+			}, {
+				opacity: 1,
+				y: -115,
+				x: 0
+			}, 1);
+
+
+		tlSecondSection
+			.fromTo('.main-map__text', 0.5, {
+				opacity: 0,
+				y: 50
+			}, {
+				opacity: 1,
+				y: 0
+			}, 0.1)
+			.to('.main-map__pictures', 1, {
+				y: 50,
+				scale: 0.9
+			}, 0.4)
+			.fromTo('.main-map__item', 0.5, {
+				opacity: 0
+			}, {
+				opacity: 1,
+				y: 0
+			}, 1);
+
+
+		tlThirdSection
+			.fromTo('.circle--green', 1, {
+				opacity: 0,
+				scale: 0
+			}, {
+				opacity: 1,
+				scale: 1
+			}, 0.2)
+			.fromTo('.line--green', 1, {
+				opacity: 0,
+				width: 0
+			}, {
+				opacity: 1,
+				width: '100%'
+			}, 0.5);
+
+		tlFourthSection
+			.fromTo('.main-about__title', 1, {
+				opacity: 0,
+				x: -20
+			}, {
+				opacity: 1,
+				x: 0
+			}, 0.1)
+			.fromTo('.main-about__decr', 1, {
+				opacity: 0,
+				x: 20
+			}, {
+				opacity: 1,
+				x: 0
+			}, 0.3)
+			.fromTo('.main-about__item', 1, {
+				opacity: 0,
+				y: 20
+			}, {
+				opacity: 1,
+				y: 0
+			}, 0.8)
+			.fromTo('.main-about-item__top, .main-about-item__bottom', 1, {
+				opacity: 0,
+				y: 20
+			}, {
+				opacity: 1,
+				y: 0
+			}, 1.2);
+
+		tlFifthSection
+			.fromTo('.advan__title', 1, {
+				opacity: 0,
+				y: -20
+			}, {
+				opacity: 1,
+				y: 0
+			}, 0.8)
+			.fromTo('.advan__item', 1, {
+				opacity: 0,
+				y: 20
+			}, {
+				opacity: 1,
+				y: 0
+			}, 1.2);
+
+		tlSixSection
+			.fromTo('.question__text', 1, {
+				opacity: 0,
+				x: -20
+			}, {
+				opacity: 1,
+				x: 0
+			}, 0.8)
+			.fromTo('.question__form', 1, {
+				opacity: 0,
+				x: 20
+			}, {
+				opacity: 1,
+				x: 0
+			}, 1.2)
+
+
+
+
+
+		const controller = new ScrollMagic.Controller();
+
+		const secondScene = new ScrollMagic.Scene({
+				triggerElement: '.s-top__trigger',
+				triggerHook: 0.1
+			})
+			.setTween(tlSecondSection)
+			//.addIndicators({
+			//	name: "1 (duration: 0)"
+			//	})
+			.addTo(controller);
+
+
+		const thirdScene = new ScrollMagic.Scene({
+				triggerElement: '.road-map',
+				triggerHook: 0
+			})
+			.setTween(tlThirdSection)
+			//.addIndicators({
+			//		name: "2 (duration: 0)"
+			//})
+			.addTo(controller);
+
+		const fourthScene = new ScrollMagic.Scene({
+				triggerElement: '.main-about',
+				triggerHook: .5
+			})
+			.setTween(tlFourthSection)
+			//.addIndicators({
+			//	name: "3 (duration: 0)"
+			//})
+			.addTo(controller);
+
+		const fifthScene = new ScrollMagic.Scene({
+				triggerElement: '.advan',
+				triggerHook: 0.8
+			})
+			.setTween(tlFifthSection)
+		//.addIndicators({
+		//	name: "4 (duration: 0)"
+		//})
+		//		.addTo(controller);
+
+		const sixScene = new ScrollMagic.Scene({
+				triggerElement: '.question',
+				triggerHook: 0.8
+			})
+			.setTween(tlSixSection)
+			//.addIndicators({
+			//	name: "5 (duration: 0)"
+			//})
+
+			.addTo(controller);
+	</script>
 </body>
 
 </html>
