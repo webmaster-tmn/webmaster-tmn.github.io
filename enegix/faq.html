@@ -170,7 +170,7 @@
 							<form class="form">
 								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
 								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" required>
+								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" oninput="replacer(this)" required>
 								<button type="submit" class="btn btn-form">готово</button>
 							</form>
 						</div>
@@ -183,6 +183,11 @@
 
 
 	<script src="js/scripts.min.js?v=1"></script>
+	<script>
+	function replacer(el) {
+    el.value = el.value.replace(/[^0-9+]/g, '');
+}
+</script>
 </body>
 
 </html>

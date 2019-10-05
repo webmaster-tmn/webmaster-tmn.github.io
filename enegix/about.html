@@ -49,8 +49,8 @@
 				<div class="btn-lang btn">
 					<span>ru</span>
 					<div class="btn-lang__wrap">
-						<span class="lang">EN</span>
-						<span class="lang">CH</span>
+						<a href="./en"><span class="lang">EN</span></a>
+						<a href="./ch"><span class="lang">CH</span></a>
 					</div>
 
 				</div>
@@ -64,13 +64,13 @@
 				</div>
 				<div class="video-block video-block--big">
 					<div class="video-block__inner" data-aos="fade-right">
-						<img src="img/video-bg.png" alt="video" class="video-block__pic">
+						<img src="img/video-bg1.jpg" alt="video" class="video-block__pic">
 						<a href="https://www.youtube.com/watch?v=4bfvXMuZgxw" class="video-block__icon popup-video">
 								<img src="img/icons/play.svg" alt="play">
 							</a>
 					</div>
 					<div class="video-block__content" data-aos="fade-left">
-						<p>Описание видео для раздела “О компании”</p>
+						<p>Видео о ENEGIX</p>
 					</div>
 
 				</div>
@@ -107,7 +107,7 @@
 							<form class="form">
 								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
 								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" required>
+								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" oninput="replacer(this)" required>
 								<button type="submit" class="btn btn-form">готово</button>
 							</form>
 						</div>
@@ -138,7 +138,7 @@
 							<form class="form">
 								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
 								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" required>
+								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" oninput="replacer(this)" required>
 								<button type="submit" class="btn btn-form">готово</button>
 							</form>
 						</div>
@@ -152,6 +152,11 @@
 
 	<script src="js/scripts.min.js?v=1"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+	function replacer(el) {
+    el.value = el.value.replace(/[^0-9+]/g, '');
+}
+</script>
 </body>
 
 </html>

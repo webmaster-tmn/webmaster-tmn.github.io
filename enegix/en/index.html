@@ -18,14 +18,14 @@
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
-	<link rel="stylesheet" href="css/main.min.css?v=1">
+	<link rel="stylesheet" href="css/main.min.css?v=1.2">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body class="page-home">
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" data-aos="header-op">
 			<div class="burger">
 				<div class="burger__top"></div>
 				<div class="burger__middle"></div>
@@ -49,7 +49,7 @@
 					<span>EN</span>
 					<div class="btn-lang__wrap">
 						<a href="../"><span class="lang">RU</span></a>
-						<a href="./ch"><span class="lang">CH</span></a>
+						<a href="../ch"><span class="lang">CH</span></a>
 					</div>
 
 				</div>
@@ -68,24 +68,24 @@
 		<section class="s-top s-top--home">
 
 			<div class="container top-container">
-				<div class="s-top__head">
+				<div class="s-top__head" data-aos="fade-up">
 					<h1 class="h1">Start mining with<br> the largest<br> data-center in CIS</h1>
 
 				</div>
 				<div class="s-top__content">
-					<div class="calc-block">
+					<div class="calc-block" data-aos="fade-up-right" data-aos-delay="300">
 						<div class="calc-block__title">Available capacity (MW) and prices starting at…</div>
 						<a href="#popup-form-calc" class="calc-block__btn btn btn-calc popup-link">Estimate cost<img src="img/icons/arrow-right.svg"
 								alt="arrow-right"></a>
 					</div>
-					<div class="video-block video-block--min">
+					<div class="video-block video-block--min" data-aos="fade-up" data-aos-delay="300">
 						<div class="video-block__inner">
 							<img src="img/video-bg.png" alt="video" class="video-block__pic">
 							<a href="https://www.youtube.com/watch?v=4bfvXMuZgxw" class="video-block__icon popup-video">
 								<img src="img/icons/play.svg" alt="play">
 							</a>
 						</div>
-						<div class="video-block__content">
+						<div class="video-block__content" data-aos="fade-up-left" data-aos-delay="300" data-aos-offset="0">
 							<p>Video about ENEGIX</p>
 						</div>
 
@@ -94,52 +94,21 @@
 				</div>
 			</div>
 		</section>
-<section class="s-main-map main-map">
-		<div class="main-map__wrap">
-				<img src="img/main-map.png" alt="карта" class="main-map__pictures">
 
-				<div class="main-map__content">
-					<div class="main-map__pin">
-						<img src="./img/map-text.png" alt="">
-						<!-- <img src="./img/icons/bitcoin.svg" alt="bitcoin" class="bitcoin"> -->
-					</div>
-					<!-- <div class="main-map__item main-map__item--usa">
-						<img class="main-map__pin" src="./img/icons/main-map-point.svg" alt="pin">
-						<span class="main-map__name-country">США</span>
-					</div>
-					<div class="main-map__item main-map__item--europe">
-						<span class="main-map__name-country">Европа</span>
-						<img class="main-map__pin" src="./img/icons/main-map-point.svg" alt="pin">
-					</div>
-					<div class="main-map__item main-map__item--kazak">
-						<img class="main-map__pin" src="./img/icons/main-map-point-big.svg" alt="pin">
-						<span class="main-map__name-country">Казахстан</span>
-					</div>
-					<div class="main-map__item main-map__item--china">
-						<img class="main-map__pin" src="./img/icons/main-map-point.svg" alt="pin">
-						<span class="main-map__name-country">Китай</span>
-					</div> -->
-					<div class="main-map__text">
-						<h2 class="h2">We work with the whole world</h2>
-						<div class="main-map__decr">Here you can add a description in one or two sentences</div>
-					</div>
-				</div>
-			</div>
-</section>
 
 		<section class="s-road-map road-map">
 			<div class="container">
-				<div class="road-map__title">
+				<div class="road-map__title" data-aos="fade-up">
 					<h2 class="h2">Capacity roadmap: 610 MW total, including</h2>
 				</div>
-				<div class="road-map__subtitle">
+				<div class="road-map__subtitle" data-aos="fade-up" data-aos-offset="0">
 					30 MW in operation + 180 MW by January 2020 + 400 MW expansion by end of 2020
 				</div>
 				<div class="road-map__list">
 					<div class="road-map__item road-map__item--one">
-						<div class="circle circle--green"></div>
-						<div class="line line--green"></div>
-						<div class="road-map__icon">
+						<div class="circle circle--green" data-aos="circle-scale"  data-aos-delay="200" data-aos-offset="0"></div>
+						<div class="line line--green" data-aos="anim-line" data-aos-delay="300" data-aos-offset="0"></div>
+						<div class="road-map__icon" data-aos="rm-icon-opacity" data-aos-duration="3000" data-aos-delay="400">
 							<div class="road-map__icon--sm">
 								<svg viewBox="0 0 95 113" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -147,17 +116,17 @@
 								</svg>
 							</div>
 						</div>
-						<div class="road-map__mwt">33 MWT</div>
-						<div class="road-map__text">
+						<div class="road-map__mwt" data-aos="fade-up" data-aos-duration="2000">30 MWT</div>
+						<div class="road-map__text" data-aos="fade-up" data-aos-duration="2000">
 							<img src="img/icons/check.svg" alt="" class="road-map__check">
 							<span>Construction completed</span>
 						</div>
 					</div>
 					<!-- 2 -->
 					<div class="road-map__item road-map__item--two">
-						<div class="circle"></div>
+						<div class="circle" data-aos="circle-op"></div>
 						<div class="line"></div>
-						<div class="road-map__icon">
+						<div class="road-map__icon" data-aos="rm-icon-opacity" data-aos-duration="3000" data-aos-delay="400">
 							<div class="road-map__icon--md">
 								<svg viewBox="0 0 95 113" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -171,17 +140,17 @@
 								</svg>
 							</div>
 						</div>
-						<div class="road-map__mwt">180 MWT</div>
-						<div class="road-map__text">
+						<div class="road-map__mwt" data-aos="fade-up" data-aos-duration="2000">180 MWT</div>
+						<div class="road-map__text" data-aos="fade-up" data-aos-duration="2000">
 							<span>180 МВТ Commisionning January, 2020</span>
 						</div>
 					</div>
 					<!-- 3 -->
 					<div class="road-map__item road-map__item--three">
-						<div class="circle"></div>
+						<div class="circle" data-aos="circle-op"></div>
 						<div class="line"></div>
 
-						<div class="road-map__icon">
+						<div class="road-map__icon" data-aos="rm-icon-opacity" data-aos-duration="3000" data-aos-delay="400">
 							<div class="road-map__icon--lg">
 								<svg viewBox="0 0 95 113" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -201,8 +170,8 @@
 								</svg>
 							</div>
 						</div>
-						<div class="road-map__mwt">360 MWT</div>
-						<div class="road-map__text">
+						<div class="road-map__mwt" data-aos="fade-up" data-aos-duration="2000">400 MWT</div>
+						<div class="road-map__text" data-aos="fade-up" data-aos-duration="2000">
 							<span>Expansion 2020 +400 MW</span>
 						</div>
 					</div>
@@ -212,32 +181,32 @@
 		<section class="s-main-about main-about">
 			<div class="container">
 				<div class="main-about__head">
-					<div class="main-about__title">
+					<div class="main-about__title" data-aos="fade-right">
 						<h2 class="h2">
 
 							Largest<br> data-center in CIS
 						</h2>
 					</div>
-					<div class="main-about__decr">
+					<div class="main-about__decr" data-aos="fade-left">
 						with 30 MW in operation<br> + 180 MW by January 2020
 					</div>
 				</div>
 				<div class="main-about__list">
 
-					<div class="main-about__item main-about-item">
-						<div class="main-about-item__top">
+					<div class="main-about__item main-about-item" data-aos="fade-up">
+						<div class="main-about-item__top" data-aos="fade-up" data-aos-duration="2000">
 							<div class="main-about__icon">
 								<img src="img/icons/main-about/main-about-1.svg" alt="1">
 							</div>
 							<div class="main-about__text">97,5</div>
 						</div>
-						<div class="main-about-item__bottom">
+						<div class="main-about-item__bottom" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
 							<span>Minimum hash rate<br> in 2018: 97.5%</span>
 						</div>
 					</div>
 
-					<div class="main-about__item main-about-item">
-						<div class="main-about-item__top">
+					<div class="main-about__item main-about-item" data-aos="fade-up">
+						<div class="main-about-item__top" data-aos="fade-up" data-aos-duration="2000">
 							<div class="main-about__icon">
 								<img src="img/icons/main-about/users.svg" alt="user">
 							</div>
@@ -245,14 +214,14 @@
 						</div>
 					</div>
 
-					<div class="main-about__item main-about-item">
-						<div class="main-about-item__top">
+					<div class="main-about__item main-about-item" data-aos="fade-up">
+						<div class="main-about-item__top" data-aos="fade-up" data-aos-duration="2000">
 							<div class="main-about__icon">
 								<img src="img/icons/main-about/clock.svg" alt="clock">
 							</div>
 							<div class="main-about__text">24/7</div>
 						</div>
-						<div class="main-about-item__bottom">
+						<div class="main-about-item__bottom" data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">
 							<span>monitoring<br> and support</span>
 						</div>
 					</div>
@@ -261,24 +230,24 @@
 		</section>
 		<section class="s-advan advan">
 			<div class="container">
-				<div class="advan__title">
+				<div class="advan__title" data-aos="fade-down">
 					<h2 class="h2">Kazakhstan’s Advantages for Mining</h2>
 				</div>
 				<div class="advan__list advan__list--top">
 
-					<div class="advan__item">
+					<div class="advan__item" data-aos="fade-up">
 						<div class="advan__icon">
 							<img src="img/icons/advan/advan-1.svg" alt="1">
 						</div>
 						<div class="advan__text">Steady 4000 MW electricity surplus</div>
 					</div>
-					<div class="advan__item">
+					<div class="advan__item" data-aos="fade-up">
 						<div class="advan__icon">
 							<img src="img/icons/advan/advan-2.svg" alt="2">
 						</div>
 						<div class="advan__text">Favorable climatic conditions </div>
 					</div>
-					<div class="advan__item">
+					<div class="advan__item" data-aos="fade-up">
 						<div class="advan__icon">
 							<img src="img/icons/advan/advan-3.svg" alt="3">
 						</div>
@@ -289,14 +258,14 @@
 				</div>
 				<div class="advan__list advan__list--bottom">
 
-					<div class="advan__item">
+					<div class="advan__item" data-aos="fade-up">
 						<div class="advan__icon">
 							<img src="img/icons/advan/advan-4.svg" alt="4">
 						</div>
 						<div class="advan__text">12% VAT, low customs fees
 </div>
 					</div>
-					<div class="advan__item">
+					<div class="advan__item"data-aos="fade-up">
 						<div class="advan__icon">
 							<img src="img/icons/advan/advan-5.svg" alt="5">
 						</div>
@@ -311,7 +280,7 @@
 		<section class="s-question question">
 			<div class="container">
 				<div class="question__wrap">
-					<div class="question__text">
+					<div class="question__text" data-aos="fade-right">
 						<div class="question__title">
 							<h2 class="h2">Have questions?</h2>
 						</div>
@@ -321,12 +290,12 @@
 							<span>We do not disclose your information to 3 persons</span>
 						</div>
 					</div>
-					<div class="question__form">
+					<div class="question__form" data-aos="fade-left">
 						<div class="form__wrap">
 							<form class="form">
 								<input type="text" name="Имя" class="form__input" placeholder="Name" required>
 								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" required>
+								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" oninput="replacer(this)" required>
 								<button type="submit" class="btn btn-form">done</button>
 							</form>
 						</div>
@@ -334,7 +303,7 @@
 				</div>
 			</div>
 		</section>
-		<footer class="footer">
+		<footer class="footer" data-aos="header-op">
 			<div class="footer__inner">
 				<div class="footer__logo">
 					<a href="#"><img src="img/logo-footer.svg" alt="enegix"></a>
@@ -358,7 +327,7 @@
 							<form class="form">
 								<input type="text" name="Имя" class="form__input" placeholder="Name" required>
 								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" required>
+								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" oninput="replacer(this)" required>
 								<button type="submit" class="btn btn-form">done</button>
 							</form>
 						</div>
@@ -373,9 +342,9 @@
 					<div class="form__wrap">
 							<form class="form">
 								<input type="text" name="Объем MWT" class="form__input" placeholder="How much MWT is needed?" required>
-								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
+								<input type="text" name="Имя" class="form__input" placeholder="Name" required>
 								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" required>
+								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" oninput="replacer(this)" required>
 								<button type="submit" class="btn btn-form">done</button>
 							</form>
 						</div>
@@ -385,7 +354,7 @@
 	</div>
 
 
-	<script src="js/scripts.min.js?v=1"></script>
+	<script src="js/scripts.min.js?v=1.2"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
@@ -393,6 +362,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/BezierPlugin.min.js"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<script>
+	function replacer(el) {
+    el.value = el.value.replace(/[^0-9+]/g, '');
+}
+</script>
 </body>
 
 </html>

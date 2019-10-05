@@ -49,7 +49,7 @@
 					<span>EN</span>
 					<div class="btn-lang__wrap">
 						<a href="../"><span class="lang">RU</span></a>
-						<a href="./ch"><span class="lang">CH</span></a>
+						<a href="../ch"><span class="lang">CH</span></a>
 					</div>
 
 				</div>
@@ -121,7 +121,7 @@
 							<form class="form">
 								<input type="text" name="Имя" class="form__input" placeholder="Name" required>
 								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" required>
+								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" oninput="replacer(this)" required>
 								<button type="submit" class="btn btn-form">done</button>
 							</form>
 						</div>
@@ -136,7 +136,11 @@
 	<script src="js/scripts.min.js?v=1"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
+<script>
+	function replacer(el) {
+    el.value = el.value.replace(/[^0-9+]/g, '');
+}
+</script>
 </body>
 
 </html>

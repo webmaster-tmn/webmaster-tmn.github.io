@@ -49,7 +49,7 @@
 					<span>EN</span>
 					<div class="btn-lang__wrap">
 						<a href="../"><span class="lang">RU</span></a>
-						<a href="./ch"><span class="lang">CH</span></a>
+						<a href="../ch"><span class="lang">CH</span></a>
 					</div>
 
 				</div>
@@ -73,23 +73,20 @@
 					</div>
 					<div class="contact__list">
 						<div class="contact__item" data-aos="fade-right">
-							<div class="contact__icon"><img src="../img/icons/contact/mail.svg" alt=""></div>
+							<div class="contact__icon"><img src="./img/icons/contact/mail.svg" alt=""></div>
 							<div class="contact__text">
 								<a href="mailto:info@enegix.net">info@enegix.net</a>
 							</div>
 						</div>
 						<div class="contact__item" data-aos="fade-right" data-aos-delay="100">
-							<div class="contact__icon"><img src="../img/icons/contact/map-pin.svg" alt=""></div>
-							<div class="contact__text">Производство: Республика Казахстан, г. Экибазтуз, ул. Кунаева 5</div>
+							<div class="contact__icon"><img src="./img/icons/contact/map-pin.svg" alt=""></div>
+							<div class="contact__text">Production: Republic of Kazakhstan, Ekibaztuz, st. Kunaeva 5</div>
 						</div>
 						<div class="contact__item" data-aos="fade-right" data-aos-delay="150">
-							<div class="contact__icon"><img src="../img/icons/contact/map-pin.svg" alt=""></div>
-							<div class="contact__text">Головной Офис: Республика Казахстан, г. Алматы, ул. Гагарина 258 В	</div>
+							<div class="contact__icon"><img src="./img/icons/contact/map-pin.svg" alt=""></div>
+							<div class="contact__text">Head office: Republic of Kazakhstan, Almaty, st. Gagarin 258 V	</div>
 						</div>
-						<div class="contact__item" data-aos="fade-right" data-aos-delay="200">
-							<div class="contact__icon"><img src="../img/icons/contact/smartphone.svg" alt=""></div>
-							<div class="contact__text">+7(123)-456-78-90</div>
-						</div>
+
 					</div>
 				</div>
 			</div>
@@ -114,7 +111,7 @@
 							<form class="form">
 								<input type="text" name="Имя" class="form__input" placeholder="Name" required>
 								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" required>
+								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" oninput="replacer(this)" required>
 								<button type="submit" class="btn btn-form">done</button>
 							</form>
 						</div>
@@ -146,7 +143,7 @@
 							<form class="form">
 								<input type="text" name="Имя" class="form__input" placeholder="Name" required>
 								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" required>
+								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" oninput="replacer(this)" required>
 								<button type="submit" class="btn btn-form">done</button>
 							</form>
 						</div>
@@ -161,7 +158,11 @@
 	<script src="js/scripts.min.js?v=1"></script>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
+<script>
+	function replacer(el) {
+    el.value = el.value.replace(/[^0-9+]/g, '');
+}
+</script>
 </body>
 
 </html>
