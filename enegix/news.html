@@ -25,6 +25,11 @@
 <body class="page-advan">
 	<div class="wrapper">
 		<header class="header">
+			<div class="burger">
+				<div class="burger__top"></div>
+				<div class="burger__middle"></div>
+				<div class="burger__bottom"></div>
+			</div>
 			<div class="header__logo">
 				<a href="" class="logo"><img src="img/logo.svg" alt="enegix" class="logo__pic"></a>
 			</div>
@@ -42,7 +47,7 @@
 				<div class="btn-lang btn">ru
 					<span class="lang-triangel"></span>
 				</div>
-				<a href="#" class="btn-feedback btn">обратная связь</a>
+				<a href="#popup-form" class="btn-feedback btn popup-link">обратная связь</a>
 			</div>
 		</header>
 		<section class="s-top news">
@@ -53,7 +58,7 @@
 				<div class="news-top">
 					<div class="news__slide js-news-slide owl-carousel owl-theme">
 						<div class="news-top__item news-top-item">
-							<img src="../img/news/news-top-1.jpg" alt="" class="news-top-item__pic">
+							<img src="./img/news/news-top-1.jpg" alt="" class="news-top-item__pic">
 							<div class="news-top-item__text">
 								<p>Made for Studio</p>
 							</div>
@@ -145,7 +150,25 @@
 		</footer>
 
 	</div>
+	<div class="hidden">
+		<div id="popup-form" class="popup">
+			<div class="popup__wrap">
+				<div class="popup__title">Обратная связь</div>
+				<div class="popup__decr">Заполните данные, мы свяжемся с<br> Вами в ближайшее время!</div>
+				<div class="popup__form">
+					<div class="form__wrap">
+							<form class="form">
+								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
+								<input type="email" name="Email" class="form__input" placeholder="Email" required>
+								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" required>
+								<button type="submit" class="btn btn-form">готово</button>
+							</form>
+						</div>
+				</div>
+			</div>
+		</div>
 
+	</div>
 
 
 
@@ -154,11 +177,19 @@
 	<script>
 		$('.js-news-slide').owlCarousel({
 			items: 2,
-			itemsDesktop: [1199, 2],
-			itemsDesktopSmall: [980, 3],
-			itemsTablet: [768, 2],
-			itemsTabletSmall: false,
-			itemsMobile: [479, 1],
+			responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        480:{
+            items:2
+        },
+        1000:{
+            items:2,
+            loop:false
+        }
+    },
 			mouseDrag: true,
 			dots: false,
 			afterInit: function () {
@@ -169,9 +200,9 @@
 				var wrapper = this.$owlWrapper;
 
 				if ($(window).width() > 778) {
-					len = items.length - 3;
+					len = items.length - 4;
 				} else {
-					len = items.length - 2;
+					len = items.length - 1;
 				}
 
 

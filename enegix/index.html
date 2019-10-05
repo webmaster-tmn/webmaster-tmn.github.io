@@ -25,6 +25,11 @@
 <body class="page-home">
 	<div class="wrapper">
 		<header class="header">
+			<div class="burger">
+				<div class="burger__top"></div>
+				<div class="burger__middle"></div>
+				<div class="burger__bottom"></div>
+			</div>
 			<div class="header__logo">
 				<a href="" class="logo"><img src="img/logo.svg" alt="enegix" class="logo__pic"></a>
 			</div>
@@ -41,8 +46,18 @@
 			<div class="header__buttons">
 				<div class="btn-lang btn">ru
 					<span class="lang-triangel"></span>
+
 				</div>
-				<a href="#" class="btn-feedback btn">обратная связь</a>
+
+				<!-- <ul class="language-select" data-selected-value="RU">
+        <li class="selected-option"><span>RU</span>
+          <ul class="options">
+            <li data-lang="en">EN</li>
+            <li data-lang="ch">CH</li>
+          </ul>
+        </li>
+      </ul> -->
+				<a href="#popup-form" class="btn-feedback btn popup-link">обратная связь</a>
 			</div>
 		</header>
 		<section class="s-top s-top--home">
@@ -50,7 +65,10 @@
 				<img src="img/main-map.png" alt="карта" class="main-map__pictures">
 
 				<div class="main-map__content">
-					<div class="main-map__item main-map__item--usa">
+					<div class="main-map__pin">
+						<img src="./img/map-pin.png" alt="">
+					</div>
+					<!-- <div class="main-map__item main-map__item--usa">
 						<img class="main-map__pin" src="./img/icons/main-map-point.svg" alt="pin">
 						<span class="main-map__name-country">США</span>
 					</div>
@@ -65,7 +83,7 @@
 					<div class="main-map__item main-map__item--china">
 						<img class="main-map__pin" src="./img/icons/main-map-point.svg" alt="pin">
 						<span class="main-map__name-country">Китай</span>
-					</div>
+					</div> -->
 					<div class="main-map__text">
 						<h2 class="h2">Работаем со всем миром</h2>
 						<div class="main-map__decr">Сюда можно добавить описание в одно-два предложения</div>
@@ -79,15 +97,15 @@
 				<div class="s-top__content">
 					<div class="calc-block">
 						<div class="calc-block__title">Свободный объем МВТ и цена от...</div>
-						<a href="#" class="calc-block__btn btn btn-calc">рассчитать стоимость<img src="img/icons/arrow-right.svg"
+						<a href="#popup-form-calc" class="calc-block__btn btn btn-calc popup-link">рассчитать стоимость<img src="img/icons/arrow-right.svg"
 								alt="arrow-right"></a>
 					</div>
 					<div class="video-block video-block--min">
 						<div class="video-block__inner">
 							<img src="img/video-bg.png" alt="video" class="video-block__pic">
-							<div class="video-block__icon">
+							<a href="https://www.youtube.com/watch?v=4bfvXMuZgxw" class="video-block__icon popup-video">
 								<img src="img/icons/play.svg" alt="play">
-							</div>
+							</a>
 						</div>
 						<div class="video-block__content">
 							<p>Покажем технологичность, размеры и преимущества нашего Дата Центра</p>
@@ -98,10 +116,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="s-main-map main-map">
 
-
-		</section>
 
 		<section class="s-road-map road-map">
 			<div class="container">
@@ -298,9 +313,9 @@
 					<div class="question__form">
 						<div class="form__wrap">
 							<form class="form">
-								<input type="text" name="Имя" class="form__input" placeholder="Имя">
-								<input type="email" name="Email" class="form__input" placeholder="Email">
-								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона">
+								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
+								<input type="email" name="Email" class="form__input" placeholder="Email" required>
+								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" required>
 								<button type="submit" class="btn btn-form">готово</button>
 							</form>
 						</div>
@@ -322,6 +337,42 @@
 
 	</div>
 
+	<div class="hidden">
+		<div id="popup-form" class="popup">
+			<div class="popup__wrap">
+				<div class="popup__title">Обратная связь</div>
+				<div class="popup__decr">Заполните данные, мы свяжемся с<br> Вами в ближайшее время!</div>
+				<div class="popup__form">
+					<div class="form__wrap">
+							<form class="form">
+								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
+								<input type="email" name="Email" class="form__input" placeholder="Email" required>
+								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" required>
+								<button type="submit" class="btn btn-form">готово</button>
+							</form>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div id="popup-form-calc" class="popup">
+			<div class="popup__wrap">
+				<div class="popup__title">Расчет стоимости</div>
+				<div class="popup__decr">Заполните данные, мы свяжемся с<br> Вами в ближайшее время!</div>
+				<div class="popup__form">
+					<div class="form__wrap">
+							<form class="form">
+								<input type="text" name="Объем MWT" class="form__input" placeholder="Какой объем MWT необходим?" required>
+								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
+								<input type="email" name="Email" class="form__input" placeholder="Email" required>
+								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" required>
+								<button type="submit" class="btn btn-form">готово</button>
+							</form>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<script src="js/scripts.min.js?v=1"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
@@ -329,219 +380,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
 
-
-	<script>
-		const tlTopSection = new TimelineMax();
-		const tlSecondSection = new TimelineMax();
-		const tlThirdSection = new TimelineMax();
-		const tlFourthSection = new TimelineMax();
-		const tlFifthSection = new TimelineMax();
-		const tlSixSection = new TimelineMax();
-
-		tlTopSection
-			.fromTo('.main-map__pictures', 2.5, {
-				scale: 1,
-				opacity: 0,
-
-			}, {
-				scale: 0.6,
-				opacity: 1,
-				x: 77
-			})
-			.fromTo('.header', 1.5, {
-				opacity: 0
-			}, {
-				opacity: 1
-			}, 0.4)
-			.fromTo('.s-top__head', 1.5, {
-				opacity: 0,
-				y: 50
-			}, {
-				opacity: 1,
-				y: 0
-			}, 0.5)
-			.fromTo('.calc-block', 1.5, {
-				opacity: 0,
-				y: 30,
-				x: -10
-			}, {
-				opacity: 1,
-				y: 0,
-				x: 0
-			}, 1)
-			.fromTo('.video-block__inner', 1.5, {
-				opacity: 0,
-				y: 20
-			}, {
-				opacity: 1,
-				y: 0
-			}, 1)
-			.fromTo('.video-block__content', 1.5, {
-				opacity: 0,
-				y: -80,
-				x: 30
-			}, {
-				opacity: 1,
-				y: -115,
-				x: 0
-			}, 1);
-
-
-		tlSecondSection
-			.fromTo('.main-map__text', 0.5, {
-				opacity: 0,
-				y: 50
-			}, {
-				opacity: 1,
-				y: 0
-			}, 0.1)
-			.to('.main-map__pictures', 1, {
-				y: 50,
-				scale: 0.9
-			}, 0.4)
-			.fromTo('.main-map__item', 0.5, {
-				opacity: 0
-			}, {
-				opacity: 1,
-				y: 0
-			}, 1);
-
-
-		tlThirdSection
-			.fromTo('.circle--green', 1, {
-				opacity: 0,
-				scale: 0
-			}, {
-				opacity: 1,
-				scale: 1
-			}, 0.2)
-			.fromTo('.line--green', 1, {
-				opacity: 0,
-				width: 0
-			}, {
-				opacity: 1,
-				width: '100%'
-			}, 0.5);
-
-		tlFourthSection
-			.fromTo('.main-about__title', 1, {
-				opacity: 0,
-				x: -20
-			}, {
-				opacity: 1,
-				x: 0
-			}, 0.1)
-			.fromTo('.main-about__decr', 1, {
-				opacity: 0,
-				x: 20
-			}, {
-				opacity: 1,
-				x: 0
-			}, 0.3)
-			.fromTo('.main-about__item', 1, {
-				opacity: 0,
-				y: 20
-			}, {
-				opacity: 1,
-				y: 0
-			}, 0.8)
-			.fromTo('.main-about-item__top, .main-about-item__bottom', 1, {
-				opacity: 0,
-				y: 20
-			}, {
-				opacity: 1,
-				y: 0
-			}, 1.2);
-
-		tlFifthSection
-			.fromTo('.advan__title', 1, {
-				opacity: 0,
-				y: -20
-			}, {
-				opacity: 1,
-				y: 0
-			}, 0.8)
-			.fromTo('.advan__item', 1, {
-				opacity: 0,
-				y: 20
-			}, {
-				opacity: 1,
-				y: 0
-			}, 1.2);
-
-		tlSixSection
-			.fromTo('.question__text', 1, {
-				opacity: 0,
-				x: -20
-			}, {
-				opacity: 1,
-				x: 0
-			}, 0.8)
-			.fromTo('.question__form', 1, {
-				opacity: 0,
-				x: 20
-			}, {
-				opacity: 1,
-				x: 0
-			}, 1.2)
-
-
-
-
-
-		const controller = new ScrollMagic.Controller();
-
-		const secondScene = new ScrollMagic.Scene({
-				triggerElement: '.s-top__trigger',
-				triggerHook: 0.1
-			})
-			.setTween(tlSecondSection)
-			//.addIndicators({
-			//	name: "1 (duration: 0)"
-			//	})
-			.addTo(controller);
-
-
-		const thirdScene = new ScrollMagic.Scene({
-				triggerElement: '.road-map',
-				triggerHook: 0
-			})
-			.setTween(tlThirdSection)
-			//.addIndicators({
-			//		name: "2 (duration: 0)"
-			//})
-			.addTo(controller);
-
-		const fourthScene = new ScrollMagic.Scene({
-				triggerElement: '.main-about',
-				triggerHook: .5
-			})
-			.setTween(tlFourthSection)
-			//.addIndicators({
-			//	name: "3 (duration: 0)"
-			//})
-			.addTo(controller);
-
-		const fifthScene = new ScrollMagic.Scene({
-				triggerElement: '.advan',
-				triggerHook: 0.8
-			})
-			.setTween(tlFifthSection)
-			//.addIndicators({
-			//	name: "4 (duration: 0)"
-			//})
-			.addTo(controller);
-
-		const sixScene = new ScrollMagic.Scene({
-				triggerElement: '.question',
-				triggerHook: 0.8
-			})
-			.setTween(tlSixSection)
-			//.addIndicators({
-			//	name: "5 (duration: 0)"
-			//})
-			.addTo(controller);
-	</script>
 </body>
 
 </html>
