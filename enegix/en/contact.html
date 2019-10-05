@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Enegix | Контакты</title>
+	<title>Enegix | Contact Info</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,31 +36,40 @@
 			</div>
 			<div class="header__nav container">
 				<nav class="nav">
-					<a href="./index.html" class="nav__link">Главная</a>
-					<a href="./advantage.html" class="nav__link">Преимущества</a>
-					<a href="./about.html" class="nav__link">О компании</a>
-					<a href="./news.html" class="nav__link">Новости</a>
+					<a href="./index.html" class="nav__link">Main</a>
+					<a href="./advantage.html" class="nav__link">Advantages</a>
+					<a href="./about.html" class="nav__link">About</a>
+					<a href="./news.html" class="nav__link">News</a>
 					<!-- <a href="./faq.html" class="nav__link">FAQ</a> -->
-					<a href="./contact.html" class="nav__link">Контакты</a>
+					<a href="./contact.html" class="nav__link">Contacts</a>
 				</nav>
 			</div>
 			<div class="header__buttons">
 				<div class="btn-lang btn">
-					<span>ru</span>
+					<span>EN</span>
 					<div class="btn-lang__wrap">
-						<span class="lang">EN</span>
-						<span class="lang">CH</span>
+						<a href="../"><span class="lang">RU</span></a>
+						<a href="./ch"><span class="lang">CH</span></a>
 					</div>
 
 				</div>
-				<a href="#popup-form" class="btn-feedback btn popup-link">обратная связь</a>
+
+				<!-- <ul class="language-select" data-selected-value="RU">
+        <li class="selected-option"><span>RU</span>
+          <ul class="options">
+            <li data-lang="en">EN</li>
+            <li data-lang="ch">CH</li>
+          </ul>
+        </li>
+      </ul> -->
+				<a href="#popup-form" class="btn-feedback btn popup-link">Feedback</a>
 			</div>
 		</header>
 		<section class="s-top contact">
 			<div class="container">
 				<div class="contact__wrap">
 					<div class="contact__title" data-aos="fade-down">
-						<h2 class="h2">Контакты</h2>
+						<h2 class="h2">Contact Info</h2>
 					</div>
 					<div class="contact__list">
 						<div class="contact__item" data-aos="fade-right">
@@ -90,23 +99,23 @@
 		<section class="s-question question dark-grey">
 			<div class="container">
 				<div class="question__wrap">
-					<div class="question__text" data-aos="fade-right">
+					<div class="question__text">
 						<div class="question__title">
-							<h2 class="h2">Есть вопросы?</h2>
+							<h2 class="h2">Have questions?</h2>
 						</div>
-						<div class="question__subtitle">Заполните форму справа, мы<br> свяжемся с Вами в ближайшее время</div>
+						<div class="question__subtitle">Fill out the form on the right,<br>we will contact you shortly</div>
 						<div class="question__conf">
 							<img src="img/icons/lock.svg" alt="lock">
-							<span>Мы не разглашаем Вашу информацию 3м лицам</span>
+							<span>We do not disclose your information to 3 persons</span>
 						</div>
 					</div>
-					<div class="question__form" data-aos="fade-left">
+					<div class="question__form">
 						<div class="form__wrap">
 							<form class="form">
-								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
+								<input type="text" name="Имя" class="form__input" placeholder="Name" required>
 								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" required>
-								<button type="submit" class="btn btn-form">готово</button>
+								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" required>
+								<button type="submit" class="btn btn-form">done</button>
 							</form>
 						</div>
 					</div>
@@ -119,7 +128,7 @@
 					<a href="#"><img src="img/logo-footer.svg" alt="enegix"></a>
 				</div>
 				<div class="footer__text">
-					<span>Политика конфедициальности</span>
+					<span>privacy policy</span>
 				</div>
 			</div>
 
@@ -130,19 +139,20 @@
 <div class="hidden">
 		<div id="popup-form" class="popup">
 			<div class="popup__wrap">
-				<div class="popup__title">Обратная связь</div>
-				<div class="popup__decr">Заполните данные, мы свяжемся с<br> Вами в ближайшее время!</div>
+				<div class="popup__title">Feedback</div>
+				<div class="popup__decr">Fill in the data,<br> we will contact you shortly!</div>
 				<div class="popup__form">
 					<div class="form__wrap">
 							<form class="form">
-								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
+								<input type="text" name="Имя" class="form__input" placeholder="Name" required>
 								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" required>
-								<button type="submit" class="btn btn-form">готово</button>
+								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" required>
+								<button type="submit" class="btn btn-form">done</button>
 							</form>
 						</div>
 				</div>
 			</div>
+		</div>
 		</div>
 
 	</div>

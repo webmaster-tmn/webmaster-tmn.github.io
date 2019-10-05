@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Enegix | Новости</title>
+	<title>Enegix | News</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +25,7 @@
 
 <body class="page-advan">
 	<div class="wrapper">
-		<header class="header">
+	<header class="header">
 			<div class="burger">
 				<div class="burger__top"></div>
 				<div class="burger__middle"></div>
@@ -36,30 +36,39 @@
 			</div>
 			<div class="header__nav container">
 				<nav class="nav">
-					<a href="./index.html" class="nav__link">Главная</a>
-					<a href="./advantage.html" class="nav__link">Преимущества</a>
-					<a href="./about.html" class="nav__link">О компании</a>
-					<a href="./news.html" class="nav__link">Новости</a>
+					<a href="./index.html" class="nav__link">Main</a>
+					<a href="./advantage.html" class="nav__link">Advantages</a>
+					<a href="./about.html" class="nav__link">About</a>
+					<a href="./news.html" class="nav__link">News</a>
 					<!-- <a href="./faq.html" class="nav__link">FAQ</a> -->
-					<a href="./contact.html" class="nav__link">Контакты</a>
+					<a href="./contact.html" class="nav__link">Contacts</a>
 				</nav>
 			</div>
 			<div class="header__buttons">
 				<div class="btn-lang btn">
-					<span>ru</span>
+					<span>EN</span>
 					<div class="btn-lang__wrap">
-						<span class="lang">EN</span>
-						<span class="lang">CH</span>
+						<a href="../"><span class="lang">RU</span></a>
+						<a href="./ch"><span class="lang">CH</span></a>
 					</div>
 
 				</div>
-				<a href="#popup-form" class="btn-feedback btn popup-link">обратная связь</a>
+
+				<!-- <ul class="language-select" data-selected-value="RU">
+        <li class="selected-option"><span>RU</span>
+          <ul class="options">
+            <li data-lang="en">EN</li>
+            <li data-lang="ch">CH</li>
+          </ul>
+        </li>
+      </ul> -->
+				<a href="#popup-form" class="btn-feedback btn popup-link">Feedback</a>
 			</div>
 		</header>
 		<section class="s-top news">
 			<div class="container">
 				<div class="news__title" data-aos="fade-down" data-aos-delay="300">
-					<h2 class="h2">Новости</h2>
+					<h2 class="h2">News</h2>
 				</div>
 
 			</div>
@@ -71,7 +80,7 @@
 					<div class="news-min__body">
 						<h2 class="news-min__title">World Digital Mining Summit 2019WDMS</h2>
 						<p class="news-min__decr">Enegix принимает участие в WORLD DIGITAL MINING SUMMIT 2019 в качестве GOLD Sponso</p>
-						<a href="https://miningconf.org/index.php?app=index&mod=Index&act=index" class="news-min__link" target="_blank">читать</a>
+						<a href="https://miningconf.org/index.php?app=index&mod=Index&act=index" class="news-min__link" target="_blank">to read</a>
 					</div>
 				</div>
 				<div class="news-list__min news-min" data-aos="fade-down" data-aos-delay="500">
@@ -81,7 +90,7 @@
 					<div class="news-min__body">
 						<h2 class="news-min__title">World Digital Mining Summit 2019</h2>
 						<p class="news-min__decr">Голосуй за Enegix за звание TOP 10 Mining farms</p>
-						<a href="https://miningconf.org/index.php?app=index&mod=Index&act=votes" class="news-min__link" target="_blank">читать</a>
+						<a href="https://miningconf.org/index.php?app=index&mod=Index&act=votes" class="news-min__link" target="_blank">to read</a>
 					</div>
 				</div>
 			</div>
@@ -95,7 +104,7 @@
 					<a href="#"><img src="img/logo-footer.svg" alt="enegix"></a>
 				</div>
 				<div class="footer__text">
-					<span>Политика конфедициальности</span>
+					<span>privacy policy</span>
 				</div>
 			</div>
 
@@ -105,15 +114,15 @@
 	<div class="hidden">
 		<div id="popup-form" class="popup">
 			<div class="popup__wrap">
-				<div class="popup__title">Обратная связь</div>
-				<div class="popup__decr">Заполните данные, мы свяжемся с<br> Вами в ближайшее время!</div>
+				<div class="popup__title">Feedback</div>
+				<div class="popup__decr">Fill in the data,<br> we will contact you shortly!</div>
 				<div class="popup__form">
 					<div class="form__wrap">
 							<form class="form">
-								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
+								<input type="text" name="Имя" class="form__input" placeholder="Name" required>
 								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" required>
-								<button type="submit" class="btn btn-form">готово</button>
+								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" required>
+								<button type="submit" class="btn btn-form">done</button>
 							</form>
 						</div>
 				</div>
