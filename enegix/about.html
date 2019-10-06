@@ -28,10 +28,10 @@
 
 		<header class="header">
 			<div class="burger">
-			<div class="burger__top"></div>
-			<div class="burger__middle"></div>
-			<div class="burger__bottom"></div>
-		</div>
+				<div class="burger__top"></div>
+				<div class="burger__middle"></div>
+				<div class="burger__bottom"></div>
+			</div>
 			<div class="header__logo">
 				<a href="./" class="logo"><img src="img/logo.svg" alt="enegix" class="logo__pic"></a>
 			</div>
@@ -50,7 +50,7 @@
 					<span>ru</span>
 					<div class="btn-lang__wrap">
 						<a href="./en"><span class="lang">EN</span></a>
-						<a href="./ch"><span class="lang">CH</span></a>
+						<!-- <a href="./ch"><span class="lang">CH</span></a> -->
 					</div>
 
 				</div>
@@ -66,8 +66,8 @@
 					<div class="video-block__inner" data-aos="fade-right">
 						<img src="img/video-bg1.jpg" alt="video" class="video-block__pic">
 						<a href="https://www.youtube.com/watch?v=4bfvXMuZgxw" class="video-block__icon popup-video">
-								<img src="img/icons/play.svg" alt="play">
-							</a>
+							<img src="img/icons/play.svg" alt="play">
+						</a>
 					</div>
 					<div class="video-block__content" data-aos="fade-left">
 						<p>Видео о ENEGIX</p>
@@ -97,17 +97,15 @@
 							<h2 class="h2">Есть вопросы?</h2>
 						</div>
 						<div class="question__subtitle">Заполните форму справа, мы<br> свяжемся с Вами в ближайшее время</div>
-						<div class="question__conf">
-							<img src="img/icons/lock.svg" alt="lock">
-							<span>Мы не разглашаем Вашу информацию 3м лицам</span>
-						</div>
+
 					</div>
 					<div class="question__form" data-aos="fade-left">
 						<div class="form__wrap">
 							<form class="form">
 								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
 								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" oninput="replacer(this)" required>
+								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона"
+									oninput="replacer(this)" required>
 								<button type="submit" class="btn btn-form">готово</button>
 							</form>
 						</div>
@@ -128,21 +126,29 @@
 		</footer>
 
 	</div>
-<div class="hidden">
+	<div class="hidden">
 		<div id="popup-form" class="popup">
 			<div class="popup__wrap">
 				<div class="popup__title">Обратная связь</div>
 				<div class="popup__decr">Заполните данные, мы свяжемся с<br> Вами в ближайшее время!</div>
 				<div class="popup__form">
 					<div class="form__wrap">
-							<form class="form">
-								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
-								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" oninput="replacer(this)" required>
-								<button type="submit" class="btn btn-form">готово</button>
-							</form>
-						</div>
+						<form class="form">
+							<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
+							<input type="email" name="Email" class="form__input" placeholder="Email" required>
+							<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" oninput="replacer(this)"
+								required>
+							<button type="submit" class="btn btn-form">готово</button>
+						</form>
+					</div>
 				</div>
+			</div>
+		</div>
+		<div id="popup-success" class="popup">
+			<div class="popup__wrap">
+				<div class="popup__title">Спасибо за заявку</div>
+				<div class="popup__decr">Мы свяжемся с<br> Вами в ближайшее время!</div>
+
 			</div>
 		</div>
 
@@ -151,12 +157,12 @@
 
 
 	<script src="js/scripts.min.js?v=1"></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>
-	function replacer(el) {
-    el.value = el.value.replace(/[^0-9+]/g, '');
-}
-</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		function replacer(el) {
+			el.value = el.value.replace(/[^0-9+]/g, '');
+		}
+	</script>
 </body>
 
 </html>

@@ -45,13 +45,13 @@
 				</nav>
 			</div>
 			<div class="btn-lang btn">
-					<span>ru</span>
-					<div class="btn-lang__wrap">
-						<span class="lang">EN</span>
-						<span class="lang">CH</span>
-					</div>
-
+				<span>ru</span>
+				<div class="btn-lang__wrap">
+					<span class="lang">EN</span>
+					<span class="lang">CH</span>
 				</div>
+
+			</div>
 		</header>
 		<section class="s-top faq">
 			<div class="container">
@@ -129,17 +129,15 @@
 							<h2 class="h2">Есть вопросы?</h2>
 						</div>
 						<div class="question__subtitle">Заполните форму справа, мы<br> свяжемся с Вами в ближайшее время</div>
-						<div class="question__conf">
-							<img src="img/icons/lock.svg" alt="lock">
-							<span>Мы не разглашаем Вашу информацию 3м лицам</span>
-						</div>
+
 					</div>
 					<div class="question__form">
 						<div class="form__wrap">
 							<form class="form">
 								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
 								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" oninput="replacer(this)" required>
+								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона"
+									oninput="replacer(this)" required>
 								<button type="submit" class="btn btn-form">готово</button>
 							</form>
 						</div>
@@ -160,21 +158,29 @@
 		</footer>
 
 	</div>
-<div class="hidden">
+	<div class="hidden">
 		<div id="popup-form" class="popup">
 			<div class="popup__wrap">
 				<div class="popup__title">Обратная связь</div>
 				<div class="popup__decr">Заполните данные, мы свяжемся с<br> Вами в ближайшее время!</div>
 				<div class="popup__form">
 					<div class="form__wrap">
-							<form class="form">
-								<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
-								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" oninput="replacer(this)" required>
-								<button type="submit" class="btn btn-form">готово</button>
-							</form>
-						</div>
+						<form class="form">
+							<input type="text" name="Имя" class="form__input" placeholder="Имя" required>
+							<input type="email" name="Email" class="form__input" placeholder="Email" required>
+							<input type="tel" name="Телефон" class="form__input" placeholder="Номер телефона" oninput="replacer(this)"
+								required>
+							<button type="submit" class="btn btn-form">готово</button>
+						</form>
+					</div>
 				</div>
+			</div>
+		</div>
+		<div id="popup-success" class="popup">
+			<div class="popup__wrap">
+				<div class="popup__title">Thank you!</div>
+				<div class="popup__decr">We will contact <br> you shortly!</div>
+
 			</div>
 		</div>
 
@@ -184,10 +190,10 @@
 
 	<script src="js/scripts.min.js?v=1"></script>
 	<script>
-	function replacer(el) {
-    el.value = el.value.replace(/[^0-9+]/g, '');
-}
-</script>
+		function replacer(el) {
+			el.value = el.value.replace(/[^0-9+]/g, '');
+		}
+	</script>
 </body>
 
 </html>
