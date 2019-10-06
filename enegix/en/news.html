@@ -25,7 +25,7 @@
 
 <body class="page-advan">
 	<div class="wrapper">
-	<header class="header">
+		<header class="header">
 			<div class="burger">
 				<div class="burger__top"></div>
 				<div class="burger__middle"></div>
@@ -38,7 +38,7 @@
 				<nav class="nav">
 					<a href="./index.html" class="nav__link">Main</a>
 					<a href="./advantage.html" class="nav__link">Advantages</a>
-					<a href="./about.html" class="nav__link">About</a>
+					<!-- <a href="./about.html" class="nav__link">About</a> -->
 					<a href="./news.html" class="nav__link">News</a>
 					<!-- <a href="./faq.html" class="nav__link">FAQ</a> -->
 					<a href="./contact.html" class="nav__link">Contacts</a>
@@ -49,7 +49,7 @@
 					<span>EN</span>
 					<div class="btn-lang__wrap">
 						<a href="../"><span class="lang">RU</span></a>
-						<a href="../ch"><span class="lang">CH</span></a>
+						<!-- <a href="../ch"><span class="lang">CH</span></a> -->
 					</div>
 
 				</div>
@@ -79,8 +79,10 @@
 					</div>
 					<div class="news-min__body">
 						<h2 class="news-min__title">World Digital Mining Summit 2019WDMS</h2>
-						<p class="news-min__decr">Enegix принимает участие в WORLD DIGITAL MINING SUMMIT 2019 в качестве GOLD Sponso</p>
-						<a href="https://miningconf.org/index.php?app=index&mod=Index&act=index" class="news-min__link" target="_blank">to read</a>
+						<p class="news-min__decr">Enegix принимает участие в WORLD DIGITAL MINING SUMMIT 2019 в качестве GOLD Sponso
+						</p>
+						<a href="https://miningconf.org/index.php?app=index&mod=Index&act=index" class="news-min__link"
+							target="_blank">to read</a>
 					</div>
 				</div>
 				<div class="news-list__min news-min" data-aos="fade-down" data-aos-delay="500">
@@ -90,7 +92,8 @@
 					<div class="news-min__body">
 						<h2 class="news-min__title">World Digital Mining Summit 2019</h2>
 						<p class="news-min__decr">Голосуй за Enegix за звание TOP 10 Mining farms</p>
-						<a href="https://miningconf.org/index.php?app=index&mod=Index&act=votes" class="news-min__link" target="_blank">to read</a>
+						<a href="https://miningconf.org/index.php?app=index&mod=Index&act=votes" class="news-min__link"
+							target="_blank">to read</a>
 					</div>
 				</div>
 			</div>
@@ -118,14 +121,22 @@
 				<div class="popup__decr">Fill in the data,<br> we will contact you shortly!</div>
 				<div class="popup__form">
 					<div class="form__wrap">
-							<form class="form">
-								<input type="text" name="Имя" class="form__input" placeholder="Name" required>
-								<input type="email" name="Email" class="form__input" placeholder="Email" required>
-								<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number" oninput="replacer(this)" required>
-								<button type="submit" class="btn btn-form">done</button>
-							</form>
-						</div>
+						<form class="form">
+							<input type="text" name="Имя" class="form__input" placeholder="Name" required>
+							<input type="email" name="Email" class="form__input" placeholder="Email" required>
+							<input type="tel" name="Телефон" class="form__input input-tel" placeholder="Phone number"
+								oninput="replacer(this)" required>
+							<button type="submit" class="btn btn-form">done</button>
+						</form>
+					</div>
 				</div>
+			</div>
+		</div>
+		<div id="popup-success" class="popup">
+			<div class="popup__wrap">
+				<div class="popup__title">Thank you!</div>
+				<div class="popup__decr">We will contact <br> you shortly!</div>
+
 			</div>
 		</div>
 
@@ -134,13 +145,13 @@
 
 
 	<script src="js/scripts.min.js?v=1"></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<script>
-	function replacer(el) {
-    el.value = el.value.replace(/[^0-9+]/g, '');
-}
-</script>
+	<script>
+		function replacer(el) {
+			el.value = el.value.replace(/[^0-9+]/g, '');
+		}
+	</script>
 </body>
 
 </html>
