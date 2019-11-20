@@ -396,6 +396,10 @@
 	</script>
 	<script type="text/javascript">
 var video = document.querySelector('video');
+enableInlineVideo(video);
+video.addEventListener('touchstart', function () {
+	video.play();
+});
 
 	</script>
 </body>
