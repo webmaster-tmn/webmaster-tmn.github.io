@@ -96,7 +96,7 @@
 		</section>
 		<div class="video__wrap">
 				<video id="video" playsinline loop muted autoplay src="./video/Enegix.mp4"></video>
-				<a id="play" href="javascript:void(0);">Play</a>
+
 			</div>
 			<a href="https://www.youtube.com/watch?v=4bfvXMuZgxw" class="video-block__icon popup-video" data-aos="fade-up">
 				<img src="img/icons/play.svg" alt="play">
@@ -383,6 +383,7 @@
 
 	<script src="js/scripts.min.js?v=1.2"></script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="js/iphone-inline-video.min.js"></script>
 
 	<script>
 		function replacer(el) {
@@ -390,13 +391,8 @@
 		}
 	</script>
 	<script type="text/javascript">
-		window.onload = function(){
-			var player = document.getElementById("video");
-			var play = document.getElementById("play");
-			play.addEventListener("click",function(){
-				player.play();
-			});
-		}
+var video = document.querySelector('video');
+ enableInlineVideo(video);
 	</script>
 </body>
 
