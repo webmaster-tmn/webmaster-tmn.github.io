@@ -95,7 +95,8 @@
 			</div>
 		</section>
 		<div class="video__wrap">
-				<video playsinline loop muted autoplay src="./video/Enegix.mp4"></video>
+				<video id="video" playsinline loop muted autoplay src="./video/Enegix.mp4"></video>
+				<a id="play" href="javascript:void(0);">Play</a>
 			</div>
 			<a href="https://www.youtube.com/watch?v=4bfvXMuZgxw" class="video-block__icon popup-video" data-aos="fade-up">
 				<img src="img/icons/play.svg" alt="play">
@@ -381,16 +382,20 @@
 
 
 	<script src="js/scripts.min.js?v=1.2"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/BezierPlugin.min.js"></script> -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<script>
 		function replacer(el) {
 			el.value = el.value.replace(/[^0-9+]/g, '');
+		}
+	</script>
+	<script type="text/javascript">
+		window.onload = function(){
+			var player = document.getElementById("video");
+			var play = document.getElementById("play");
+			play.addEventListener("click",function(){
+				player.play();
+			});
 		}
 	</script>
 </body>
