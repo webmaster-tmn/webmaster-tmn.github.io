@@ -801,7 +801,8 @@ a:hover {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+		justify-content: space-between;
+		align-items: center;
     position: relative;
     border-bottom: 1px solid rgba(255,255,255,.13);
     padding-top: 90px;
@@ -2774,7 +2775,9 @@ h2 {
 			margin-bottom: 0;
 		}
 		.top-wrap{
-			min-height: 670px;	
+			min-height: 400px;
+			height: auto;
+			margin-bottom: 100px;	
 		}
     .calc-block {
         max-width: 100%;
@@ -2883,13 +2886,13 @@ h2 {
 		}
 
 		.video-block__icon{
-			left: 0;
-			margin: 0 auto;
-			right: 0;
-			bottom: 200px;
+		
 		}
 		.video__wrap video{
 			object-fit: contain;
+			position: absolute;
+			bottom: 0;
+			height: auto;
 		}
     .road-map__list {
         -webkit-box-orient: vertical;
