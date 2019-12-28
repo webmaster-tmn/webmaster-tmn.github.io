@@ -21,14 +21,14 @@
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/styles/main.min.css">
+    <link rel="stylesheet" href="./assets/styles/main.min.css?v=2.1">
 </head>
 <body class="page">
 	<div class="page__inner">
 		<div class="page__content">
 		
 		<section class="main" id="main">
-			<div class="pulsating-rhombus">
+			<div class="pulsating-rhombus" data-aos="header-op">
 				<div class="pulsating-rhombus__item pulsating-rhomb pulsating-rhomb--one"></div>
 				<div class="pulsating-rhombus__item pulsating-rhomb pulsating-rhomb--two"></div>
 				<div class="pulsating-rhombus__item pulsating-rhomb pulsating-rhomb--three"></div>
@@ -36,7 +36,7 @@
 				<div class="pulsating-rhombus__item pulsating-rhomb pulsating-rhomb--five"></div>
 				<div class="pulsating-rhombus__item pulsating-rhomb pulsating-rhomb--six"></div>
 			</div>
-			<a href="" class="scroll-down">Scroll</a>
+			<a href="" class="scroll-down" data-aos="header-op" data-aos-delay="150">Scroll</a>
 			<header class="header">
 				<div class="container header__inner">
 					<div class="lines">
@@ -46,27 +46,27 @@
 						<div class="lines__item line line--three"></div>
 						<div class="lines__item line line--four"></div>
 					</div>
-					<div class="header__logo logo">
+					<div class="header__logo logo" data-aos="fade-down">
 						<span class="logo__title">StartMarket</span>
 						<span class="logo__subtitle">Краудфандинговая <br> платформа</span>
 					</div>
 					<div class="mobile-mnu">
 	
 				
-					<div class="header__buttons">
-						<a href="#" class="btn-reg">Регистрация</a>
+					<div class="header__buttons"  data-aos="fade-down">
+						<a href="#popup" class="btn-reg popup-link">Регистрация</a>
 						<a href="#" class="btn-enter">
 							<img src="./assets/images/icons/enter-icon.svg" alt="Вход">
 							<span>Вход</span>
 						</a>
 					</div>
-					<a href="Wp StM v.2.0.docx" download class="download-main">
+					<a href="Wp StM v.2.0.docx" data-aos="fade-right" download class="download-main">
 						<div class="download-main__icon">
 							<img src="./assets/images/icons/download.svg" alt="">
 						</div>
-						<div class="download-main__text">Скачать <b>Whitepaper</b></div>
+						<div class="download-main__text" >Скачать <b>Whitepaper</b></div>
 					</a>
-					<nav class="navigation">
+					<nav class="navigation" data-aos="fade-left">
 						<a class="navigation__item navigation__item--active" href="#main" data-number="1"><span>Главная</span><span class="navigation__line"></span></a>
 						<a class="navigation__item" href="#about" data-number="2"><span>О платформе</span><span class="navigation__line"></span></a>
 						<a class="navigation__item" href="#types" data-number="3"><span>5 типов</span><span class="navigation__line"></span></a>
@@ -97,10 +97,10 @@
 				</div>
 			
 				<div class="main__content">
-					<h1 class="h1">Развитие cтартап–проектов и создание собственного токена</h1>
-					<div class="main__buttons">
-						<a href="#" class="btn">Начать работу</a>
-						<a href="#" class="btn-more">Узнать больше</a>
+					<h1 class="h1" data-aos="fade-down" data-aos-delay="150">Развитие cтартап–проектов и создание собственного токена</h1>
+					<div class="main__buttons" data-aos="fade-down" data-aos-delay="200">
+						<a href="#popup" class="btn popup-link">Начать работу</a>
+						<a href="#popup"  class="btn-more popup-link">Узнать больше</a>
 					</div>
 				</div>
 			</div>
@@ -120,17 +120,17 @@
 					</div>
 				</div>
 				<div class="about__inner">
-					<div class="about__text">
+					<div class="about__text" data-aos="fade-down">
 						<p>Экосистема Startmarket, на основе собственного токена, создает для венчурных Startup-проектов индивидуальный токен, предоставляя сервис для дальнейшего развития. </p>
 						<p>На базе этого токена созданы сервисы, помогающие компании сконцентрироваться на развитии своего продукта, оставив проблемы маркетинга, финансового поддержания и анализа и поиска инвесторов нам.</p>
 					</div>
-					<div class="about__pic">
+					<div class="about__pic" data-aos="fade-down" data-aos-anchor="#about" data-aos-offset="500">
 						<img src="./assets/images/about-pic.png" alt="1">
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="types" id="types">
+		<section class="types" id="types" data-aos="fade-down" data-aos-offset="500">
 			<div class="container">
 				<div class="lines">
 					<div class="lines__item line line--one">
@@ -144,64 +144,72 @@
 						<span class="line__plus"  style="top: 7%"></span>
 					</div>
 				</div>
-				<div class="types__heading">Почему токен это удобно</div>
-				<img src="./assets/images/types-bg.png" alt="1" class="types__bg">
+				<div class="types__heading" >Почему токен это удобно</div>
+				<img src="./assets/images/types-bg.png" alt="1" class="types__bg" data-aos="header-op" data-aos-anchor="#types" >
 
 			
-				<div class="types__inner swiper-container js-types">
-					<div class="swiper-wrapper">
+				<div class="types__inner swiper-container js-types" d>
+					<div class="swiper-wrapper">					
 
-					
-
-					<div class="swiper-slide types__item type type--one tooltip" data-tooltip="В контракте прописаны все условия сделки и, если участники их выполняют, автоматически получают требуемое">
+					<div class="swiper-slide types__item type type--one tooltip">
 						<div class="type__pic">
 								
 							<img src="./assets/images/icons/types-1.svg" alt="01">
 							<span class="type__numb">.01</span>
 						</div>
 						<h3 class="type__name">Возможности</h3>
+						<div class="tooltip__text">Позволяет обмениваться ценными активами напрямую без участия третьих лиц. Одной транзакцией можно перевести не ограниченную сумму</div>
+
 					</div>
 					<!-- 2 -->
 
-					<div class="swiper-slide types__item type type--two tooltip" data-tooltip="В контракте прописаны все условия сделки и, если участники их выполняют, автоматически получают требуемое">
+					<div class="swiper-slide types__item type type--two tooltip">
 						<div class="type__pic">
 							<img src="./assets/images/icons/types-2.svg" alt="01">
 							<span class="type__numb">.02</span>
 						</div>
 						<h3 class="type__name">Максимально быстро</h3>
+						<div class="tooltip__text">Высокая скорость обмена транзакций - менее 1 секунды</div>
+
 					</div>
 					<!-- 3 -->
-					<div class="swiper-slide types__item type type--three tooltip" data-tooltip="В контракте прописаны все условия сделки и, если участники их выполняют, автоматически получают требуемое">
+					<div class="swiper-slide types__item type type--three tooltip">
 						<div class="type__pic">
 							<img src="./assets/images/icons/types-3.svg" alt="01">
 							<span class="type__numb">.03</span>
 						</div>
 						<h3 class="type__name">Условия сделки</h3>
+						<div class="tooltip__text">После заключения сделки между участниками, условия фиксируются и транзакция проходит только после выполнения обязательств обеими сторонами</div>
+
 					</div>
 					<!-- 4 -->
-					<div class="swiper-slide types__item type type--four tooltip" data-tooltip="В контракте прописаны все условия сделки и, если участники их выполняют, автоматически получают требуемое">
+					<div class="swiper-slide types__item type type--four tooltip">
 						<div class="type__pic">
 							<img src="./assets/images/icons/types-4.svg" alt="01">
 							<span class="type__numb">.04</span>
 						</div>
 						<h3 class="type__name">Условия транзакции</h3>
+						<div class="tooltip__text">В контракте прописаны все условия сделки и, если участники их выполняют, автоматически получают требуемое</div>
 					</div>
 					<!-- 5 -->
-					<div class="swiper-slide types__item type type--five tooltip" data-tooltip="В контракте прописаны все условия сделки и, если участники их выполняют, автоматически получают требуемое">
+					<div class="swiper-slide types__item type type--five tooltip">
 						<div class="type__pic">
 							<img src="./assets/images/icons/types-5.svg" alt="01">
 							<span class="type__numb">.05</span>
 						</div>
 						<h3 class="type__name">Своя биржа</h3>
+						<div class="tooltip__text">После выпуска токена вы сразу можете его разместить и торговать на <a href="https://nodex.exchange/" target="_blank"> нашей бирже</a></div>
 					</div>
 
 					<!-- 6 -->
-					<div class="swiper-slide types__item type type--six tooltip" data-tooltip="В контракте прописаны все условия сделки и, если участники их выполняют, автоматически получают требуемое">
+					<div class="swiper-slide types__item type type--six tooltip">
 						<div class="type__pic">
 							<img src="./assets/images/icons/types-6.svg" alt="01">
 							<span class="type__numb">.06</span>
 						</div>
 						<h3 class="type__name">Понятно</h3>
+						<div class="tooltip__text">Полная прозрачность сделок</div>
+
 					</div>
 				</div>
 
@@ -230,7 +238,7 @@
 					<div class="lines__item line line--four"></div>
 				</div>
 				<div class="why__inner">
-					<div class="why__text">
+					<div class="why__text" data-aos="fade-down" data-aos-delay="150">
 						<p>Мы нацелены на все, чтобы сделать мир лучше, поэтому разработали свой сервис, который помогает перспективным Startup-проектам полностью сконцентрироваться и бросить все силы на доведение идеи до полноценного продукта.</p>
 						<p>Направления сервиса разделены на 5 типов, где каждый из них автономный и дополняет друг друга, повышая эффективность любого проекта:</p>
 						<div class="why__decr">Подробно о каждом сервисе <br> можно узнать в Whitepaper</div>
@@ -240,35 +248,35 @@
 						<img src="./assets/images/why-map.png" alt="1" class="why__map-pic">
 						<div class="why__list swiper-container js-why">
 							<div class="swiper-wrapper">
-							<div class="swiper-slide why__item why__item--one">
+							<div class="swiper-slide why__item why__item--one"  data-aos="fade-down" data-aos-delay="150">
 								<div class="why__item-pic">
 									<img src="./assets/images/icons/why-icon-1.png" alt="1">
 								</div>
 								<h3 class="why__item-text">Capitan <br>	efficiency</h3>
 							</div>
 						<!-- 2 -->
-						<div class="swiper-slide why__item why__item--two">
+						<div class="swiper-slide why__item why__item--two"  data-aos="fade-down" data-aos-delay="250">
 							<div class="why__item-pic">
 								<img src="./assets/images/icons/why-icon-2.png" alt="1">
 							</div>
 							<h3 class="why__item-text">Analytics<br>& Consultation</h3>
 						</div>
 						<!-- 3 -->
-						<div class="swiper-slide why__item why__item--three">
+						<div class="swiper-slide why__item why__item--three"  data-aos="fade-down" data-aos-delay="350">
 							<div class="why__item-pic">
 								<img src="./assets/images/icons/why-icon-3.png" alt="1">
 							</div>
 							<h3 class="why__item-text">Startup<br>finder</h3>
 						</div>
 						<!-- 4 -->
-						<div class="swiper-slide why__item why__item--four">
+						<div class="swiper-slide why__item why__item--four"  data-aos="fade-down" data-aos-delay="450">
 							<div class="why__item-pic">
 								<img src="./assets/images/icons/why-icon-4.png" alt="1">
 							</div>
 							<h3 class="why__item-text">Listing<br>of DEX</h3>
 						</div>
 						<!-- 5 -->
-						<div class="swiper-slide why__item why__item--five">
+						<div class="swiper-slide why__item why__item--five"  data-aos="fade-down" data-aos-delay="550">
 							<div class="why__item-pic">
 								<img src="./assets/images/icons/why-icon-5.png" alt="1">
 							</div>
@@ -298,9 +306,9 @@
 					<div class="lines__item line line--three"></div>
 					<div class="lines__item line line--four"></div>
 				</div>
-				<div class="big__title">marketing</div>
+				<div class="big__title" data-aos="fade-down" data-aos-delay="150">marketing</div>
 				<div class="marketing__inner">
-					<div class="marketing__blocks ">
+					<div class="marketing__blocks "data-aos="fade-down" data-aos-delay="350">
 						<img src="./assets/images/marketing-blocks.png" alt="1" class="marketing__pic">
 						
 						<div class="marketing__blocks-list swiper-container js-marketing">
@@ -347,9 +355,9 @@
 							<img src="./assets/images/icons/arrow-mobile-right.svg" alt="">
 						</div>
 					</div>
-					<div class="marketing__text">
+					<div class="marketing__text" data-aos="fade-down" data-aos-delay="450">
 						<div class="marketing__text-heading">Полезный, качественный продукт - основа успешного проекта, однако нужно, чтобы о нем смогли узнать</div>
-						<p>Именно поэтому мы предоставляем отдельный сервис маркетинга, закрывающий любые потребности потребности клиента.</p>
+						<p>Именно поэтому мы предоставляем отдельный сервис маркетинга, закрывающий любые потребности клиента.</p>
 					</div>
 				</div>
 				
@@ -369,43 +377,51 @@
 					</div>
 					<div class="lines__item line line--four"></div>
 				</div>
-				<div class="advans__title">7 преимуществ использования	<br> платформы StartMarket</div>
+				<div class="advans__title" data-aos="fade-down" data-aos-delay="500">7 преимуществ использования	<br> платформы StartMarket</div>
 				<div class="advans__list">
-					<div class="advans__item advan advan--one tooltip tooltip--small" data-tooltip="Масштабируемость любого проекта">
+					<div class="advans__item advan advan--one tooltip tooltip--small" data-aos="fade-down" data-aos-delay="300">
 						<div class="advan__box"><span class="advan__plus"></span>	</div>
 						<div class="advan__hover"><img src="./assets/images/icons/tap.svg" alt="1">Наведите</div>
+						<div class="tooltip__text">Надежность</div>
+
 					</div>
 					<!-- 2 -->
-					<div class="advans__item advan advan--two tooltip tooltip--small" data-tooltip="Масштабируемость любого проекта">
+					<div class="advans__item advan advan--two tooltip tooltip--small" data-aos="fade-down" data-aos-delay="350">
 						<div class="advan__box"><span class="advan__plus"></span>	</div>
+						<div class="tooltip__text">Доступность</div>
 					</div>
 					<!-- 3 -->
-					<div class="advans__item advan advan--three tooltip tooltip--small" data-tooltip="Масштабируемость любого проекта">
+					<div class="advans__item advan advan--three tooltip tooltip--small" data-aos="fade-down" data-aos-delay="400">
 						<div class="advan__box"><span class="advan__plus"></span>	</div>
+						<div class="tooltip__text">Стабильность</div>
 					</div>
 					<!-- 4 -->
-					<div class="advans__item advan advan--four tooltip tooltip--small" data-tooltip="Масштабируемость любого проекта">
+					<div class="advans__item advan advan--four tooltip tooltip--small" data-aos="fade-down" data-aos-delay="450">
 						<div class="advan__box"><span class="advan__plus"></span>	</div>
+						<div class="tooltip__text">Удобство</div>
 					</div>
 					<!-- 5 -->
-					<div class="advans__item advan advan--five tooltip tooltip--small" data-tooltip="Масштабируемость любого проекта">
+					<div class="advans__item advan advan--five tooltip tooltip--small" data-aos="fade-down" data-aos-delay="500">
 						<div class="advan__box"><span class="advan__plus"></span>	</div>
+						<div class="tooltip__text">Актуальность</div>
 					</div>
 					<!-- 6 -->
-					<div class="advans__item advan advan--six tooltip tooltip--small" data-tooltip="Масштабируемость любого проекта">
-						<div class="advan__box"><span class="advan__plus"></span>	</div>
+					<div class="advans__item advan advan--six tooltip tooltip--small" data-aos="fade-down" data-aos-delay="550">
+						<div class="advan__box"><span class="advan__plus"></span>	</div> 
+						<div class="tooltip__text">Лаконичность</div>
 					</div>
 					<!-- 7 -->
-					<div class="advans__item advan advan--seven tooltip tooltip--small" data-tooltip="Масштабируемость любого проекта">
+					<div class="advans__item advan advan--seven tooltip tooltip--small" data-aos="fade-down" data-aos-delay="600">
 						<div class="advan__box"><span class="advan__plus"></span>	</div>
+						<div class="tooltip__text">Экосистема</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="stages" id="stages">
 			<div class="container">
-				<div class="big__title">Этапы запуска</div>
-				<div class="stages__inner">
+				<div class="big__title"  data-aos="fade-down">Этапы запуска</div>
+				<div class="stages__inner"  data-aos="fade-down" data-aos-delay="250">
 					<div class="swiper-container stages-slider">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide stage">
@@ -431,7 +447,7 @@
 						</div>
 					</div>	
 				</div>
-				<div class="stages__nav">
+				<div class="stages__nav"  data-aos="fade-down" data-aos-delay="350">
 					<div class="slider-arrows">
 						<div class="slider-arrows__item slider-arrows__item--left">
 							<svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -452,15 +468,15 @@
 
 		<section class="news" id="news">
 			<div class="container">
-				<h2 class="title">Новости</h2>
+				<h2 class="title" data-aos="fade-down" data-aos-delay="250">Новости</h2>
 				<div class="news__inner">
 					<ul class="news-nav tab-nav">
-						<li class="news__col news__heading active" id="tab1">компания</li>
-						<li class="news__col news__heading" id="tab2">Проекты</li>
-						<li class="news__col news__heading" id="tab3">по теме</li>
+						<li class="news__col news__heading active" id="tab1" data-aos="fade-down" data-aos-delay="150">компания</li>
+						<li class="news__col news__heading" id="tab2" data-aos="fade-down" data-aos-delay="200">Проекты</li>
+						<li class="news__col news__heading" id="tab3" data-aos="fade-down" data-aos-delay="250">по теме</li>
 					</ul>
 					<div class="news__body">
-						<div class="news__col tab-body tab-body--active" id="con_tab1">
+						<div class="news__col tab-body tab-body--active" id="con_tab1" data-aos="fade-down" data-aos-delay="150">
 							<div class="news__item">
 								<div class="news__title">Выпуск Desktop версии кошелька NDX Wallet</div>
 								<p class="news__decr">Управлять своими активами стало ещё проще, т....</p>
@@ -474,7 +490,7 @@
 							
 						</div>
 						<!-- 2col -->
-						<div class="news__col tab-body" id="con_tab2">
+						<div class="news__col tab-body" id="con_tab2" data-aos="fade-down" data-aos-delay="200">
 							<div class="news__item">
 								<div class="news__title">В начале марта 2020 старт нового проекта Suex</div>
 								<p class="news__decr">Suex — это доступ ко всем ключевым биржам ми...</p>
@@ -488,7 +504,7 @@
 							
 						</div>
 						<!-- 3col -->
-						<div class="news__col tab-body" id="con_tab3">
+						<div class="news__col tab-body" id="con_tab3" data-aos="fade-down" data-aos-delay="250">
 							<div class="news__item">
 								<div class="news__title">BitMEX обвиняются в нечестной рекламе</div>
 								<p class="news__decr">Онлайн-опрос банковского гиганта ING показал, ...</p>
@@ -508,8 +524,8 @@
 		<section class="cases" id="cases">
 			<div class="container">
 				<div class="cases__head">
-					<h2 class="title">Кейсы StartMarket</h2>
-					<div class="slider-arrows">
+					<h2 class="title" data-aos="fade-down" data-aos-delay="100">Кейсы StartMarket</h2>
+					<div class="slider-arrows" data-aos="fade-down" data-aos-delay="150">
 						<div class="slider-arrows__item slider-arrows__item--left">
 							<svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M8.00006 0.999756L1.00006 7.49976L8.00006 13.9998" />
@@ -527,7 +543,7 @@
 				<div class="cases__list swiper-container js-cases">
 					<div class="swiper-wrapper">
 
-					<div class="swiper-slide cases__item case">
+					<div class="swiper-slide cases__item case" data-aos="fade-down" data-aos-delay="200">
 						<div class="case__pic">
 							<img src="./assets/images/case-1.jpg" alt="1">
 						</div>
@@ -535,11 +551,11 @@
 						<div class="case__body">
 							<div class="case__small-title">Energy 2020</div>
 							<p>описание</p>
-							<a href="#" class="case__link">Подробнее</a>
+							<a href="https://denistiaglin.com/" target="_blank" class="case__link">Подробнее</a>
 						</div>
 					</div>
 					<!-- 2 -->
-					<div class="swiper-slide cases__item case">
+					<div class="swiper-slide cases__item case" data-aos="fade-down" data-aos-delay="250">
 						<div class="case__pic">
 							<img src="./assets/images/case-1.jpg" alt="1">
 						</div>
@@ -547,11 +563,11 @@
 						<div class="case__body">
 							<div class="case__small-title">Suex</div>
 							<p>Suex — это доступ ко всем ключевым биржам мира, широкая линейка криптовалют, брокерское обслуживание компании.</p>
-							<a href="#" class="case__link">Подробнее</a>
+							<a href="https://suex.io/" target="_blank" class="case__link">Подробнее</a>
 						</div>
 					</div>
 					<!-- 3 -->
-					<div class="swiper-slide cases__item case">
+					<div class="swiper-slide cases__item case" data-aos="fade-down" data-aos-delay="300">
 						<div class="case__pic">
 							<img src="./assets/images/case-2.jpg" alt="1">
 						</div>
@@ -559,7 +575,7 @@
 						<div class="case__body">
 							<div class="case__small-title">Chatex</div>
 							<p>описание</p>
-							<a href="#" class="case__link">Подробнее</a>
+							<a href="https://chatex.com/" target="_blank" class="case__link">Подробнее</a>
 						</div>
 					</div>
 
@@ -573,16 +589,16 @@
 			<footer class="footer">
 				<div class="container">
 					<div class="footer__contact footer-contact">
-						<div class="footer-contact__item">
+						<div class="footer-contact__item" data-aos="fade-down" data-aos-delay="100">
 							<div class="footer-contact__icon">
 								<img src="./assets/images/icons/telegram-icon.svg" alt="telegram">
 							</div>
 							<div class="footer-contact__text">
 								<span>Telegram</span>
-								<a href="tg://resolve?domain=Nodesharing_news" class="footer-contact__link">Nodesharing_news</a>
+								<a href="tg://resolve?domain=NODEX_NEWS" class="footer-contact__link">Nodesharing_news</a>
 							</div>
 						</div>
-						<div class="footer-contact__item">
+						<div class="footer-contact__item" data-aos="fade-down" data-aos-delay="150">
 							<div class="footer-contact__icon">
 								<img src="./assets/images/icons/mail-icon.svg" alt="mail">
 							</div>
@@ -592,12 +608,180 @@
 							</div>
 						</div>
 					</div>
-					<div class="footer__bottom">
+					<div class="footer__bottom" data-aos="fade-down" data-aos-delay="100" data-aos-anchor="#contact">
 						<div class="footer__copy">© StartMarket, 2019</div>
 						<a href="#" class="footer__politics">Политика использования</a>
 					</div>
 				</div>
 			</footer>
+		</div>
+	</div>
+
+	<div class="hidden">
+		<div class="form__wrapper mfp-with-anim " id="popup" >
+			<form class="form">
+				<div class="form__head">Регистрация бесплатна</div>
+				<div class="form__group">
+					<div class="input__name">Имя<span>*</span></div>
+					<input type="text" name="Имя" required class="form__input">
+				</div>
+				<div class="form__group">
+					<div class="input__name">Фамилия<span>*</span></div>
+					<input type="text" name="Фамилия" required class="form__input">
+				</div>
+				<div class="form__group">
+					<div class="input__name">Email<span>*</span></div>
+					<input type="email" name="Email" required class="form__input">
+				</div>
+				<div class="form__group">
+					<div class="input__name">Мобильный телефон<span>*</span></div>
+					<input type="tel" name="Телефон" required class="form__input">
+					<div class="input__caption">Мы отправим вам напоминание</div>
+				</div>
+				<div class="form__group">
+					<div class="input__name">Пожалуйста, выберите роль<span>*</span></div>
+					
+					<label class="input__label">
+						<input type="radio" name="Роль" required value="Стартап">
+						Стартап
+					</label><br>
+					<label class="input__label">
+						<input type="radio" name="Роль" value="Рабочий проект">
+						Рабочий проект
+					</label><br>
+					<label class="input__label">
+						<input type="radio" name="Роль" value="Корпорация">
+						Корпорация
+					</label><br>
+					
+				</div>
+				<div class="form__group">
+					<div class="input__name">Хотите ли вы подписаться на еженедельную рассылку от StartMarket<span>*</span></div>
+					
+					<label class="input__label">
+						<input type="radio" name="Подписка на рассылку" required value="Да">
+						Да
+					</label><br>
+					<label class="input__label">
+						<input type="radio" name="Подписка на рассылку" value="Нет">
+						Нет
+					</label><br>
+					<label class="input__label">
+						<input type="radio" name="Подписка на рассылку" value="Уже получаю">
+						Уже получаю
+					</label><br>					
+				</div>
+				<div class="form__group">
+					<div class="input__name">Как называется ваш стартап или компания?<span>*</span></div>
+					<input type="text" name="Название стартапа/компании" required class="form__input">
+				</div>
+				<div class="form__group">
+					<div class="input__name">Суть вашего проекта/стартапа (целевая аудитория, какую проблему решает, каким образом)</div>
+					<textarea class="form__input form__textarea" name="Суть проекта"></textarea>
+				</div>
+				<div class="form__group">
+					<div class="input__name">Если вы предоставляете стартап, пожалуйста, укажите ссылку на сайт или презентацию (если есть)</div>
+					<textarea class="form__input form__textarea" name="Ссылка на сайт/презентацию"></textarea>
+				</div>
+				<div class="form__group">
+					<div class="input__name">Опишите наилучшим образом стадию продаж:<span>*</span></div>
+					
+					<label class="input__label">
+						<input type="radio" name="Стадия продаж" required value="Продаж нет, до старта продаж более года">
+						Продаж нет, до старта продаж более года
+					</label><br>
+					<label class="input__label">
+						<input type="radio" name="Стадия продаж" required value="Продаж нет, но запутился в ближайшие 3-4 месяца">
+						Продаж нет, но запутился в ближайшие 3-4 месяца
+					</label><br>
+					<label class="input__label">
+						<input type="radio" name="Стадия продаж" required value="Продажи уже запустились, выручка до 50 000 рублей в месяц">
+						Продажи уже запустились, выручка до 50 000 рублей в месяц
+					</label><br>
+					<label class="input__label">
+						<input type="radio" name="Стадия продаж" required value="Выручка от 50 000 до 200 000 рублей в месяц">
+						Выручка от 50 000 до 200 000 рублей в месяц
+					</label><br>
+					<label class="input__label">
+						<input type="radio" name="Стадия продаж" required value="Выручка от 200 000 до 1 000 000 рублей в месяц">
+						Выручка от 200 000 до 1 000 000 рублей в месяц
+					</label><br>
+					<label class="input__label">
+						<input type="radio" name="Стадия продаж" required value="Выручка от 1 000 000 до 5 000 000 рублей в месяц">
+						Выручка от 1 000 000 до 5 000 000 рублей в месяц
+					</label><br>
+					<label class="input__label">
+						<input type="radio" name="Стадия продаж" required value="Более 5 000 000 рублей в месяц">
+						Более 5 000 000 рублей в месяц
+					</label><br>	
+				</div>
+				<div class="form__group">
+					<div class="input__name">Сколько вы тратите на компанию/стартап в месяц</div>
+					<input type="text" name="Траты на компанию в месяц" required class="form__input">
+				</div>
+				<div class="form__group">
+					<div class="input__name">Ссылка на сайт</div>
+					<input type="text" name="Ссылка на сайт" required class="form__input">
+				</div>
+				<div class="form__group">
+					<div class="input__name">Потребность проекта</div>
+					
+					<label class="input__label">
+						<input type="radio" name="Потребность проекта"value="Привлечь инвестиции">
+						Привлечь инвестиции
+					</label><br>
+					<label class="input__label">
+						<input type="radio" name="Потребность проекта" value="Проектное финансирование ">
+						Проектное финансирование 
+					</label><br>					
+				</div>
+				<div class="form__group">
+					<div class="input__name">Какие вам нужны инструменты</div>
+					
+					<label class="label__checkbox">
+						<input type="checkbox" name="Нужны инструменты"class="form__checkbox" value="Брендированный блокчейн кошелек ">
+						Брендированный блокчейн кошелек 
+					</label><br>					
+					<label class="label__checkbox">
+						<input type="checkbox" name="Нужны инструменты"class="form__checkbox" value="Собственный токен ">
+						Собственный токен 
+					</label><br>					
+					<label class="label__checkbox">
+						<input type="checkbox" name="Нужны инструменты"class="form__checkbox" value="Поддержание Ликвидности">
+						Поддержание Ликвидности
+					</label><br>					
+					<label class="label__checkbox">
+						<input type="checkbox" name="Нужны инструменты"class="form__checkbox" value="Автоматизация обмена и Торгов">
+						Автоматизация обмена и Торгов  
+					</label><br>					
+					<label class="label__checkbox">
+						<input type="checkbox" name="Нужны инструменты"class="form__checkbox" value="Экспертная Аналитика или Эдвайзеры">
+						Экспертная Аналитика или Эдвайзеры 
+					</label><br>					
+					<label class="label__checkbox">
+						<input type="checkbox" name="Нужны инструменты"class="form__checkbox" value="Упаковка проекта и Маркетинг">
+						Упаковка проекта и Маркетинг 
+					</label><br>					
+					<label class="label__checkbox">
+						<input type="checkbox" name="Нужны инструменты"class="form__checkbox" value="Построение экономики проекта">
+						Построение экономики проекта 
+					</label><br>					
+				</div>
+				<div class="form__group">
+					<label class="">
+					<input type="checkbox" name="Согласие на получение анонсов"class="form__checkbox" value="Согласие">
+						Я хочу получать анонсы событий этого организатора по электронной почте
+				</label>
+				</div>
+
+				<div class="form__conf">
+					<label>
+					<input type="checkbox" name="checkbox" onchange="document.getElementById('submit').disabled = !this.checked;" />
+					Я подтверждаю свое согласие с условиями <a href="">Пользовательского соглашения</a>и <a href="">Договором оказания услуг по организации мероприятия и политикой возвратов<span>*</span></a>
+					 </label>	
+					<input class="btn-submit" type="submit" disabled="disabled" name="submit" id="submit" value="Зарегистрироваться" />
+				</div>
+			</form>
 		</div>
 	</div>
 
