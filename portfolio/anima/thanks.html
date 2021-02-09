@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+
+	<title>Anima | Спасибо за заявку</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.ico">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main-thanks.min.css?v=2">
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () {
+				(m[i].a = m[i].a || []).push(arguments)
+			};
+			m[i].l = 1 * new Date();
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(55207078, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/55207078" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="container thanks">
+			<div class="thanks__head">
+				<a href="/" class="header__logo">
+					Anima
+				</a>
+			</div>
+			<div class="thanks__body">
+				<div class="thanks__text">
+					<p>Спасибо, что оставили свои контактные данные, наш специалист свяжется с вами в ближайшее время...</p>
+					<button class="thanks__link modal-btn" data-modal="1">Пройти тест</button>
+				</div>
+				<div class="thanks__video video">
+					<a href="video/v2.mp4" class="video__wrap popup-player popup-player">
+						<div class="video__play"><img src="/img/icons/play.svg" alt="play"></div>
+
+						<video class="video__video" preload="auto">
+							<source src="video/v2.mp4" type="video/mp4">
+						</video>
+
+						</video>
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay js-overlay-modal">
+		<div class="quiz__wrapper quiz" data-modal="1">
+			<div class="success">
+				<h2>Спасибо! <br>Ваша заявка отправлена!</h2>
+			</div>
+			<div class="quiz__top">
+			</div>
+			<div class="quiz__bottom">
+
+				<form action="/mail-qw.php" method="POST" class="quiz__form" id="form">
+
+					<div class="steps">
+						<div class="step active">
+							<h2 class="title">Какой праздник вы хотите организовать:</h2>
+							<div class="step__group">
+
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="holiday" value="День рождения">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">День рождения</span>
+									</label>
+								</div>
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="holiday" value="Семейный праздник">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">Семейный праздник</span>
+									</label>
+								</div>
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="holiday" value="Новый год">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">Новый год</span>
+									</label>
+								</div>
+
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="holiday" value="Летний лагерь">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">Летний лагерь</span>
+									</label>
+								</div>
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="holiday" value="Выпускной">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">Выпускной</span>
+									</label>
+								</div>
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="holiday" value="Свой вариант">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">Свой вариант</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="step">
+							<h2 class="title">Пол и возраст ребенка:</h2>
+							<div class="step__group">
+								<div class="gender">
+									<div class="label__wrapper">
+										<label class="step__label">
+											<input type="radio" class="step__input step__input-radio" name="gender" value="Мужской">
+											<span class="custom-radio"></span>
+											<span class="step__label__text">Мужской</span>
+										</label>
+									</div>
+									<div class="label__wrapper">
+										<label class="step__label">
+											<input type="radio" class="step__input step__input-radio" name="gender" value="Женский">
+											<span class="custom-radio"></span>
+											<span class="step__label__text">Женский</span>
+										</label>
+									</div>
+								</div>
+								<div class="age">
+									<div class="label__wrapper">
+										<label class="step__label">
+											<input type="radio" class="step__input step__input-radio" name="age" value="1-3">
+											<span class="custom-radio"></span>
+											<span class="step__label__text">1-3</span>
+										</label>
+									</div>
+									<div class="label__wrapper">
+										<label class="step__label">
+											<input type="radio" class="step__input step__input-radio" name="age" value="4-6">
+											<span class="custom-radio"></span>
+											<span class="step__label__text">4-6</span>
+										</label>
+									</div>
+									<div class="label__wrapper">
+										<label class="step__label">
+											<input type="radio" class="step__input step__input-radio" name="age" value="7-9">
+											<span class="custom-radio"></span>
+											<span class="step__label__text">7-9</span>
+										</label>
+									</div>
+
+									<div class="label__wrapper">
+										<label class="step__label">
+											<input type="radio" class="step__input step__input-radio" name="age" value="10-12">
+											<span class="custom-radio"></span>
+											<span class="step__label__text">10-12</span>
+										</label>
+									</div>
+									<div class="label__wrapper">
+										<label class="step__label">
+											<input type="radio" class="step__input step__input-radio" name="age" value="старше 13 лет">
+											<span class="custom-radio"></span>
+											<span class="step__label__text">старше 13 лет</span>
+										</label>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+						<div class="step">
+							<h2 class="title">Количество гостей на мероприятии:</h2>
+							<div class="step__group">
+
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="number_guets" value="менее 5ти">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">менее 5ти</span>
+									</label>
+								</div>
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="number_guets" value="5-10">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">5-10</span>
+									</label>
+								</div>
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="number_guets" value="10-20">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">10-20</span>
+									</label>
+								</div>
+
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="number_guets" value="больше 20ти">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">больше 20ти</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="step">
+							<h2 class="title">Предпочтения по месту проводения:</h2>
+							<div class="step__group">
+
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="location"
+											value="На специальной Площадке для мероприятий">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">На специальной Площадке для мероприятий</span>
+									</label>
+								</div>
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="location" value="На свежем воздухе">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">На свежем воздухе</span>
+									</label>
+								</div>
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="location" value="В парке">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">В парке</span>
+									</label>
+								</div>
+
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="location" value="В торговом центре">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">В торговом центре</span>
+									</label>
+								</div>
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="location"
+											value="В развлекательном центре">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">В развлекательном центре</span>
+									</label>
+								</div>
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="location" value="Дома">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">Дома</span>
+									</label>
+								</div>
+								<div class="label__wrapper">
+									<label class="step__label">
+										<input type="radio" class="step__input step__input-radio" name="location"
+											value="В кафе / ресторане">
+										<span class="custom-radio"></span>
+										<span class="step__label__text">В кафе / ресторане</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="step step-text">
+							<h2 class="title">Какого персонажа хотел бы видеть ваш ребёнок?</h2>
+							<div class="step__group">
+								<textarea class="step-textarea" name="character"></textarea>
+
+
+							</div>
+						</div>
+						<div class="step step-last">
+							<h3 class="decr"></h3>
+							<h2 class="title">Оставьте телефон: наш специалист перезвонит вам
+								в ближайшее время!</h2>
+							<div class="step__form">
+								<form class="popup__form form">
+									<input type="hidden" name="Заявка с формы:" class="formname" value="">
+									<div class="form__group">
+										<input type="text" name="name" class="form__input form__input--popup" required="">
+										<span class="placeholder">Имя</span>
+									</div>
+									<div class="form__group">
+										<input type="text" name="phone" class="form__input form__input--popup" required="">
+										<span class="placeholder">Телефон</span>
+									</div>
+									<input type="submit" class="form__input form__input--submit form__input--submit-popup"
+										value="Отправить заявку">
+									<div class="form__decr">Отправляя форму вы соглашаетесь на <a href="#">обработку персональных
+											данных</a>.
+									</div>
+								</form>
+							</div>
+
+						</div>
+					</div>
+
+				</form>
+				<div class="progress-bar">
+					<div class="progress-bar__text">Готово: <span></span></div>
+					<div class="progress-bar__line"><span></span></div>
+
+				</div>
+			</div>
+
+
+			<div class="btn-group">
+				<div class="btn-group__left">
+					<button type="button" class="btn action btn-prev back"><span>Назад</span></button>
+				</div>
+				<div class="btn-group__right">
+					<button type="button" class="btn action btn-next next"><span>Дальше</span></button>
+
+				</div>
+
+
+
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<script src="js/scripts.min.js?v=2"></script>
+
+	<script>
+		$('.popup-player').magnificPopup({
+			type: 'iframe',
+			mainClass: 'mfp-zoom-in',
+			removalDelay: 160,
+			preloader: true,
+			fixedContentPos: true,
+			midClick: true,
+			callbacks: {
+				beforeOpen: function () {
+					startWindowScroll = $(window).scrollTop();
+
+				},
+				open: function () {
+
+				},
+				close: function () {
+					$(window).scrollTop(startWindowScroll);
+				}
+			}
+		});
+
+
+		if ($(window).width() > 768) {
+			openPopupVideo();
+		} else {
+
+		}
+
+		function openPopupVideo() {
+			setTimeout(function () {
+				$.magnificPopup.open({
+					items: {
+						src: 'video/v2.mp4', // can be a HTML string, jQuery object, or CSS selector
+
+					},
+					type: 'iframe',
+					mainClass: 'mfp-fade',
+					removalDelay: 160,
+					preloader: true,
+					fixedContentPos: true,
+					callbacks: {
+						beforeOpen: function () {
+							startWindowScroll = $(window).scrollTop();
+						},
+						close: function () {
+							$(window).scrollTop(startWindowScroll);
+						}
+					}
+				});
+
+			}, 1500)
+
+		};
+	</script>
+
+	<script>
+		var modalButton = document.querySelector('.modal-btn'),
+			overlay = document.querySelector('.js-overlay-modal'),
+			btn = document.querySelector('.user-info'),
+			step = document.querySelectorAll('.step'),
+			stepEnd = step.length - 1;
+
+
+		modalButton.addEventListener('click', function (e) {
+			e.preventDefault();
+
+			var modalId = this.getAttribute('data-modal'),
+				modalElem = document.querySelector('.quiz__wrapper[data-modal="' + modalId + '"]');
+
+			modalElem.classList.add('active');
+			overlay.classList.add('active');
+		}); // end click
+
+		$(".btn-next").addClass("buttton-blk");
+
+		function blockbutt() {
+			$(".btn-next").addClass("buttton-blk");
+		};
+
+
+		function steps() {
+
+			$(document).ready(function () {
+				var current = 1;
+
+				widget = $(".step");
+				btnnext = $(".btn-next");
+				btnback = $(".btn-prev");
+				btnsubmit = $(".btn-submit");
+				widgetLast = widget[widget.length - 1];
+
+
+				// $(".step.active.step-last").parents().find('.quiz__top').addClass('quiz__top-last')
+
+
+				$(".active.step-last").parents().find('.quiz__top').addClass('quiz__top-last');
+				// Init buttons and UI
+				widget.not(':eq(0)').removeClass('active');
+				// widget.not(':eq(0)').removeClass('quiz__top-last');
+				hideButtons(current);
+				setProgress(current);
+
+				// Next button click action
+				btnnext.click(function () {
+					if (current < widget.length) {
+						widget.addClass('active');
+						widget.not(':eq(' + (current++) + ')').removeClass('active');
+						setProgress(current);
+						//alert("I was called from btnNext");
+						if ($('.step-last').hasClass('active')) {
+							console.log('yes')
+							$('.quiz__top').addClass('quiz__top-last');
+
+						}
+
+
+					}
+					hideButtons(current);
+
+					if ($('.step-text').hasClass('active')) {
+						$(".btn-next").removeClass("buttton-blk");
+
+					} else {
+						blockbutt();
+					}
+
+				});
+
+				// Back button click action
+				btnback.click(function () {
+					if (current > 1) {
+						current = current - 2;
+						btnnext.trigger('click');
+					}
+					hideButtons(current);
+
+					if ($(".step__input-radio").prop("checked")) {
+						$(".btn-next").removeClass("buttton-blk");
+					}
+					$(".btn-next").removeClass("buttton-blk");
+				});
+
+				if (widgetLast) {
+					// $('.quiz__top').addClass('quiz__top-last');
+				} else {
+					// $('.quiz__top').removeClass('quiz__top-last');
+				}
+			});
+
+			// Change progress bar action
+			setProgress = function (currstep) {
+				var percent = parseFloat(100 / widget.length) * currstep;
+				percent = percent.toFixed();
+				$(".progress-bar__text span").html(percent + "%");
+				$(".progress-bar__line span").css("width", percent + "%");
+			}
+
+
+
+
+			$(".step__label").click(function () {
+				$(".btn-next").removeClass("buttton-blk");
+			});
+
+			// Hide buttons according to the current step
+			hideButtons = function (current) {
+				var limit = parseInt(widget.length);
+
+				$(".action").hide();
+
+				if (current < limit) btnnext.show();
+				if (current > 1) btnback.show();
+				if (current == limit) {
+					btnnext.hide();
+					btnback.hide();
+					btnsubmit.show();
+				}
+			}
+		}
+
+
+		steps();
+	</script>
+</body>
+
+</html>

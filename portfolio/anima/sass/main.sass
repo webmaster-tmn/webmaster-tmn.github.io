@@ -1,0 +1,833 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	font-weight: 500
+	overflow-x: hidden
+	input, textarea
+			border: #666 1px solid
+			outline: none
+			&:focus:required:invalid
+				// border-color: red
+			&:required:valid
+				// border-color: green
+
+.scroll-hidden
+	position: fixed
+	width: 100%
+	height: 100%
+	overflow: hidden
+
+.hidden
+	display: none
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.container
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	position: relative
+
+
+.header
+	padding-top: 40px
+	margin-bottom: 20px
+	&__inner
+		display: flex
+		align-items: center
+
+	&__logo
+		font-family: $lobster-font
+		color: #ef084f
+		font-size: 60px
+		line-height: 24.91px
+		letter-spacing: 0.36px
+		text-decoration: none
+		transform: rotate(-5deg)
+		margin-right: 60px
+	
+	&__right
+		margin-left: auto
+		a
+			display: block
+			text-align: right
+			color: #000
+			
+
+	&__phone
+		font-size: 25px
+		letter-spacing: 0.13px
+		text-decoration: none
+		line-height: 1.2
+		font-weight: bold
+	
+	&__callback
+		font-size: 14px
+		text-decoration: underline
+
+
+
+.nav
+	&__link
+		color: #000
+		text-decoration: none
+		font-size: 17px
+		letter-spacing: 0.09px
+		position: relative
+		&:not(:last-child)
+			margin-right: 16px
+		&:after
+			content: ''
+			width: 0
+			height: 2px
+			position: absolute
+			left: 50%
+			bottom: 0
+			background-color: $accent
+			transition: all .3s
+		&:hover
+			&:after
+				width: 100%
+				left: 0
+
+
+@keyframes navLinkFade
+	from
+		opacity: 0
+		transform: translateX(50px)
+	
+	to
+		opacity: 1
+		transform: translateX(0px)
+.hamburger-menu 
+	display: none;
+	// height: 100px;
+	// padding: 35px 25px;
+	transition: all 0.3s ease-in-out
+	margin-right: 20px
+	vertical-align: middle
+
+	&:hover 
+		cursor: pointer
+	
+
+	.menu-item 
+		background: #2e313d
+		display: block
+		height: 2px
+		margin: 0 0 5px
+		transition: all 0.3s ease-in-out
+		width: 25px
+
+
+
+.hamburger-wrap.open
+	border-right: none
+	.menu-item 
+			margin: 0 0 5px
+			background: #80714f
+
+			&:first-child 
+				transform: rotate(45deg)
+				transform-origin: 4px
+			
+			&:nth-child(2) 
+				opacity: 0;
+			
+			&:nth-child(3) 
+				transform: rotate(-45deg)
+				transform-origin: 2px
+			
+		
+html.open 
+    overflow: hidden
+
+
+h1
+	font-size: 57px
+	line-height: 74px
+	font-weight: 800
+	letter-spacing: 0.28px
+
+
+.s-top
+	margin-bottom: 150px
+	&__inner
+		display: flex
+	&__heading
+		flex: 0 0 480px
+		width: 480px
+		margin-top: 158px
+	&__pic
+		position: relative
+		margin-left: -26px
+		&:after
+			content: ''
+			position: absolute
+			top: 260px
+			left: 30px
+			z-index: -1
+			display: block
+			width: 308px
+			height: 308px
+			background-color: #e7e8ec
+			border-radius: 50% 50% 50% 50%
+			transform: skew(0deg, 0deg)
+			animation-name: circle
+			animation-duration: 12s
+			animation-iteration-count: infinite
+			animation-direction: alternate
+			animation-timing-function: linear
+			animation-fill-mode: both
+		&-decor
+			position: absolute
+			top: 15px
+			margin-left: -74px
+			width: 479px
+			height: 570px
+			background: url(../img/top-line.png)  0 0 no-repeat
+	
+	&__title
+		margin-bottom: 52px
+	&__btn
+		background-image: url(../img/btn-bg.svg)
+		width: 256px
+		height: 93px
+		display: flex
+		align-items: center
+		justify-content: center
+		text-decoration: none
+		color: #fff
+		font-size: 21px
+		font-weight: bold
+		letter-spacing: 0.1px
+	
+	&__text
+		margin-top: 266px
+		// transform: translateX(-95px)
+		margin-left: -95px
+		font-size: 19px
+	
+	&__video
+		margin-top: 140px
+		transform: translateX(-40px)
+
+
+.text-line
+	background: url(../img/text-line.png) 0 0 no-repeat
+	width: 291px
+	height: 7px
+	margin-bottom: 5px
+.wow
+	visibility: hidden
+.video
+	display: flex
+	align-items: center
+	&__play
+		width: 70px
+		height: 62px
+		background-image: url(../img/play-bg.svg)
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-right: 17px
+	&__text
+		font-size: 16px
+		line-height: 17px
+		width: 130px
+
+@keyframes circle 
+ 0% 
+  transform: skew(0deg, 0deg)
+
+	10% 
+			border-radius: 50% 50% 30% 50%
+			transform: skew(0deg,-10deg) scale(1, 1)
+
+	20% 
+		border-radius: 50% 50% 30% 50%
+		transform: skew(0deg,-10deg) scale(0.9, 0.9)
+
+	30%
+		border-radius: 50% 30% 50% 50%
+		transform: skew(0deg,10deg) scale(0.9, 0.9)
+
+	40%
+		border-radius: 50% 40% 50% 50%
+		transform: skew(10deg,0deg) scale(1,0.9) 
+
+	50%
+		border-radius: 50% 40% 45% 50%
+		transform: skew(5deg,-10deg) scale(1,1) 
+
+	60%
+		border-radius: 50% 45% 40% 50%
+		transform: skew(5deg,-10deg) scale(1,1.1) 
+
+	70%
+		border-radius: 50% 50% 40% 50%
+		transform: skew(5deg,-20deg) scale(1,1.1) 
+
+	80%
+		border-radius: 50% 50% 40% 40%
+		transform: skew(5deg,-10deg) scale(1,1) 
+
+	90%
+		border-radius: 50% 50% 30% 50%
+		transform: skew(0deg,-10deg) scale(0.95, 0.9)
+
+	100%
+		border-radius: 50% 50% 40% 50%
+		transform: skew(0deg,-10deg) scale(0.95, 1)
+
+  
+h2
+	font-size: 57px
+	line-height: 74px
+	letter-spacing: 0.28px
+	font-weight: 800
+.s-about
+	margin-bottom: 115px
+.about
+	&__inner
+		display: flex
+		justify-content: space-between
+		position: relative
+	&__pic
+		position: absolute
+		left: 320px
+		top: -50px
+		&-decor
+			width: 366px
+			height: 352px
+			position: absolute
+			top: 133px
+			left: 87px
+			background: url(../img/about-line.png)  0 0 no-repeat
+	&__right	
+		padding-top: 20px
+	&__title
+		margin-bottom: 50px
+
+	&__item
+		position: relative
+		width: 329px
+		height: 111px
+		box-shadow: 0 13px 49px rgba(0, 0, 0, 0.07)
+		border-radius: 20px
+		background-color: #ffffff
+		display: flex
+		align-items: center
+		padding-right: 30px
+		margin-bottom: 60px
+		margin-left: 55px
+	
+	&__icon
+		width: 111px
+		height: 111px
+		flex: 0 0 111px
+		transform: translateX(-50%)
+		&--child
+			background: url(../img/icons/about-icon-child.svg)  0 0 no-repeat
+		&--celeb
+			background: url(../img/icons/about-icon-celeb.svg) 0 0 no-repeat
+		&--money
+			background: url(../img/icons/about-icon-money.svg) 0 0 no-repeat
+		&--cpec
+			background: url(../img/icons/about-icon-cpec.svg) 0 0 no-repeat
+		&--star
+			background: url(../img/icons/about-icon-star.svg) 0 0 no-repeat
+
+	&__text
+		color: #010101
+		font-size: 18px
+		line-height: 21px
+		letter-spacing: 0.09px
+		margin-left: -31px
+
+.s-holidays
+	margin-bottom: 145px
+
+.holidays
+	&__title
+		text-align: center
+		margin-bottom: 90px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+	
+	&__item
+		margin-bottom: 70px
+		&:nth-child(2n)
+			margin: 0 90px
+		&:nth-child(4n)
+		&:nth-child(5n)
+			margin: 0 50px
+
+.holiday
+	text-align: center
+	&__top
+		height: 300px
+		display: flex
+		align-items: flex-end
+		img
+
+	&__title
+		font-weight: bold
+		font-size: 33px
+		letter-spacing: 0.17px
+	&__link
+		color: #ef084f
+		font-weight: bold
+		font-size: 17px
+		text-decoration: none
+		position: relative
+		transition: all .3s
+		&:after
+			content: ''
+			width: 100%
+			height: 1px
+			position: absolute
+			left: 0
+			bottom: 0
+			background: #ef084f
+			transition: all .3s
+		&:hover
+			color: darken(#ef084f, 15%)
+			&:after
+				width: 0
+
+
+  
+
+  
+.s-pictures
+	margin-bottom: 90px
+	position: relative
+	z-index: 50
+
+
+.pictures
+	&__title
+		text-align: center
+		margin-bottom: 85px
+	
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		transition: all .3s
+		&--hide
+			// display: none
+			&.is-active
+				// display: flex
+	
+	&__item
+		margin-bottom: 65px
+		max-width: 271px
+		height: 209px
+		border-radius: 5px
+		overflow: hidden
+		transition: all .3s
+		&:hover
+			opacity: 0.6
+	&__buttons
+	text-align: center
+.btn-show
+	margin: 0 auto
+	display: flex
+	align-items: center
+	justify-content: center
+	background-color: transparent
+	// background: url(../img/btn-more-bg.svg) center no-repeat
+
+	// max-width: 423px
+	// width: 100%
+	position: relative
+	padding: 0 55px
+	height: 78px
+	outline: none
+	border: none
+	color: #010101
+	font-size: 19px
+	cursor: pointer
+	&:before
+		content: ''
+		background: url(../img/btn-more-bg.svg)
+		background-size: contain
+		background-repeat: no-repeat
+		display: block
+		position: absolute
+		top: 50%
+		left: 0
+		transform: translateY(-50%)
+		width: 100%
+		height: 100%
+		background-position: center
+	span
+		padding-right: 15px
+		position: relative
+		z-index: 5
+	svg
+		position: relative
+		z-index: 5
+.btn-more-hid
+	display: none
+.s-reviews
+	margin-bottom: 80px
+.reviews
+	position: relative
+	&__title
+		text-align: center
+		margin-bottom: 50px
+
+	&__decor
+		position: absolute
+		top: -120px	
+		width: 100%
+		height: 892px
+		background-image: url(../img/reviews-decor2.svg)
+		background-size: cover
+		background-position: center
+		z-index: 0
+
+	&__list
+		position: relative
+		z-index: 10
+		max-width: 1000px
+		margin: 0 auto
+		margin-bottom: 40px
+
+	&__arrow
+		width: 67px
+		height: 67px
+		background-color: #e7e8ec
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		z-index: 100
+		&--left
+			left: 0
+		&--right
+			right: 0
+
+	&__button
+		text-align: center
+
+	&__btn
+		font-size: 19px
+		text-decoration: none
+		color: #fff
+		padding: 0 58px
+		height: 78px
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		background: url(../img/btn-rev-bg.svg) 0 0	 no-repeat
+		background-size: cover		
+
+.review
+	max-width: 440px
+	box-shadow: 0 0 29px rgba(0, 0, 0, 0.1)
+	border-radius: 5px
+	background-color: #ffffff
+	padding: 38px 50px 20px 60px
+	margin: 30px 30px
+	min-height: 435px
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		right: 0
+		bottom: 0
+		display: block
+		width: 147px
+		height: 80px
+		background-image: url(../img/icons/rev-icon.svg)
+	&__head
+		display: flex
+		align-items: center
+		margin-bottom: 45px
+
+	&__photo
+		position: relative
+		width: 94px
+		height: 94px
+		border-radius: 50%
+		overflow: hidden
+		margin-right: 30px
+	
+	&__name
+		font-weight: bold
+		font-size: 25px
+		letter-spacing: 0.13px
+	
+	&__body
+		color: #010101
+		font-size: 17px
+		p
+			line-height: 30px
+			letter-spacing: 0.09px
+			margin-bottom: 0
+
+
+.s-contact
+	margin-bottom: 85px
+
+.contact
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+	&__title
+		text-align: center
+		margin-bottom: 60px
+	&__map
+		max-width: 705px
+		width: 100%
+		&-wrap
+			width: 100%
+			height: 467px
+			border-radius: 30px
+			overflow: hidden
+
+#map
+	width: 100%
+	height: 100%
+
+.form-site
+	max-width: 414px
+	// height: 467px
+	border-radius: 10px
+	background-color: #ef084f
+	padding-top: 31px
+	padding-left: 30px
+	padding-right: 30px
+	padding-bottom: 27px
+	text-align: center
+	&__title
+		color: #fff
+		font-size: 32px
+		font-weight: 800
+		letter-spacing: 0.16px
+		margin-bottom: 20px
+	&__text
+		color: #6d0021
+		font-size: 14px
+		line-height: 19px
+		font-weight: normal
+		a
+			text-decoration: none
+			font-weight: bold
+			color: #6d0021
+
+.form
+	&__input
+		width: 100%
+		height: 78px
+		border-radius: 5px
+		background-color: #be073f
+		border: none
+		padding: 0 25px
+		margin-bottom: 15px
+		color: #fff
+		font-size: 15px
+		font-weight: 300
+		&-submit
+			background-color: #fff
+			font-size: 20px
+			font-weight: 800
+			color: #000
+			padding: 0
+			cursor: pointer
+			margin-top: 15px
+			margin-bottom: 20px
+		&--popup
+			border: solid 1px #e5ebf9
+			background-color: #f6f8fc
+			margin-bottom: 0
+			color: #000
+			font-size: 18px
+	@include placeholder()
+		color: #fff
+		font-weight: normal
+	&__decr
+		opacity: 0.5
+		font-size: 14px
+		a
+			color: inherit
+	
+.form__group 
+	position: relative
+	margin-bottom: 15px
+	&:before 
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+    border: solid 2px #ccd7ec
+    border-radius: 4px
+    z-index: 1
+    opacity: 0
+    pointer-events: none
+    transition: 0.3s
+	&:hover
+		&:before
+			opacity: 1
+	.placeholder 
+    position: absolute
+    width: 100%
+    padding-left: 23px
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    color: #9c9c9c
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: .14px
+    -webkit-transition: all .3s
+    -o-transition: all .3s
+    transition: all .3s
+    pointer-events: none
+	&.focus 
+      .placeholder 
+        font-size: 12px
+        top: 0
+        transform: translateY(8px)
+        background-color: transparent
+      
+    
+
+.slick-track 
+    height: auto!important
+
+.footer
+	padding-bottom: 30px
+	&__wrap
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__link
+		text-decoration: none
+		color: #000
+		font-size: 17px
+		font-weight: bold
+	&__contact
+		a
+			display: block
+			text-align: right
+			color: #000
+
+	.social
+		display: flex
+		&__item
+		
+			width: 30px
+			height: 30px
+			display: flex
+			align-items: center
+			justify-content: center
+			border-radius: 50%
+			border: 1px solid #a29d9d
+			margin-right: 10px
+			display: none	
+			img
+				max-width: 100%
+				height: auto
+				width: 50%
+
+.modal
+	&__wrap
+		background-color: #fff
+		max-width: 480px
+		margin: 0 auto
+		padding: 56px
+		border-radius: 4px
+		position: relative
+
+.close 
+	position: absolute
+	top: 53px
+	right: -29px
+	width: 70px
+	height: 70px
+	cursor: pointer
+	background-image: -webkit-gradient(linear, right top, left top, from(#3fb2ff), to(#5582ff))
+	background-image: linear-gradient(to left, #EC0C55, #a92751)
+	border-radius: 283px 186px 187px 150px
+	svg 
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-top: -12px
+		margin-left: -12px
+		width: 24px
+		height: 24px
+		-webkit-transform: rotate(0deg)
+		transform: rotate(0deg)
+		-webkit-transition: all .3s ease
+		transition: all .3s ease
+		stroke: #fff
+	&:hover svg 
+    stroke: #fff
+    -webkit-transform: rotate(90deg)
+    transform: rotate(90deg)
+
+
+.popup
+	&__title
+		margin-bottom: 30px
+		h2
+			font-size: 30px
+			line-height: 1.2em
+			font-weight: 500
+
+
+.mfp-move-from-top
+  .mfp-content
+  .mfp-with-anim
+    opacity: 0
+    transition: all 0.2s
+    transform: translateY(-100px)
+  &.mfp-bg
+    opacity: 0
+    transition: all 0.2
+  &.mfp-ready .mfp-with-anim
+    opacity: 1
+    transform: translateY(0)
+  &.mfp-bg.mfp-ready
+    opacity: 0.8
+  &.mfp-removing
+    .mfp-with-anim
+      transform: translateY(-50px)
+      opacity: 0
+    &.mfp-bg
+      opacity: 0
+@import "media" // Always at the end

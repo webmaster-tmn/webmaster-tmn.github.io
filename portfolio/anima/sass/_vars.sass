@@ -1,0 +1,17 @@
+$default-font: "UniNeue",sans-serif
+$lobster-font: "Lobster",sans-serif
+$neuecyr-font: "HelveticaNeueCyr",sans-serif
+
+$accent: #ef084f
+
+
+@mixin placeholder()
+  input::-webkit-input-placeholder
+    @content
+  input:-moz-placeholder
+    @content
+  input::-moz-placeholder
+    @content
+  input:-ms-input-placeholder
+    @content
+

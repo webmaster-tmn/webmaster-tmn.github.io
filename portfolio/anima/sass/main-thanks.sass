@@ -1,0 +1,609 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	font-weight: 500
+	overflow-x: hidden
+
+.container
+	max-width: 1170px
+	width: 100%
+	margin: 0 auto
+	position: relative
+
+.header
+	&__logo
+		font-family: $lobster-font
+		color: #ef084f
+		font-size: 70px
+		line-height: 24.91px
+		letter-spacing: 0.36px
+		text-decoration: none
+		transform: rotate(-5deg)
+		display: inline-block
+		margin-top: 50px
+
+.thanks
+	padding-top: 50px
+	&__head
+		text-align: center
+		margin-bottom: 100px
+	
+	&__body
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: space-between
+	
+	&__text
+		max-width: 535px
+		margin-right: 20px
+		p
+			font-size: 39px
+			line-height: 60px
+			font-weight: bold
+			margin-bottom: 54px
+	&__link
+		background-image: url(../img/thanks-link.svg)
+		width: 256px
+		height: 93px
+		display: flex
+		align-items: center
+		justify-content: center
+		text-decoration: none
+		color: #fff
+		font-size: 21px
+		font-weight: bold
+		letter-spacing: 0.1px
+		background-color: transparent
+		border: none
+.thanks__body-qw
+	margin-top: 150px
+.video
+	&__wrap
+		width: 495px
+		height: 340px
+		border: 5px solid #ef084f
+		background-color: #ffffff
+		position: relative
+		display: block
+	&__play
+		position: absolute
+		left: -35px
+		top: 50%
+		margin-top: -31px
+		width: 70px
+		height: 62px
+		background-image: url(../img/play-bg.svg)
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-right: 17px
+		z-index: 10
+	&__video
+		width: 100%
+		height: 100%
+		position: absolute
+		top: 0
+		left: 0
+		object-fit: cover
+
+.progress-bar 
+	position: relative
+
+
+	&__text 
+		font-size: 14px
+		letter-spacing: 0.8px
+		color: #727a8b
+
+		span 
+			color: #ab006e
+			font-weight: 700
+			padding-left: 0px
+
+	&__line 
+		width: 100%
+		height: 7px
+		border-radius: 4px
+		background-color: #dddddd
+		position: relative
+		overflow: hidden
+
+		span 
+			position: absolute
+			left: 0
+			top: 0
+			border-radius: 4px
+			background: linear-gradient(to left,#ec0c55,#a92751)
+			z-index: 1
+			display: block
+			height: 100%
+			transition: all .5s
+
+
+.overlay 
+
+	/* Скрываем подложку  */
+	opacity: 0
+	visibility: hidden
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 998
+	overflow: hidden
+	background-color: #fff
+	transition: .3s all
+	overflow-y: scroll
+	overflow-x: hidden
+	text-align: center
+	&:before 
+		content: ''
+		display: inline-block
+		height: 100%
+		vertical-align: middle
+		margin-right: -0.36em
+    
+.quiz 
+
+	&__wrapper 
+		display: inline-block
+		vertical-align: middle
+		text-align: left
+		opacity: 0
+		visibility: hidden
+		position: relative
+		max-width: 915px
+		width: 95%
+		min-height: 400px
+		height: auto
+		transition: 0.2s all
+		display: none
+
+	&__top 
+		padding: 17px 45px
+		&-last
+			display: none
+
+
+		&__icon 
+			display: inline-block
+			vertical-align: middle
+
+
+		&__text 
+			display: inline-block
+			vertical-align: middle
+			color: #727a8b
+			font-size: 17px
+			letter-spacing: 0.09px
+			padding-left: 15px
+
+
+	&__bottom 
+		padding: 28px 38px 40px 45px
+		position: relative
+
+
+.quiz__wrapper.active,
+.overlay.active 
+	opacity: 1
+	visibility: visible
+	z-index: 100
+
+.quiz__wrapper.active
+	display: inline-block
+
+.steps 
+	margin-bottom: 40px
+
+
+.title
+	font-size: 25px
+	font-weight: 700
+	margin-bottom: 30px
+
+.step 
+	position: absolute
+	left: 20px
+	top: 20px
+	opacity: 0
+	visibility: hidden
+	pointer-events: none
+	transition: left .3s
+
+	&-last
+		h3
+			text-align: center
+			margin: 0
+		
+		h2
+			
+			margin-bottom: 30px
+	    margin-top: 60px
+	    padding: 0 50px
+
+.step.active.step-last
+	top: 0
+.step.active 
+	visibility: visible
+	left: 0px
+	top: -45px
+	position: relative
+	opacity: 1
+	pointer-events: all
+
+
+
+
+.step__group 
+
+
+.label__wrapper 
+
+	&:not(:last-child) 
+		margin-bottom: 10px
+		display: flex
+		align-items: center
+
+
+.step__label
+
+	&__text 
+		// background-color: #efefef;
+		font-size: 18px
+		letter-spacing: 0.75px
+		padding-left: 10px
+		z-index: 1
+	
+
+	.custom-radio 
+		width: 20px
+		height: 20px
+		border-radius: 50%
+		border: 2px solid rgba($accent, 0.3)
+		background-color: #fff
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		position: relative
+		transition: all .3s
+
+		&:after 
+			content: ''
+			display: block
+			border-radius: 50%
+			width: 10px
+			height: 10px
+			background-color: $accent
+			opacity: 0
+			transition: all .3s
+
+
+.step__input-radio 
+	display: none
+
+.gender
+	margin-bottom: 40px
+
+.input-site-text 
+	position: absolute
+	z-index: 10
+	width: 100%
+	height: 100%
+	left: 60px
+	background-color: transparent
+	border: none
+	font-size: 17px
+	padding-left: 25px
+	color: #b7b7b7
+	font-size: 15px
+
+	@include placeholder 
+		color: #b7b7b7
+		font-size: 15px
+
+
+.step__input-radio:checked~.step__label 
+	// box-shadow: 5px 8px 16px rgba(0, 0, 0, 0.13)
+	// background-color: #fff
+	color: #000
+	font-weight: 700
+
+
+.step__input-radio:checked~.input-site-text 
+	font-size: 17px
+	color: #000
+
+
+.step__input-radio:checked~.step__label__text 
+
+
+.step__input-radio:checked~ .custom-radio
+	border: 2px solid rgba($accent, 1)
+
+.step__input-radio:checked~ .custom-radio:after
+	opacity: 1
+
+
+.label__wrapper-target 
+	&:not(:last-child) 
+		margin-right: 25px
+		margin-bottom: 20px
+	
+
+	.step__label 
+		width: auto
+		padding-right: 25px
+		font-weight: 700
+		background-color: transparent
+	
+
+	.step__label__text 
+		position: relative
+		padding-left: 10px
+		top: -8px
+		color: #000
+
+
+
+
+
+
+.btn-group 
+	padding-right: 40px
+	padding-left: 45px
+
+	display: flex
+	justify-content: flex-end
+
+.btn 
+	outline: none
+	border: 0
+	height: 45px
+	line-height: 45px
+	padding: 0 29px
+	border-radius: 23px
+	cursor: pointer
+	color: #ffffff
+	font-size: 15px
+	margin-left: 30px
+	font-weight: 700
+
+	&-prev
+		color: #000
+		background-color: transparent 
+		img 
+			transition: all .3s
+
+		&:hover 
+			img 
+				transform: translateX(-10px)
+
+	&-next 
+		background: linear-gradient(90deg, rgba(#bb1048, 1) 30%, rgba(#ec0c55, 1) 100%)
+		position: relative
+		padding: 0 50px
+		span 
+			position: relative
+			z-index: 10
+		
+		&:after 
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-radius: 23px
+			background: linear-gradient(-90deg, rgba(#bb1048, 1) 0%, rgba(#ec0c55, 1) 100%)
+			opacity: 0
+			transition: all 0.3s
+		
+
+		&:hover 
+			&:after 
+				opacity: 1
+				color: #ffffff
+
+
+	&-submit 
+		background: linear-gradient(to right, #75007f 0%, #ae006d 100%)
+		// background-color: #eee;
+		border-radius: 5px
+		width: 100%
+		position: relative
+		color: #fff
+		font-size: 20px
+		font-weight: 300
+		letter-spacing: 0.2
+		height: 60px
+		line-height: 60px
+		margin-bottom: 20px
+
+
+		span 
+			position: relative
+			z-index: 10
+
+		&:after 
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			border-radius: 5px
+			background: linear-gradient(to left, #75007f 0%, #ae006d 100%)
+			opacity: 0
+	
+
+		&:hover 
+			color: #ffffff
+
+.buttton-blk
+       opacity: 0.6
+       pointer-events: none
+
+.step__form
+	width: 60%
+	margin: 0 auto
+
+.form__group 
+    position: relative
+    margin-bottom: 15px
+
+
+.form__input 
+    width: 100%
+    height: 78px
+    border-radius: 5px
+    background-color: #be073f
+    border: none
+    padding: 0 25px
+    color: #fff
+    font-size: 15px
+    font-weight: 300
+
+
+.form__input--popup 
+    border: solid 1px #e5ebf9
+    background-color: #f6f8fc
+    color: #000
+    font-size: 18px
+
+.form__group .placeholder 
+    position: absolute
+    width: 100%
+    padding-left: 23px
+    left: 0
+    top: 50%
+    -webkit-transform: translateY(-50%)
+    -ms-transform: translateY(-50%)
+    transform: translateY(-50%)
+    color: #9c9c9c
+    font-size: 16px
+    font-weight: 400
+    letter-spacing: .14px
+    -webkit-transition: all .3s
+    -o-transition: all .3s
+    transition: all .3s
+    pointer-events: none
+
+.form__group.focus 
+	.placeholder 
+			font-size: 12px
+			top: 0
+			transform: translateY(8px)
+			background-color: transparent
+
+.form__input--submit-popup
+	margin-bottom: 15px
+	cursor: pointer
+.form__decr 
+    opacity: .5
+    font-size: 14px
+		
+.form__decr a 
+    color: inherit
+
+
+.success
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	z-index: 50
+	text-align: center
+	background-color: #fff
+	opacity: 0
+	transform: translateX(-100%)
+	transition: all .3s
+	&.active
+		opacity: 1
+		transform: translateX(0%)
+
+.step-textarea
+	width: 80%
+	resize: vertical
+	min-height: 150px
+	padding: 20px
+	border: solid 1px #e5ebf9
+	background-color: #f6f8fc
+	color: #000
+	font-size: 18px
+	outline: none
+
+
+@media only screen and (max-width : 1170px)
+	.container
+		padding: 0 20px
+		padding-top: 50px 
+	.thanks
+		&__head
+			margin-bottom: 50px
+		&__body
+			flex-direction: column
+		&__text
+			margin-bottom: 50px
+			p
+				font-size: 30px
+				line-height: 1.6em
+
+
+@media only screen and (max-width : 600px)
+	
+	.thanks__text
+		margin-right: 0
+		p
+			font-size: 20px
+	.header__logo
+		margin-top: 0
+		font-size: 60px
+	.thanks__link
+		margin: 0 auto
+	.video
+		&__wrap
+			width: 85%
+			min-width: 300px
+			margin: 0 auto
+			height: 200px
+		&__play
+			left: 50%
+			transform: translateX(-50%)
+	.thanks__body-qw 
+    margin-top: 100px
+
+
+@media only screen and (max-width : 480px)
+
+	.video__wrap
+		min-width: 270px
+	.title
+		font-size: 18px
+	.step__label__text
+		font-size: 15px
+	.steps
+		margin-bottom: 0
+	.quiz__bottom
+		padding: 20px
+	.btn-group
+		padding-left: 20px
+		padding-right: 20px
+	.step-textarea
+		width: 100%
+	.step__form
+		width: 100%
+		margin-bottom: 20px
