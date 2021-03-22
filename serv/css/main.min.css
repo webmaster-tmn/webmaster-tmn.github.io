@@ -5832,6 +5832,7 @@ body textarea:required:valid {
   color: #ececec;
   box-shadow: 0 0 0 0 #e67e22;
   transition: box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+	white-space: nowrap;
 }
 .btn-one:hover {
   box-shadow: 0 0 40px 0 #e67e22;
@@ -7411,21 +7412,30 @@ footer.wm .footer__block-info{
     font-size: 20px;
     height: 55px;
   }
+	.services__list {
+    margin-top: 40px;
+}
   header .header__inner {
 		/* padding-top: 7px; */
 		/* padding-bottom: 10px; */
-    background-size: cover;
-		
+    /* background-size: cover;		 */
+		background-size: 700px 390px!important;
     background-repeat: no-repeat;
     background-position: top;
   }
+	header .header__inner-bg{
+		padding-top: 7px;
+    padding-bottom: 10px;
+    
+	}
 	header.header-was-mchines .header__inner{
     background-size: 700px 390px!important;
 	}
   header .header__inner .header__intro {
     margin-bottom: 10px;
   }
-  header .header__inner .header__intro .col-6 {
+  header .header__inner .header__intro .col-5,
+	header .header__inner .header__intro .col-4 {
     padding-right: 5px !important;
     padding-left: 5px !important;
   }
@@ -7466,7 +7476,7 @@ footer.wm .footer__block-info{
     font-size: 9px;
   }
   header h1 {
-    font-size: 15px;
+    font-size: 4vw;
     line-height: 1 !important;
   }
   header h1 span {
@@ -8157,10 +8167,11 @@ footer.wm .footer__block-info{
   header .header__inner .header__intro {
     margin-bottom: 10px;
   }
-  header .header__inner .header__intro .col-6 {
+  header .header__inner .header__intro .col-5 {
     padding-right: 5px !important;
     padding-left: 5px !important;
   }
+
   header .header__inner .header__intro .header__logo {
     padding-right: 3px;
   }
@@ -8793,6 +8804,12 @@ footer.wm .footer__block-info{
     font-size: 9px;
     line-height: 1.2;
   }
+
+	.header-top__btn{
+		padding: 3px 8px;
+		text-transform: capitalize;
+		font-size: 14px;
+	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .thanks-main {
@@ -10480,6 +10497,15 @@ footer.wm .footer__block-info{
 
 @media(max-width: 480px){
 	.header__inner-bg .col-3{
-		display: none;
+		/* display: none; */
+		padding: 0;
+		flex: 0 0 15%;
+    max-width: 15%;
 	}
 }
+
+
+.webp header.header-main .header__inner{ background-image: url(../img/kitchen-bg.webp); }
+.webp .bcg-sale-box { background-image: url(../img/inner-content.webp); }
+.webp .free-dep .free-dep__inner { background-image: url(../img/free-person.webp); }
+.webp  .free-dep .f-d__callback .f-d__inner-wrap { background-image: url(../img/consult1.webp); }
