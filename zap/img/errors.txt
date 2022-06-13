@@ -1,3 +1,0 @@
-[Sat May 11 2019 18:49:19 GMT+0300 (RTZ 2 (зима))] Layer "+7 (999) 999-99-99 +7 (999) 999-99-99": Expected Either a default asset specification or a layer asset specification but "+" found.
-[Sat May 11 2019 18:49:19 GMT+0300 (RTZ 2 (зима))] Layer "+7 (999) 999-99-99": Expected Either a default asset specification or a layer asset specification but "+" found.
-[Sat May 11 2019 18:49:19 GMT+0300 (RTZ 2 (зима))] Layer "+7 (999) 999-99-99": Expected Either a default asset specification or a layer asset specification but "+" found.
