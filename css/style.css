@@ -4053,7 +4053,7 @@ footer {
 
 .about__desc {
   margin-bottom: 3.125rem;
-  height: 18.125rem; }
+  height: 20.125rem; }
   @media screen and (max-width: 768px) {
     .about__desc {
       height: auto; } }
@@ -4471,8 +4471,7 @@ footer {
 .socials__link {
   display: block;
   width: 2.0625rem;
-  height: 2.125rem;
-  background: url(../img/content/sprite.png) 0 0 no-repeat; }
+  height: 2.125rem;}
   @media screen and (max-width: 768px) {
     .socials__link {
       width: 2.25rem;

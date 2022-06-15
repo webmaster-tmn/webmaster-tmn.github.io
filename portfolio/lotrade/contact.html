@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<meta name="robots" content="noindex, nofollow" />
+
+    <title>Контакты</title>
+    <meta property="og:image" content="path/to/image.jpg" />
+    <link rel="icon" href="img/favicon/favicon.ico" />
+    <link rel="stylesheet" href="css/main.min.css?v=1.2" />
+  </head>
+ <body class="page">
+	<div class="page__inner">
+		<div class="page__content">
+		<header class="header">
+				<div class="container">
+					<div class="header__inner">
+						<a href="#" class="logo header__logo">
+							<img src="./img/logo-top.svg" alt="lotrade" class="logo__pic">
+						</a>
+						<nav class="header__nav">
+							<ul class="nav__list">
+								<li class="nav__item">
+									<a href="./index.html" class="nav__link nav__link--active">Главная</a>
+								</li>
+								<li class="nav__item">
+									<a href="./services.html" class="nav__link">Услуги</a>
+								</li>
+								<li class="nav__item">
+									<a href="./vacancies.html" class="nav__link">Вакансии</a>
+								</li>
+								<li class="nav__item">
+									<a href="./contact.html" class="nav__link">Контакты</a>
+								</li>
+							</ul>
+							<a href="tel:+74993993098" class="header__phone-link for-mobile">+7 (499) 399-30-98</a>
+							<a href="#" class="contact-page__chat for-mobile">
+											<img src="./img/whatsapp-min.svg" alt="WhatsApp">
+											<span>WhatsApp</span>
+										</a>
+						</nav>
+						<div class="header__phone hidden-xs">
+							<!-- <img src="./img/call-icon.svg" alt="call" class="header__phone-icon"> -->
+							<a href="tel:+74993993098" class="header__phone-link">+7 (499) 399-30-98</a>
+						</div>
+						<div class="burger">
+							<span class="burger__item burger__item--one"></span>
+							<span class="burger__item burger__item--two"></span>
+							<span class="burger__item burger__item--three"></span>
+					</div>
+					</div>
+				</div>
+			</header>
+
+		<section class="contact-page">
+			<div class="contact-page__map">
+				<div id="map"></div>
+			</div>
+			<div class="container">
+				<div class="breadcrumbs">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a href="#">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#">Контакты</a>
+								</li>
+							</ul>
+						</div>
+						<h2 class="contact-page__title">Контакты</h2>
+						<div class="contact-page__columns">
+							<div class="contact-page__col">
+								<div class="contact-page__item">
+									<div class="contact-page__label">
+										Телефон:
+									</div>									
+									<div class="contact-page__info">
+										<a href="tel+74993993098" class="contact-page__phone">+7 (499) 399-30-98</a>
+									</div>
+								</div>
+								<div class="contact-page__item">
+									<div class="contact-page__label">
+										Адрес:
+									</div>									
+									<div class="contact-page__info">
+										<p>Москва, ул. Зорге, д. 22А</p>
+									</div>
+								</div>
+								<div class="contact-page__item">
+									<div class="contact-page__label">
+										E-mail:
+									</div>									
+									<div class="contact-page__info">
+										<p>lotrade@mail.ru</p>
+									</div>
+								</div>
+							</div>
+							<div class="contact-page__col">
+								<div class="contact-page__item">
+									<div class="contact-page__label">
+										Начать чат:
+									</div>									
+									<div class="contact-page__info">
+										<a href="#" class="contact-page__chat">
+											<img src="./img/whatsapp-min.svg" alt="WhatsApp">
+											<span>WhatsApp</span>
+										</a>
+									</div>
+								</div>
+								<div class="contact-page__item">
+									<div class="contact-page__label">
+										График работы:
+									</div>									
+									<div class="contact-page__info">
+										<p>9:00 - 17:00 <br>(Выходные дни: сб, вс)</p>
+									</div>
+								</div>
+								<div class="contact-page__item">
+									<div class="contact-page__label">
+										Реквизиты:
+									</div>									
+									<div class="contact-page__info contact-page__info--color-grey">
+										<p>ОГРН: 1097746554839 <br>
+											ИНН: 7703706603 <br>
+											КПП: 770301001
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+			</div>
+		</section>
+	
+	
+	
+			<section class="s-callback">
+				<div class="container">
+					<h2 class="s-callback__title">Оставьте заявку</h2>
+					<p class="site-subtitle">Если вас интересует стоимость наших услуг или любые другие вопросы, заполните форму заявки и мы ответим вам в течении 15 минут</p>
+				<div class="form-wrapper">
+					<form class="form form--col" enctype="multipart/form-data">
+						<div class="form-col">
+							<div class="inputs-row">
+									<input type="tel" class="form__input" name="Телефон" placeholder="+7 (___) ___-__-__">
+							<input type="email" class="form__input" name="Email" placeholder="Электронный адрес">
+							</div>
+						
+							<textarea class="form__textarea" name="Сообщение" placeholder="Напишите характеристики груза или задайте вопрос"></textarea>
+							<div class="form__buttons-wrap">
+								<button type="submit" class="form-btn btn--reset btn"><span>оформить заявку</span></button>
+								<label class="file-upload-label">
+									<input class="file-upload-input visually-hidden" type="file" />
+									<img class="file-upload-icon" src="./img/upload-icon.svg" alt="прикрепить">
+									<span class="file-upload-text">Прикрепить файл</span>	
+								</label>
+							</div>
+						</div>
+						<div class="form__service">
+							<div class="form__service-title">Выберите услугу</div>
+							<div class="form__service-list">
+								<label class="label-checkbox">
+                  <input type="checkbox" name="Услуга:" value="Таможенное оформление(импорт/экспорт/транзит)" class="visually-hidden">
+                  <div class="custom-checkbox"></div>
+                  <span class="checkbox-text">Таможенное оформление<br>(импорт/экспорт/транзит)</span>
+                </label>
+								<label class="label-checkbox">
+                  <input type="checkbox" name="Услуга:" value="Юридическая поддержка клиента 24/7" class="visually-hidden">
+                  <div class="custom-checkbox"></div>
+                  <span class="checkbox-text">Юридическая поддержка<br>клиента 24/7</span>
+                </label>
+								<label class="label-checkbox">
+                  <input type="checkbox" name="Услуга:" value="Транспортная логистика" class="visually-hidden">
+                  <div class="custom-checkbox"></div>
+                  <span class="checkbox-text">Транспортная логистика</span>
+                </label>
+								<label class="label-checkbox">
+                  <input type="checkbox" name="Услуга:" value="Валютные переводы" class="visually-hidden">
+                  <div class="custom-checkbox"></div>
+                  <span class="checkbox-text">Валютные переводы</span>
+                </label>
+								<label class="label-checkbox">
+                  <input type="checkbox" name="Услуга:" value="Консультирование в области ВЭД" class="visually-hidden">
+                  <div class="custom-checkbox"></div>
+                  <span class="checkbox-text">Консультирование<br>в области ВЭД</span>
+                </label>
+								<label class="label-checkbox">
+                  <input type="checkbox" name="Услуга:" value="Таможенное оформление физических лиц" class="visually-hidden">
+                  <div class="custom-checkbox"></div>
+                  <span class="checkbox-text">Таможенное оформление<br> физических лиц</span>
+                </label>
+								<label class="label-checkbox">
+                  <input type="checkbox" name="Услуга:" value="Сертификация продукции" class="visually-hidden">
+                  <div class="custom-checkbox"></div>
+                  <span class="checkbox-text">Сертификация продукции</span>
+                </label>
+							</div>
+						</div>	
+					
+					</form>
+				</div>
+				</div>
+			</section>
+		</div>
+		<div class="page__footer-wrapper">
+			<footer class="footer">
+				<div class="footer__top">
+					<div class="container">
+						<div class="footer__inner">
+							<div class="footer__logo">
+								<a href="#" class="footer__logo-link">
+									<img src="./img/logo-white.svg" alt="lotrade">
+								</a>
+								<div class="footer__chat chat">
+									<span class="chat__head">Начать чат:</span>
+									<a href="#" class="chat__btn">
+										<img src="./img/whatsapp.svg" alt="whatsapp">
+										<span>WhatsApp</span>	
+									</a>
+								</div>
+							</div>
+							<nav class="nav-footer">
+								<ul class="nav-footer__list">
+									<li class="nav-footer__item">
+										<a href="#">Таможенное оформление</a>
+									</li>
+									<li class="nav-footer__item">
+										<a href="#">Юридическая поддержка</a>
+									</li>
+									<li class="nav-footer__item">
+										<a href="#">Транспортная логистика</a>
+									</li>
+								</ul>
+								<ul class="nav-footer__list">
+									<li class="nav-footer__item">
+										<a href="#">Валютные переводы</a>
+									</li>
+									<li class="nav-footer__item">
+										<a href="#">Консультирование ВЭД</a>
+									</li>
+									<li class="nav-footer__item">
+										<a href="#">Сертификация продукции</a>
+									</li>
+								</ul>
+								<ul class="nav-footer__list">
+									<li class="nav-footer__item">
+										<a href="#">Вакансии</a>
+									</li>
+									<li class="nav-footer__item">
+										<a href="#">Контакты</a>
+									</li>
+									
+								</ul>
+							</nav>
+							<div class="footer__contact">
+								<a href="tel:+78005557589" class="footer__phone">+7 (800) 555-75-89</a>
+								<span class="footer__contact-caption">Обратный звонок</span>
+								<a href="mailto:lotrade@mail.ru" class="footer__mail">lotrade@mail.ru</a>
+								<div class="footer__developer">
+							
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="container">
+						<div class="footer__inner">
+							<div class="footer__copy">Lotrade © 2020</div>
+							<div class="footer__policy"> 
+								<a href="#">Политика конфиденциальности</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/main.js"></script>
+		<script>ymaps.ready(init);
+
+function init() {
+  var myMap = new ymaps.Map("map", {
+      center: [55.78851919749162,37.508854898147554],
+      zoom: 15
+    }),
+
+    // Создаем метку с помощью вспомогательного класса.
+    myPlacemark1 = new ymaps.Placemark([55.78851919749162,37.508854898147554], {
+      // Свойства.
+      // Содержимое хинта.
+      hintContent: 'Москва, ул. Зорге, д. 22А'
+    }, {
+      // Опции
+      // Своё изображение иконки метки.
+      iconImageHref: './img/gps.svg',
+      // Размеры метки.
+      iconImageSize: [87, 87],
+      // Смещение левого верхнего угла иконки относительно
+      // её "ножки" (точки привязки).
+      
+    })
+  
+
+  // Добавляем все метки на карту.
+  myMap.geoObjects
+    .add(myPlacemark1)
+
+}
+</script>
+</body>
+</html>
