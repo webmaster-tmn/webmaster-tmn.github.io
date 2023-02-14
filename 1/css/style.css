@@ -1,0 +1,57 @@
+/*!
+Theme Name: refrigerators
+Theme URI: http://underscores.me/
+Author: remarket
+Author URI: http://remarket.pro
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: refrigerators
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+refrigerators is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+#error .small-header {
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+.input_field .error_img {
+    display: none;
+}
+.input_field.error img{
+    display: none;
+}
+.input_field.error .error_img {
+    display: block;
+}
+.form_submitted .form_sender {
+    position: relative;
+    background: #EAEAEA!important;
+    color: #002586!important;
+}
+.form_submitted .form_sender:before {
+
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url('../img/preloader.svg');
+    right: 20px;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
