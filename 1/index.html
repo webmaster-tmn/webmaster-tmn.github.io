@@ -26,7 +26,12 @@
 	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
-
+	<link rel="preload" href="fonts/Montserrat/Montserrat-Regular.woff2" as="font">
+	<link rel="preload" href="fonts/Montserrat/Montserrat-Black.woff2" as="font">
+	<link rel="preload" href="fonts/Open_Sans/OpenSans-Regular.woff2" as="font">
+	<link rel="preload" href="fonts/Open_Sans/OpenSans-Bold.woff2" as="font">
+	<link rel="preload" href="fonts/Open_Sans/OpenSans-ExtraBold.woff2" as="font">
+	<link rel="preload" href="fonts/Open_Sans/OpenSans-SemiBold.woff2" as="font">
 
 	<!-- <link rel='stylesheet' href='css/jquery.fancybox.min.css?ver=1' type='text/css' media='all' /> -->
 	<!-- <link rel='stylesheet' href='css/slick.css?ver=1' type='text/css' media='all' /> -->
@@ -34,7 +39,57 @@
 	<!-- <link rel='stylesheet' href='css/selectize.css?ver=1' type='text/css' media='all' /> -->
 
 	<style>
-	*{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:0}body{font-family:'Open Sans',sans-serif;font-size:16px;position:relative;overflow-x:hidden;overflow-y:inherit}body .scroll-up{position:absolute;bottom:70px;right:30px;display:none;opacity:.5;-webkit-transition:.3s;transition:.3s;padding:15px}body .scroll-up img{width:20px}.close-pop-up:hover,body .scroll-up:hover{cursor:pointer;opacity:.8}body .scroll-up.active{display:block;position:fixed;z-index:50}.container{max-width:1170px;padding:0 15px;margin:0 auto;width:100%}.header{background:#fff;padding:15px 0;width:100%;-webkit-box-shadow:0 20px 30px rgba(0,66,193,.3);box-shadow:0 20px 30px rgba(0,66,193,.3);position:relative;z-index:2;-webkit-transition:.1s;transition:.1s;-webkit-transform:translateZ(0);transform:translateZ(0)}.header.sticky{top:0;position:fixed;-webkit-box-shadow:0 20px 30px rgba(0,66,193,.1);box-shadow:0 20px 30px rgba(0,66,193,.1);-webkit-transform:translateZ(0);transform:translateZ(0)}.header-wrap{display:flex;width:100%;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.logo{display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-decoration:none}.logo img{margin-right:10px;max-width:70px}.logo .logo-text{font-size:16px;font-weight:300;line-height:1.2;flex-shrink:0}.logo .logo-text span{font-weight:800;text-transform:uppercase;font-size:19px;line-height:1}.header-contacts{display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap}.header-contacts .phone{font-size:24px;font-weight:700;text-decoration:none;margin-right:28px}.back-call-button{padding:17px 22px;display:block;background:#ba2b4f;color:#fff;font-weight:600;white-space:nowrap;-webkit-transition:.2s;transition:.2s;font-size:16px}.main-block{padding:50px 0 0;position:relative;width:100%}.main-block .main-block-wrap{display:flex;width:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap}.main-block .main-block-left{display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:1;-ms-flex:1 0 50%;flex:1 0 50%}.main-block .main-block-left h1{font-size:35px;font-weight:800;font-family:Montserrat;line-height:1;margin-bottom:10px}.main-block .main-block-left .subheader{font-size:22px;margin-bottom:30px}.main-block .main-block-left .advantages-icon{display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:37px}.main-block .main-block-left .advantages-icon .advantages-icon-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:1;-ms-flex:1 0 33%;flex:1 0 33%;margin-right:30px;max-width:160px}.main-block .main-block-left .main-button-wrap{position:relative;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;display:inline-block;-webkit-transition:.2s;transition:.2s}.main-block .main-block-left .main-button{display:inline-block;text-align:center;color:#fff;font-weight:700;background:linear-gradient(248.58deg,#769fef 17.29%,#4966ce 98.25%);border-radius:50px;padding:17px 25px;text-decoration:none;-webkit-transition:.3s;transition:.3s;position:relative;overflow:hidden}.main-block .main-block-left .main-button:after{content:'';position:absolute;top:0;right:-50%;bottom:-50%;left:-100%;background:-webkit-gradient(linear,left top,left bottom,from(rgba(229,172,142,0)),color-stop(50%,rgba(255,255,255,.5)),to(rgba(229,172,142,0)));background:linear-gradient(to bottom,rgba(229,172,142,0),rgba(255,255,255,.5) 50%,rgba(229,172,142,0));-webkit-transform:rotateZ(60deg) translate(-5em,7.5em);transform:rotateZ(60deg) translate(-5em,7.5em);will-change:transform}.main-block .main-block-left .main-button::after{-webkit-animation:1.5s ease-out infinite forwards sheen;animation:1.5s ease-out infinite forwards sheen}.main-block .main-block-left .main-button:hover::after{-webkit-animation-play-state:paused;animation-play-state:paused}.main-block .main-block-left .main-button-wrap:hover{-webkit-transform:perspective(1px) scale(1.06);transform:perspective(1px) scale(1.06)}.main-block .main-block-right,.text-block .text-block-wrap .text-block-left,.whats-app .whats-app-wrap .whats-app-left,.whats-app .whats-app-wrap .whats-app-right{-webkit-box-flex:1;-ms-flex:1 0 50%;flex:1 0 50%}.main-block .main-block-right img{width:100%;max-width:400px;height:auto;display:block;margin:0 auto}.main-block .arrow-down{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-animation:.5s linear infinite alternate arrow-down;animation:.5s linear infinite alternate arrow-down}@-webkit-keyframes arrow-down{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}}@keyframes arrow-down{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}}@media screen and (max-width:950px){.header-wrap,.purchase__wrap{flex-direction:column}.main-block .main-block-wrap{position:relative;padding-bottom:30px}.main-block .main-block-left{-webkit-box-flex:1;-ms-flex:1 0 100%;flex:1 0 100%;z-index:2;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.main-block .main-block-left .subheader,.main-block .main-block-left h1{text-align:center}.main-block .main-block-right{position:absolute;width:100%}.main-block .main-block-right img{margin:0 auto;opacity:.1}.purchase__img{display:none}}@media screen and (max-width:766px){.header-contacts,.header-wrap,.main-block .main-block-left .advantages-icon{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.main-block .main-block-left .advantages-icon .advantages-icon-item{margin-bottom:15px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-right:0}.header-wrap .logo .logo-text,.main-block .main-block-left .advantages-icon .advantages-icon-item p{text-align:center}.main-block .main-block-left .advantages-icon .advantages-icon-item:last-child{margin-bottom:0}.header-wrap .logo{margin-bottom:10px}.header-wrap .logo img{display:none}.header-contacts .back-call-button{font-size:14px;padding:10px 15px}.header-contacts .phone{margin-right:0;margin-bottom:5px}}@media screen and (max-width:550px){.header-contacts .phone,.main-block .main-block-left .subheader{font-size:18px}.logo img{max-width:20px}.logo .logo-text{font-size:16px}.logo .logo-text span{font-size:24px}.main-block .main-block-left h1{font-size:28px}.main-block .main-block-left .main-button{font-size:14px;padding:15px 20px}.main-block .main-block-left .main-button-wrap:before{display:none}}
+		@font-face {
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: local("Open Sans"),
+					url("/fonts/Open_Sans/OpenSans-Regular.woff2") format("woff2");
+		}
+		@font-face {
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 600;
+			font-display: swap;
+			src: local("Open Sans"),
+					url("/fonts/Open_Sans/OpenSans-SemiBold.woff2") format("woff2");
+		}
+		@font-face {
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 700;
+			font-display: swap;
+			src: local("Open Sans"),
+					url("/fonts/Open_Sans/OpenSans-Bold.woff2") format("woff2");
+		}
+		@font-face {
+			font-family: "Open Sans";
+			font-style: normal;
+			font-weight: 800;
+			font-display: swap;
+			src: local("Open Sans"),
+					url("/fonts/Open_Sans/OpenSans-ExtraBold.woff2") format("woff2");
+		}
+		@font-face {
+			font-family: "Montserrat";
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: local("Montserrat"),
+					url("/fonts//Montserrat/Montserrat-Regular.woff2") format("woff2");
+		}
+		@font-face {
+			font-family: "Montserrat";
+			font-style: normal;
+			font-weight: 900;
+			font-display: swap;
+			src: local("Montserrat"),
+					url("/fonts//Montserrat/Montserrat-Black.woff2") format("woff2");
+		}
+	*{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box;outline:0}body{font-family:'Open Sans',sans-serif;font-size:16px;position:relative;overflow-x:hidden;overflow-y:inherit}body .scroll-up{position:absolute;bottom:70px;right:30px;display:none;opacity:.5;-webkit-transition:.3s;transition:.3s;padding:15px}body .scroll-up img{width:20px}.close-pop-up:hover,body .scroll-up:hover{cursor:pointer;opacity:.8}body .scroll-up.active{display:block;position:fixed;z-index:50}body .contacts-fix{position:fixed;right:3%;bottom:3%;z-index:10000;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:distribute;justify-content:space-around}.container{max-width:1170px;padding:0 15px;margin:0 auto;width:100%}.header{background:#fff;padding:15px 0;width:100%;-webkit-box-shadow:0 20px 30px rgba(0,66,193,.3);box-shadow:0 20px 30px rgba(0,66,193,.3);position:relative;z-index:2;-webkit-transition:.1s;transition:.1s;-webkit-transform:translateZ(0);transform:translateZ(0)}.header.sticky{top:0;position:fixed;-webkit-box-shadow:0 20px 30px rgba(0,66,193,.1);box-shadow:0 20px 30px rgba(0,66,193,.1);-webkit-transform:translateZ(0);transform:translateZ(0)}.header-wrap{display:flex;width:100%;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.logo{display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-decoration:none}.logo img{margin-right:10px;max-width:70px}.logo .logo-text{font-size:16px;font-weight:300;line-height:1.2;flex-shrink:1;    color: #2b4363;}.logo .logo-text span{font-weight:800;text-transform:uppercase;font-size:19px;line-height:1}.header-contacts{display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap}.header-contacts .phone{font-size:24px;font-weight:700;text-decoration:none;margin-right:28px}.back-call-button{padding:17px 22px;display:block;background:#ba2b4f;color:#fff;font-weight:600;white-space:nowrap;-webkit-transition:.2s;transition:.2s;font-size:16px}.back-call-button,.form-button{border-radius:30px;text-align:center;text-decoration:none}.main-block{padding:50px 0 0;position:relative;width:100%}.main-block .main-block-wrap{display:flex;width:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap}.main-block .main-block-left{display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:1;-ms-flex:1 0 50%;flex:1 0 50%}.main-block .main-block-left h1{font-size:35px;font-weight:800;font-family:Montserrat;line-height:1;margin-bottom:10px}.main-block .main-block-left .subheader{font-size:22px;margin-bottom:30px}.main-block .main-block-left .advantages-icon{display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:37px}.main-block .main-block-left .advantages-icon .advantages-icon-item{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:1;-ms-flex:1 0 33%;flex:1 0 33%;margin-right:30px;max-width:160px}.main-block .main-block-left .advantages-icon .advantages-icon-item p {font-size: 15px;line-height: 1;}.main-block .main-block-left .main-button-wrap{position:relative;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;display:inline-block;-webkit-transition:.2s;transition:.2s}.main-block .main-block-left .main-button{display:inline-block;text-align:center;color:#fff;font-weight:700;background:linear-gradient(248.58deg,#769fef 17.29%,#4966ce 98.25%);border-radius:50px;padding:17px 25px;text-decoration:none;-webkit-transition:.3s;transition:.3s;position:relative;overflow:hidden}.main-block .main-block-left .main-button:after{content:'';position:absolute;top:0;right:-50%;bottom:-50%;left:-100%;background:-webkit-gradient(linear,left top,left bottom,from(rgba(229,172,142,0)),color-stop(50%,rgba(255,255,255,.5)),to(rgba(229,172,142,0)));background:linear-gradient(to bottom,rgba(229,172,142,0),rgba(255,255,255,.5) 50%,rgba(229,172,142,0));-webkit-transform:rotateZ(60deg) translate(-5em,7.5em);transform:rotateZ(60deg) translate(-5em,7.5em);will-change:transform}.main-block .main-block-left .main-button::after{-webkit-animation:1.5s ease-out infinite forwards sheen;animation:1.5s ease-out infinite forwards sheen}.main-block .main-block-left .main-button:hover::after{-webkit-animation-play-state:paused;animation-play-state:paused}.main-block .main-block-left .main-button-wrap:hover{-webkit-transform:perspective(1px) scale(1.06);transform:perspective(1px) scale(1.06)}.main-block .main-block-right,.text-block .text-block-wrap .text-block-left,.whats-app .whats-app-wrap .whats-app-left,.whats-app .whats-app-wrap .whats-app-right{-webkit-box-flex:1;-ms-flex:1 0 50%;flex:1 0 50%}.main-block .main-block-right img{width:100%;max-width:400px;height:auto;display:block;margin:0 auto}.main-block .arrow-down{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-animation:.5s linear infinite alternate arrow-down;animation:.5s linear infinite alternate arrow-down}@-webkit-keyframes arrow-down{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}}@keyframes arrow-down{0%{-webkit-transform:translateY(0);transform:translateY(0)}100%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}}@media screen and (max-width:950px){.header-wrap,.purchase__wrap{flex-direction:column}.main-block .main-block-wrap{position:relative;padding-bottom:30px}.main-block .main-block-left{-webkit-box-flex:1;-ms-flex:1 0 100%;flex:1 0 100%;z-index:2;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.main-block .main-block-left .subheader,.main-block .main-block-left h1{text-align:center}.main-block .main-block-right{position:absolute;width:100%}.main-block .main-block-right img{margin:0 auto;opacity:.1}.purchase__img{display:none}}@media screen and (max-width:766px){.header-contacts,.header-wrap,.main-block .main-block-left .advantages-icon{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.main-block .main-block-left .advantages-icon .advantages-icon-item{margin-bottom:15px;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-right:0}.header-wrap .logo .logo-text,.main-block .main-block-left .advantages-icon .advantages-icon-item p{text-align:center}.main-block .main-block-left .advantages-icon .advantages-icon-item:last-child{margin-bottom:0}.header-wrap .logo{margin-bottom:10px}.header-wrap .logo img{display:none}.header-contacts .back-call-button{font-size:14px;padding:10px 15px}.header-contacts .phone{margin-right:0;margin-bottom:5px}}@media screen and (max-width:550px){.header-contacts .phone,.main-block .main-block-left .subheader{font-size:18px}.logo img{max-width:20px}.logo .logo-text span{font-size:17px}.main-block .main-block-left h1{font-size:28px}.main-block .main-block-left .main-button{font-size:14px;padding:15px 20px}.main-block .main-block-left .main-button-wrap:before{display:none}}
+	@media screen and (max-width: 400px){.main-block .main-block-left h1 {font-size:18px;}}
+
 	</style>
 
 	
@@ -184,8 +239,8 @@
 			<div class="block-form1-left">
 				<!-- <img src="img/image_form1.png" alt="Узнайте предварительную стоимость вашей стиральной машины"> -->
 				<picture>
-					<source type="image/webp" srcset="img/image_form1.webp">
-					<img src="img/image_form1.png" alt="Узнайте предварительную стоимость вашей стиральной машины" width="380px" height="395px">
+					<source type="image/webp" data-srcset="img/image_form1.webp">
+					<img data-src="img/image_form1.png" alt="Узнайте предварительную стоимость вашей стиральной машины" width="380px" height="395px">
 				</picture>
 			</div>
 			<div class="block-form1-right">
@@ -265,8 +320,8 @@
 			<div class="text-block-right">
 				<!-- <img src="img/text_block_image.png"	alt="Сдать старую стиральную машину и холодильник за хорошие деньги в Брянске реально!"> -->
 					<picture>
-						<source type="image/webp" srcset="img/text_block_image.webp" width="450px" height="338px">
-						<img src="img/text_block_image.png" alt="Сдать старую стиральную машину и холодильник за хорошие деньги в Брянске реально!" width="450px" height="338px">
+						<source type="image/webp" data-srcset="img/text_block_image.webp" width="450px" height="338px">
+						<img data-src="img/text_block_image.png" alt="Сдать старую стиральную машину и холодильник за хорошие деньги в Брянске реально!" width="450px" height="338px">
 					</picture>
 			</div>
 
@@ -283,7 +338,7 @@
 		<div class="steps-wrap">
 			<div class="steps-item">
 				<div class="steps-item-img">
-					<img src="img/1.svg" alt="Позвоните нам по телефону либо пришлите фото в WhatsApp" width="60px" height="60">
+					<img data-src="img/1.svg" alt="Позвоните нам по телефону либо пришлите фото в WhatsApp" width="60px" height="60">
 
 				</div>
    
@@ -293,21 +348,21 @@
 			</div>
 			<div class="steps-item">
 				<div class="steps-item-img">
-					<img src="img/transport.svg" alt="Мы согласовываем все детали и приезжаем к вам в любое удобное время" width="60px" height="60">
+					<img data-src="img/transport.svg" alt="Мы согласовываем все детали и приезжаем к вам в любое удобное время" width="60px" height="60">
 				</div>
 				
 				<p class="text">Мы согласовываем все детали и приезжаем к вам в <strong>любое удобное время</strong></p>
 			</div>
 			<div class="steps-item">
 				<div class="steps-item-img">
-					<img src="img/3.svg" alt="Мастера производят окончательную оценку стоимости машинки" width="60px" height="60">
+					<img data-src="img/3.svg" alt="Мастера производят окончательную оценку стоимости машинки" width="60px" height="60">
 				</div>
 				
 				<p class="text">Мастера производят <strong>окончательную оценку</strong> стоимости машинки или холодильника</p>
 			</div>
 			<div class="steps-item">
 				<div class="steps-item-img">
-					<img src="img/4.svg" alt="Отдаем вам деньги и самостоятельно вывозим технику" width="60px" height="60">
+					<img data-src="img/4.svg" alt="Отдаем вам деньги и самостоятельно вывозим технику" width="60px" height="60">
 				</div>
 				
 				<p class="text"><strong>Отдаем вам деньги</strong> и самостоятельно <strong>вывозим</strong> технику</p>
@@ -454,8 +509,8 @@
 				<div class="purchase__img">
 					<!-- <img src="img/purchase-1.png" alt="Скупка холодильников"> -->
 					<picture>
-						<source type="image/webp" srcset="img/purchase-1.webp" width="545px" height="581px">
-						<img src="img/purchase-1.png" alt="Скупка холодильников" width="545px" height="581px">
+						<source type="image/webp" data-srcset="img/purchase-1.webp" width="545px" height="581px">
+						<img data-src="img/purchase-1.png" alt="Скупка холодильников" width="545px" height="581px">
 					</picture>
 				</div>
 			</div>
@@ -595,8 +650,8 @@
 				<div class="purchase__img">
 					<!-- <img src="img/purchase-2.png" alt="Скупка стиральных машин"> -->
 					<picture>
-						<source type="image/webp" srcset="img/purchase-2.webp" width="545px" height="363px">
-						<img src="img/purchase-2.png" alt="Скупка стиральных машин" width="545px" height="363px">
+						<source type="image/webp" data-srcset="img/purchase-2.webp" width="545px" height="363px">
+						<img data-src="img/purchase-2.png" alt="Скупка стиральных машин" width="545px" height="363px">
 					</picture>
 				</div>
 			</div>
@@ -630,7 +685,7 @@
 									href="img/whatsapp-image-2020-10-06-at-18.36.56.jpeg"
 									class="slide-image">
 									<img
-										src="img/whatsapp-image-2020-10-06-at-18.36.56-185x300.jpeg"
+										data-src="img/whatsapp-image-2020-10-06-at-18.36.56-185x300.jpeg"
 										alt="whatsapp">
 									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<circle cx="20" cy="20" r="20" fill="white" />
@@ -660,7 +715,7 @@
 									href="img/whatsapp-image-2020-10-06-at-18.37.35.jpeg"
 									class="slide-image">
 									<img
-										src="img/whatsapp-image-2020-10-06-at-18.37.35-214x300.jpeg"
+										data-src="img/whatsapp-image-2020-10-06-at-18.37.35-214x300.jpeg"
 										alt="whatsapp">
 									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<circle cx="20" cy="20" r="20" fill="white" />
@@ -690,7 +745,7 @@
 									href="img/whatsapp-image-2020-10-06-at-18.38.09.jpeg"
 									class="slide-image">
 									<img
-										src="img/whatsapp-image-2020-10-06-at-18.38.09-220x300.jpeg"
+										data-src="img/whatsapp-image-2020-10-06-at-18.38.09-220x300.jpeg"
 										alt="whatsapp">
 									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<circle cx="20" cy="20" r="20" fill="white" />
@@ -721,7 +776,7 @@
 									href="img/whatsapp-image-2020-10-06-at-18.39.00.jpeg"
 									class="slide-image">
 									<img
-										src="img/whatsapp-image-2020-10-06-at-18.39.00-201x300.jpeg"
+										data-src="img/whatsapp-image-2020-10-06-at-18.39.00-201x300.jpeg"
 										alt="whatsapp">
 									<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<circle cx="20" cy="20" r="20" fill="white" />
@@ -836,18 +891,18 @@
 				<div class="social-button">
 					<p>Нажмите на иконку мессенджера</p>
 					<a href="viber://add?number=%2B89003732233">
-						<img src="img/viber.svg" alt="viber" width="40xp" height="40px">
+						<img data-src="img/viber.svg" alt="viber" width="40xp" height="40px">
 					</a>
 					<a href="https://wa.me/:89003732233?text=Здравствуйте">
-						<img src="img/whatsapp.svg" alt="whatsapp" width="40xp" height="40px">
+						<img data-src="img/whatsapp.svg" alt="whatsapp" width="40xp" height="40px">
 					</a>
 				</div>
 			</div>
 			<div class="whats-app-right">
 				<!-- <img src="img/iphonex.png" alt="телефон"> -->
 				<picture>
-					<source type="image/webp" srcset="img/iphonex.webp" width="360px" height="455px">
-					<img src="img/iphonex.png" alt="телефон" width="360px" height="455px">
+					<source type="image/webp" data-srcset="img/iphonex.webp" width="360px" height="455px">
+					<img data-src="img/iphonex.png" alt="телефон" width="360px" height="455px">
 				</picture>
 			</div>
 
@@ -935,9 +990,9 @@
 				<div class="title">Контакты</div>
 				<span itemprop="addressLocality">г. Брянск, ул. Ульянова д.18А</span>
 				<a class="phone" href="tel:+79003732233">
-					<!-- noindex -->
+				
 					<span itemprop="telephone">+7 900 373-22-33</span>
-					<!--/ noindex -->
+				
 				</a>
 			</div>
 		</div>
@@ -982,17 +1037,23 @@
 
 <link rel='stylesheet' href='css/libs.css' type='text/css' media='all' />
 <link rel='stylesheet' href='css/main.css?ver=1' type='text/css' media='all' />
-<script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
-<script type='text/javascript' src='js/jquery.min.js?ver=1'></script>
-<script type='text/javascript' src='js/jquery.inputmask.js?ver=1' defer></script>
-<script type='text/javascript' src='js/jquery.fancybox.min.js?ver=1' defer></script>
-<script type='text/javascript' src='js/slick.js?ver=1' defer></script>
-<script type='text/javascript' src='js/selectize.js?ver=1' defer></script>
-<script type='text/javascript' src='js/imagesloaded.min.js?ver=1' defer></script>
-<script type='text/javascript' src='js/script.js?ver=1' defer></script>
-<script type='text/javascript' src='js/form.js?ver=1' defer></script>
+<script type="text/javascript" src="https://unpkg.com/default-passive-events" async></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type='text/javascript' src='js/jquery.inputmask.js?ver=1' async></script>
+<script type='text/javascript' src='js/jquery.fancybox.min.js?ver=1' async></script>
+<script type='text/javascript' src='js/slick.js?ver=1' async></script>
+<script type='text/javascript' src='js/selectize.js?ver=1' async></script>
+<!-- <script type='text/javascript' src='js/imagesloaded.min.js?ver=1' async></script> -->
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
+<script type='text/javascript' src='js/script.js?ver=1' async></script>
+<script type='text/javascript' src='js/form.js?ver=1' async></script>
 
 <script>
+	const lazyMedia = new LazyLoad({
+			elements_selector: '[data-src],[data-srcset]',
+			class_loaded: '_lazy-loaded',
+			use_native: true
+		});
 	
 		// files
 			const dt = new DataTransfer()
